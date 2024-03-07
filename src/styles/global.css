@@ -5977,8 +5977,11 @@ html {
   max-width: 100%;
 }
 
+.panel-three-lines .row {
+  --bs-gutter-x: 3rem;
+}
 .panel-three-lines .col {
-  padding: 60px 40px 38px;
+  padding: 60px 30px 38px;
 }
 
 #panel-two-features {
