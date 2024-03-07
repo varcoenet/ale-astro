@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="55px" viewBox="0 0 48 55" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>magento</title>
+    <g id="Game-Images" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="gamebg-smalland-1920" transform="translate(-725, -781)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="magento" transform="translate(725, 781)">
+                <polygon id="Path" points="23.8391395 0 0 13.7605111 0 41.2454953 6.80517637 45.179644 6.7571257 17.6886535 23.7910887 7.8562848 40.825052 17.6886535 40.825052 45.1676313 47.6302282 41.2454953 47.6302282 13.7364857"></polygon>
+                <polygon id="Path" points="27.2146992 45.1736376 23.8151141 47.1497216 20.39751 45.1916566 20.39751 17.6886535 13.5983401 21.6167959 13.6103527 49.1077864 23.8091078 55 34.0198755 49.1077864 34.0198755 21.6167959 27.2146992 17.6886535"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

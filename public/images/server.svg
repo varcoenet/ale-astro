@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="55px" height="52px" viewBox="0 0 55 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>server</title>
+    <g id="Game-Images" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="server" transform="translate(1, 1)" stroke-width="2">
+            <path d="M52.3907727,37.7167208 C52.3907727,44.5012228 46.892908,50 40.1074935,50 C33.3257291,50 27.8169143,44.5012228 27.8169143,37.7167208 C27.8169143,30.9331314 33.3257291,25.4352666 40.1074935,25.4352666 C46.892908,25.4352666 52.3907727,30.9331314 52.3907727,37.7167208 Z" id="Path" stroke="#367FCA"></path>
+            <g id="Group" transform="translate(34.3167, 31.9314)" stroke="#367FCA">
+                <line x1="11.5724349" y1="5.78621747" x2="0" y2="5.78621747" id="Path"></line>
+                <line x1="5.788955" y1="11.5715224" x2="5.788955" y2="0" id="Path"></line>
+            </g>
+            <g id="Group" stroke="#060000">
+                <circle id="Oval" fill="#394553" fill-rule="nonzero" cx="8.43340512" cy="7.62857247" r="1"></circle>
+                <circle id="Oval" fill="#394553" fill-rule="nonzero" cx="8.43340512" cy="22.6849655" r="1"></circle>
+                <circle id="Oval" fill="#394553" fill-rule="nonzero" cx="8.43340512" cy="37.8134467" r="1"></circle>
+                <path d="M0,11.3169325 L0,2.73752601 C0,1.2318867 1.23279921,0 2.73752601,0 L37.261379,0 C38.7670183,0 39.998905,1.2318867 39.998905,2.73752601 L39.998905,21.263277" id="Path" stroke-linejoin="round"></path>
+                <polyline id="Path" points="0 26.5457897 0 15.153119 39.8793664 15.153119"></polyline>
+                <path d="M25.0647881,45.473957 L2.73752601,45.473957 C1.23279921,45.473957 0,44.2411578 0,42.736431 L0,30.2606125 L1.8523926,30.2606125 L24.9260868,30.2606125" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>

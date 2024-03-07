@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>terraria-icon-network</title>
+    <g id="Network" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-1808.000000, -2316.000000)" stroke="#060000" stroke-width="2">
+            <g id="Group-8" transform="translate(1287.000000, 2028.000000)">
+                <g id="terraria-icon-network" transform="translate(522.000000, 289.000000)">
+                    <polygon id="Path" fill="#3781C3" points="32.4010743 37.2505381 32.4010743 32.1990133 35.7172518 32.1990133 35.7172518 27.1465742 40.7696909 27.1465742 40.7696909 10.5675156 7.23030915 10.5675156 7.23030915 27.1465742 12.2809196 27.1465742 12.2809196 32.1990133 15.5989257 32.1990133 15.5989257 37.2505381"></polygon>
+                    <g id="Group" transform="translate(14.269529, 14.552963)">
+                        <line x1="0.457151565" y1="0" x2="0.457151565" y2="8.38690261" id="Path"></line>
+                        <line x1="6.63875502" y1="0" x2="6.63875502" y2="8.38690261" id="Path"></line>
+                        <line x1="12.8212728" y1="0" x2="12.8212728" y2="8.38690261" id="Path"></line>
+                        <line x1="19.0037905" y1="0" x2="19.0037905" y2="8.38690261" id="Path"></line>
+                    </g>
+                    <path d="M48,42.5141812 C48,45.5313816 45.5313816,48 42.5141812,48 L5.48581878,48 C2.46861845,48 -3.24825724e-15,45.5313816 -3.24825724e-15,42.5141812 L-3.24825724e-15,5.48581878 C-3.24825724e-15,2.46861845 2.46861845,0 5.48581878,0 L42.5141812,0 C45.5313816,0 48,2.46861845 48,5.48581878 L48,42.5141812 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="52px" viewBox="0 0 50 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>email-hosting</title>
+    <g id="Game-Images" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="email-hosting" transform="translate(1, 1)" stroke="#060000" stroke-width="2">
+            <polyline id="Path" points="28.0300575 43.0477133 40.6654612 48.1022159 47.4437488 0 0 31.9211545 14.2124836 37.1709797 18.9351939 50 23.175142 41.1055765"></polyline>
+            <line x1="17.7956705" y1="33.207383" x2="47.0590744" y2="0.502379693" id="Path"></line>
+            <line x1="23.175142" y1="41.1055765" x2="47.1827502" y2="0.51602668" id="Path"></line>
+        </g>
+    </g>
+</svg>

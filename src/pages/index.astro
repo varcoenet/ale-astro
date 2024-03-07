@@ -1,0 +1,378 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+
+    <div class="top-bg">
+		<Header />
+
+	
+        <div id="banner" class="home-slide">
+            <div class="container">
+					<div id="carouselGames" class="carousel slide mt-4 pt-2 ptfix" data-bs-ride="carousel" data-bs-interval="25000">
+                            <div class="carousel-inner">
+								
+                        <div class="carousel-item" id="hb-csgo">
+                            <img src="images/logo-csgo.webp" loading="lazy" alt="">
+                                        <h1>Order a CS:GO Server</h1>
+                                        <p>Starting at just <span>$0.50</span> per slot.</p>
+                                        <a href="games/csgo-counter-strike-global-offensive.html" class="button">Order CS:GO Server</a>
+                                        <span class="trial">Free trial available for all game servers.</span>
+                        </div>
+                        
+                        <div class="carousel-item active" id="hb-minecraft">
+                            <img src="images/logo-minecraft.webp" loading="lazy" alt="">
+                                        <h1>Order a Minecraft Server</h1>
+                                        <p>Starting at just <span>$4.50</span> per GB.</p>
+                                        <a href="games/minecraft.html" class="button">Order Minecraft Server</a>
+                                        <span class="trial">Free trial available for all game servers.</span>
+                        </div>
+                        <div class="carousel-item" id="hb-terraria">
+                            <img src="images/logo-terraria-3.webp" loading="lazy" alt="">
+                                        <h1>Order a Terraria Server</h1>
+                                        <p>Starting at just <span>$0.60</span> per slot.</p>
+                                        <a href="games/terraria" class="button">Order Terraria Server</a>
+                                        <span class="trial">Free trial available for all game servers.</span>
+                        </div>
+                            </div>
+                        </div>
+						
+
+                    <a class="carousel-control-prev prev" href="javascript:void(0)" data-bs-target="#carouselGames" data-bs-slide="prev" aria-label="Previous">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next next" href="javascript:void(0)" data-bs-target="#carouselGames" data-bs-slide="next" aria-label="Next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+
+            </div>
+        </div>
+    </div>
+
+
+    <section class="how-it-works">
+        <div class="container">
+            <div class="flex-grid two">
+                <div class="col" id="tc-l">
+                    <h2><small>How it Works</small>Getting Started is Easy</h2>
+                    <p>Choose your game, pick a plan, and jump right into your very own game server. Aleforge provides a variety of easy-to-use, customizable features for a smooth and enjoyable gaming experience.</p>
+                    <ul class="checklist">
+                        <li><img src="images/tick.webp" loading="lazy" alt="">Get your game server up and running in less than a minute.</li>
+                        <li><img src="images/tick.webp" loading="lazy" alt="">Want to do a test run? Try our 10-day free trial!</li>
+                    </ul>
+                    <a href="gameservers.html" class="button">Get Started</a>
+                </div>
+                <div class="col" id="hiw-img">
+                    <img src="images/get-started.webp" loading="lazy" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="grey-bg" id="home-games">
+        <div class="container">
+            <div class="title">
+                <h2>Popular Game Servers</h2>
+                <p>Build, explore, and survive with your friends in a game world of your choice. We’re constantly expanding our gaming catalog so you can play all of your favorite games 24/7.</p>
+            </div>
+            <div id="carousel-popular" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-popular" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-popular" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="flex-grid four">
+                            <div class="col" id="game-minecraft-big" onclick="javascript:window.location.href='games/minecraft.html';">
+                                <span class="label">Popular</span>
+                                <h4>Minecraft</h4>
+                                <span>Starting at $4.50/GB</span>
+                            </div>
+                            <div class="col" id="game-factorio-big" onclick="javascript:window.location.href='games/factorio.html';">
+                                <h4>Factorio</h4>
+                                <span>Starting at $0.35/slot</span>
+                            </div>
+                            <div class="col" id="game-csgo-big" onclick="javascript:window.location.href='games/csgo-counter-strike-global-offensive.html';">
+                                <h4>Counter-Strike GO</h4>
+                                <span>Starting at $0.50/slot</span>
+                            </div>
+                            <div class="col" id="game-starbound-big" onclick="javascript:window.location.href='games/starbound.html';">
+                                <span class="label">Coming Soon</span>
+                                <!-- <span class="label secondary">New</span> -->
+                                <h4>Starbound</h4>
+                                <span>Starting at $0.75/slot</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="flex-grid four">
+                            <div class="col" id="game-css-big" onclick="javascript:window.location.href='games/counter-strike-source.html';">
+                                <!-- <span class="label">Coming Soon</span> -->
+                                <span class="label">Popular</span>
+                                <h4>Counter-Strike Source</h4>
+                                <span>Starting at $0.50/slot</span>
+                            </div>
+                            <div class="col" id="game-gmod-big" onclick="javascript:window.location.href='games/garrysmod.html';">
+                                <span class="label">Coming Soon</span>
+                                <h4>Garry's Mod</h4>
+                                <span>Starting at $0.50/slot</span>
+                            </div>
+                            <div class="col" id="game-terraria-big" onclick="javascript:window.location.href='games/terraria.html';">
+                                <h4>Terraria</h4>
+                                <span>Starting at $0.60/slot</span>
+                            </div>
+                            <div class="col" id="game-squad-big" onclick="javascript:window.location.href='games/squad.html';">
+                                <span class="label">Coming Soon</span>
+                                <span class="label secondary">New</span>
+                                <h4>Squad</h4>
+                                <span>Starting at $1.25/slot</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel-popular" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-popular" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="blue-bg promobar" id="promobarfix">
+        <div class="container">
+            <div class="flex-grid">
+                <div class="col">
+                    <h2>10%</h2>
+                    <h3>Off your <br>first month</h3>
+                </div>
+                <div class="col leftauto" id="coupon-code">
+                    Use coupon code during checkout: <strong>1STMONTH</strong>
+                </div>
+                <div class="col leftauto">
+                    <div id="timer">
+                        <div id="clock"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <section class="four-feats" id="home-feats">
+        <div class="container">
+            <div class="title">
+                <h2><small>Included Features</small>Affordable Game Hosting</h2>
+                <p>We did the math. By renting a dedicated game server on AleForge, you can have the best of both worlds: inexpensive game hosting services combined with intuitive defense systems and phenomenal performance.</p>
+            </div>
+            <div class="flex-grid three">
+                <div class="col">
+                    <img src="images/security.webp" loading="lazy" alt="">
+                    <h4>Unparalleled Security</h4>
+                    <p>Protections are included by default in all of our products to ensure your gaming remains shielded from hacks, DDoS, or other malicious acts.</p>
+                </div>
+                <div class="col">
+                    <img src="images/low-latency.webp" loading="lazy" alt="">
+                    <h4>Low Latency</h4>
+                    <p>Our systems are optimized for performance, processing high volumes of data in real-time with minimal delay.</p>
+                </div>
+                <div class="col">
+                    <img src="images/never.webp" loading="lazy" alt="">
+                    <h4>Never Oversold</h4>
+                    <p>We have the superior bandwidth and hardware you need to run a quality server and are continuously growing our platform.</p>
+                </div>
+                <div class="col">
+                    <img src="images/ddos-protection.webp" loading="lazy" alt="">
+                    <h4>Free DDoS Protection</h4>
+                    <p>Sophisticated protection services mean you never have to worry about a distributed denial-of-service attack.</p>
+                </div>
+                <div class="col">
+                    <img src="images/support.webp" loading="lazy" alt="">
+                    <h4>24/7 Technical Support</h4>
+                    <p>If you want your problem solved without needing multiple support requests, our support agents are ready to assist from debugging crashes, to helping install mods, and more!</p>
+                </div>
+                <div class="col">
+                    <img src="images/servers-added.webp" loading="lazy" alt="">
+                    <h4>Enterprise Hardware</h4>
+                    <p>We spec our game servers to provide a minimum clock speed of 3.8 GHz backed with NvME SSD drives to provide the fastest gaming experience around.</p>
+                </div>
+            </div>
+
+            <div class="flex-grid one">
+                <div class="col">
+                    <h5>Are we missing something?</h5>
+                    <a href="https://billing.aleforge.net/submitticket.php?step=2&deptid=1" class="button">Contact Us</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    <section class="dark-bg-small" id="trustpilot-home">
+        <div class="container">
+            <div class="flex-grid twothirds">
+                <div class="col colsecond" id="tp-home-left">
+                    <h5 style="color:white">We're Rated</h5>
+                    <h2>Excellent</h2>
+                    <!--<img src="images/fourfivestars-big.webp" alt="">
+                    <p>Based on over <a href="#">10+ reviews</a></p>
+                    <a href="#"><img src="images/trustpilot-logo.webp" alt=""></a>-->
+                    <!-- TrustBox widget - Starter -->
+                    <div class="trustpilot-widget" data-locale="en-US" data-template-id="5613c9cde69ddc09340c6beb" data-businessunit-id="5b71ce2ce60f880001a41213" data-style-height="100%" data-style-width="100%" data-theme="dark">
+                        <a href="https://www.trustpilot.com/review/aleforge.net" target="_blank" rel="noopener">Trustpilot</a>
+                    </div>
+                    <!-- End TrustBox widget -->
+                </div>
+            <div class="col colfirst" id="tp-testimonials"><div id="carousel-testimonials" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <div class="flex-grid one">
+                            <div class="col slider">
+                                <img src="images/quote-white.webp" loading="lazy" alt="">
+                                <p>"When we weren't pushing the limits of the game itself, the server ran like a dream, even when we updated to new, experimental versions of the server.  Setup and updating to new server versions was easy and led to a relaxing, stress-free co-op experience in-game.  A quality service, I highly recommend it.”</p>
+                                <h4>Bryce</h4>
+                                <!--<span>Smith Brewing Company</span>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <div class="flex-grid one">
+                            <div class="col slider">
+                                <img src="images/quote-white.webp" loading="lazy" alt="">
+                                <p>"Excellent service. They know what they are doing, communicate clearly on reasonable time scales, deliver what they promise and go out of their way to give you a good experience. I've hosted with several different companies before. I prefer AleForge for the technical and customer service excellence.”</p>
+                                <h4>Alfred</h4>
+                                <!--<span>Smith Brewing Company</span>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="flex-grid one">
+                            <div class="col slider">
+                                <img src="images/quote-white.webp" loading="lazy" alt="">
+                                <p>"Quick response given the time Zone differences also I was only really expecting general advice To see where my issue may be stemming from I had not actually expected someone to look into the issue very deeply. Very grateful. found issue and have been able to remove it and continue my merry way.”</p>
+                                <h4>Paddlewand</h4>
+                                <!--<span>Smith Brewing Company</span>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="flex-grid one">
+                            <div class="col slider">
+                                <img src="images/quote-white.webp" loading="lazy" alt="">
+                                <p>"Server works great. simple to use interface for people with little experience running a server. Customer Support is responsive and makes sure that you are satisfied before closing a ticket. I have a Minecraft package with Aleforge and definitely worth it for the added feature of getting help to set up my server.”</p>
+                                <h4>Dominic</h4>
+                                <!--<span>Smith Brewing Company</span>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel-testimonials" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-testimonials" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="infastructure">
+        <div class="container">
+            <div class="title">
+                <h2>Infrastructure Overview</h2>
+                <form>
+                    <select id='tabselect'>
+                        <option value='0'>Server Locations</option>
+                        <option value='1'>Easy-To-Use Control Panels</option>
+                        <option value='2'>Free DDoS Protection</option>
+                    </select>
+                </form>
+                <ul class="nav nav-tabs inf-tabs clearfix" role="tablist" id="home-tabs">
+                    <li class="nav-item"><a data-toggle="tab" href="#tabs-1" role="tab" class="nav-link active">Server Locations</a></li>
+                    <li class="nav-item"><a data-toggle="tab" href="#tabs-2" role="tab" class="nav-link">Easy-To-Use Control Panel</a></li>
+                    <li class="nav-item"><a data-toggle="tab" href="#tabs-3" role="tab" class="nav-link">Free DDoS Protection</a></li>
+                </ul>
+            </div>
+            <div class="tab-content">
+                <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                    <div class="flex-grid two" id="locations">
+                        <div class="col">
+                            <sergey-import src="map" />
+                        </div>
+                        <div class="col" id="tc-r">
+                            <h2>Multiple Locations</h2>
+                            <p>We use a global network with reliable facilities and actual redundancy to provide you with 99.9% uptime for uninterrupted game play.</p>
+                            <a href="about" class="button">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tabs-2" role="tabpanel">
+                    <div class="flex-grid two" id="home-panels">
+                        <div class="col" id="tc-l">
+                            <h2>Powerful Control Panel</h2>
+                            <p>Manage your server and find what you need quickly and easily with our refined game server control panel, complete with mod installer, auto backups, and more.</p>
+                            <p>*GameDash panel will be available once it has launched.</p>
+                            <div class="flex-grid two" id="cp-half">
+                                <div class="col">
+                                    <h5>Mod Installers</h5>
+                                    <p>Easily install Steam Workshop content, modpacks, plugins, and many more.</p>
+                                </div>
+                                <div class="col">
+                                    <h5>Powerful Interface</h5>
+                                    <p>Easy to use for both novice and power users.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col">
+                            <img src="images/panel-preview.webp" loading="lazy" alt="" id="panel">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tabs-3" role="tabpanel">
+                    <div class="flex-grid twothirds" id="ddos">
+                        <div class="col colsecond" id="ddos-img">
+                            <img src="images/ddosicon.webp" loading="lazy" alt="">
+                        </div>
+                        <div class="col colfirst" id="tc-r">
+                            <h2>DDoS Protection 40 Gbps and Up</h2>
+                            <p>We protect you against threats ranging from basic UDP floods to targeted Source Engine Query attacks. The majority of modern threats target application-specific exploits instead of utilizing bandwidth capacity. Our security uses machine learning, actively adjusting as necessary to keep threats out and you in the game.</p>
+                            <ul class="checklist">
+                                <li><img src="images/tick.webp" loading="lazy" alt="">Customized threat mitigation for every game.</li>
+                                <li><img src="images/tick.webp" loading="lazy" alt="">Machine learning threat mitigation applied in real time.</li>
+                                <li><img src="images/tick.webp" loading="lazy" alt="">Distributed protection to prevent single points of failure.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+		<Footer />
+	</body>
+</html>

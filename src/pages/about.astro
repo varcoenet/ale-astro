@@ -1,0 +1,262 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Map from '../components/map.astro'
+import SupportLinks from '../components/support-links.astro'
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+
+    <div class="top-bg">
+		<Header />
+
+        <div id="banner" class="subbanner about-banner">
+            <div class="container">
+                <h1>About AleForge</h1>
+                <p>Take a brief tour of our history and core values that define AleForge. We prove every day why our customers should use our services.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="our-story">
+        <div class="container">
+            <div class="row">
+                <div class="col col-lg-6 pt-4 ptfix">
+                    <h2><small>Our Story</small>About Us</h2>
+                    <p>We’ve hosted many game servers over the years for our friends and the community at large and always ran into issues with hosts. You would always buy slots with every resource shared allowing for others to break your server whether it be on purpose or on accident.</p>
+
+                    <p>We want to offer a clear view into server hosting, provide the resources you need, and guide you towards what you need if you don’t know. We strive to be a provider that works with it’s community. If there is a game or feature missing, let us know so we can add it to our roadmap.</p>
+
+                    <p>We want to change that by providing hosting with no obfuscation, period.</p>
+                </div>
+                <div class="col col-lg-5 ml-auto">
+                    <img src="/images/about-pic.webp" alt="" class="dwarf-img mb-n4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blue-bg" id="mission-statement">
+        <div class="container">
+            <div class="flex-grid one">
+                <div class="col">
+                    <h2>“We believe we can do game server hosting right.”</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <Map />
+
+    <section class="timeline grey-bg">
+        <div class="container">
+            <div class="title">
+                <h2>Company Timeline</h2>
+                <p>View our history and progress of our company and see how we keep adding new features for our customers.</p>
+            </div>
+            <ul class="clearfix">
+                <li class="inverted">
+                    <img src="/images/servers-added.webp" alt="">
+                    <h5><small>January 2024</small><br>Added New Game Support!</h5>
+                    <p>Added support for Palworld.</p>
+                </li>
+                <li>
+                    <img src="/images/servers-added.webp" alt="">
+                    <h5><small>January 2024</small><br>Added New Game Support!</h5>
+                    <p>Added support for Craftopia.</p>
+                </li>
+                <li class="inverted">
+                    <img src="/images/gameservers.webp" alt="">
+                    <h5><small>January 2024</small><br>Reached 7000 Customers</h5>
+                </li>
+                <li>
+                    <img src="/images/gameservers.webp" alt="">
+                    <h5><small>January 2024</small><br>Released Custom Java</h5>
+                    <p><a href="#">Custom Java build released for Minecraft that increases performance.</a></p>
+                </li>
+                <li class="inverted">
+                    <img src="/images/gameservers.webp" alt="">
+                    <h5><small>January 2024</small><br>Enhanced Valhiem Server Product</h5>
+                    <p><a href="https://bit.ly/41KJoAH">Details here</a></p>
+                </li>
+                <li>
+                    <img src="/images/servers-added.webp" alt="">
+                    <h5><small>December 2023</small><br>Added New Game Support!</h5>
+                    <p>Added support for Fistful of Frags.</p>
+                </li>
+                <li class="inverted hidden showpanel" style="display: none;">
+                    <img src="/images/servers-added.webp" alt="">
+                    <h5><small>December 2023</small><br>Panel Update!</h5>
+                    <p>Add many new features like server splitter.</p>
+                </li>
+                <li class="hidden showpanel" style="display: none;">
+                    <img src="/images/locationopen.webp" alt="">
+                    <h5><small>October 2023</small><br>New Location in Singapore</h5>
+                    <p>Due to customer requests we expanded our locations to include Singapore.</p>
+                </li>
+                <li class="inverted hidden showpanel" style="display: none;">
+                    <img src="/images/servers-added.webp" alt="">
+                    <h5><small>October 2023</small><br>Added New Game Support!</h5>
+                    <p>Added support for Mount and Blade II: Bannerlord.</p>
+                </li>
+                <li class="hidden showpanel" style="display: none;">
+                    <img src="/images/servers-added.webp" alt="">
+                    <h5><small>September 2023</small><br>Added New Game Support!</h5>
+                    <p>Added support for Necesse and Unturned.</p>
+                </li>
+                <li class="inverted hidden showpanel" style="display: none;">
+                    <img src="/images/tunneling.webp" alt="">
+                    <h5><small>May 2023</small><br>Premium 10 Gbps!</h5>
+                    <p>All premium servers now include 10 Gbps.</p>
+                </li>
+                <li class="hidden showpanel" style="display: none;">
+                    <img src="/images/servers-added.webp" alt="">
+                    <h5><small>April 2023</small><br>Added New Game Support!</h5>
+                    <p>Added support for Conan Exiles.</p>
+                </li>
+                <li class="inverted hidden showpanel" style="display: none;">
+                    <img src="/images/servers-added.webp" alt="">
+                    <h5><small>March 2023</small><br>Added New Game Support!</h5>
+                    <p>Added support for Core Keeper.</p>
+                </li>
+                <li class="hidden showpanel" style="display: none;">
+                    <img src="/images/servers-added.webp" alt="">
+                    <h5><small>January 2023</small><br>Added New Game Support!</h5>
+                    <p>Added support for Killing Floor 2, 7 Days to Die, and Project Zomboid.</p>
+                </li>
+                <li class="inverted hidden showpanel" style="display: none;">
+                    <img src="/images/servers-added.webp" alt="">
+                    <h5><small>January 2022</small><br>Added New Game Support!</h5>
+                    <p>Added support for Satisfactory.</p>
+                </li>
+                <li class="hidden showpanel" style="display: none;">
+                    <img src="/images/servers-added.webp" alt="">
+                    <h5><small>November 2021</small><br>Added New Game Support!</h5>
+                    <p>Added support for Avorion, and Don't Starve Together.</p>
+                </li>
+                <li class="inverted hidden showpanel" style="display: none;">
+                    <img src="/images/locationopen.webp" alt="">
+                    <h5><small>June 2021</small><br>New Location in Sydney</h5>
+                    <p>Due to customer requests we expanded our locations to include the east coast of Australia.</p>
+                </li>
+                <li class="hidden showpanel" style="display: none;">
+                    <img src="/images/gameservers.webp" alt="">
+                    <h5><small>June 2021</small><br>Reached 1800 Customers</h5>
+                </li>
+                <li class="inverted hidden showpanel" style="display: none;">
+                    <img src="/images/servers-added.webp" alt="">
+                    <h5><small>Feburary 2021</small><br>Added New Game Support!</h5>
+                    <p>Added support for Valheim, and Holdfast Nations at War.</p>
+                </li>
+                <li class="hidden showpanel" style="display: none;">
+                    <img src="/images/servers-added.webp" alt="">
+                    <h5><small>December 2020</small><br>Added New Game Support!</h5>
+                    <p>Added support for Rust, Mordhau, and Starbound.</p>
+                </li>
+                <li class="inverted hidden showpanel" style="display: none;">
+                    <img src="/images/support.webp" alt="">
+                    <h5><small>November 2020</small><br>Web Hosting Launched</h5>
+                    <p>Launched our extremely fast and secure web hosting platform.</p>
+                </li>
+                <li class="hidden showpanel" style="display: none;">
+                    <img src="/images/servers-added.webp" alt="">
+                    <h5><small>September 2020</small><br>Added CS:Source Support!</h5>
+                    <p>Added CS:Source support with every out of the box game mode working.</p>
+                </li>
+                <li class="inverted hidden showpanel" style="display: none;">
+                    <img src="/images/locationopen.webp" alt="">
+                    <h5><small>September 2020</small><br>New Location in Frankfurt, Germany</h5>
+                    <p>Due to customer requests we expanded our locations to expand our hosting services to Europe.</p>
+                </li>
+                <li class="hidden showpanel" style="display: none;">
+                    <img src="/images/servers-added.webp" alt="">
+                    <h5><small>July 2020</small><br>Added CS:GO Support!</h5>
+                    <p>Added CS:GO support with every out of the box game mode working.</p>
+                </li>
+                <li class="inverted hidden showpanel" style="display: none;">
+                    <img src="/images/support.webp" alt="">
+                    <h5><small>July 2020</small><br>New Website!</h5>
+                    <p>We launched our new branding on our new site and billing area.</p>
+                </li>
+                <li class="hidden showpanel" style="display: none;">
+                    <img src="/images/gameservers.webp" alt="">
+                    <h5><small>May 2020</small><br>Reached 300 Customers</h5>
+                    <p></p>
+                </li>
+                <li class="inverted hidden showpanel" style="display: none;">
+                    <img src="/images/locationopen.webp" alt="">
+                    <h5><small>May 2020</small><br>New Location in Oregon</h5>
+                    <p>Due to customer requests we expanded our locations to include the west coast in Oregon.</p>
+                </li>
+                <li class="hidden showpanel" style="display: none;">
+                    <img src="/images/locationopen.webp" alt="">
+                    <h5><small>August 2019</small><br>New Location in Virginia</h5>
+                    <p>Due to customer requests we expanded our locations to include the east coast in Virginia.</p>
+                </li>
+                <li class="inverted hidden showpanel" style="display: none;">
+                    <img src="/images/tunneling.webp" alt="">
+                    <h5><small>April 2019</small><br>Upgraded all servers to 1 Gbps</h5>
+                    <p>All customer servers now have minimum of 1 GBps symmetrical connection.</p>
+                </li>
+                <li class="hidden showpanel" style="display: none;">
+                    <img src="/images/gameservers.webp" alt="">
+                    <h5><small>February 2019</small><br>Reached 100 Customers</h5>
+                    <p></p>
+                </li>
+                <li class="inverted hidden showpanel" style="display: none;">
+                    <img src="/images/gameservers.webp" alt="">
+                    <h5><small>October 2018</small><br>Added Terraria Support</h5>
+                    <p>Added Terraria with tModloader and Tshock support.</p>
+                </li>
+                <li class="hidden showpanel" style="display: none;">
+                    <img src="/images/locationopen.webp" alt="">
+                    <h5><small>September 2018</small><br>Expanded Operations in Dallas</h5>
+                    <p>Due to high demand more hardware was deployed to our Dallas colocation.</p>
+                </li>
+                <li class="inverted hidden showpanel" style="display: none;">
+                    <img src="/images/servers-added.webp" alt="">
+                    <h5><small>April 2018</small><br>Added 4 Games</h5>
+                    <p>More supported games were added. Minecraft Java & Bedrock, Factorio, TF2, and CS:GO.</p>
+                </li>
+                <li class="hidden showpanel" style="display: none;">
+                    <img src="/images/open.webp" alt="">
+                    <h5><small>March 2018</small><br>Official Launch Date</h5>
+                    <p>Launch of AleForge website and our first game server hosting.</p>
+                </li>
+            </ul>
+            <div class="clear"></div>
+            <a href="javascript:void(0)" class="button outline-blue open">Show Full Timeline</a>
+        </div>
+    </section>
+
+	<script type="text/javascript">
+	            $(document).ready(function(){
+                $('.open').click(function(){
+                    var link = $(this);
+                    $('.showpanel').slideToggle('slow', function() {
+                        if ($(this).is(":visible")) {
+                             link.text('Hide Full Timeline');                
+                        } else {
+                             link.text('Show Full Timeline');                
+                        }        
+                    });
+
+                });
+            });
+			</script>
+
+
+  <SupportLinks />
+
+
+		<Footer />
+	</body>
+</html>
+

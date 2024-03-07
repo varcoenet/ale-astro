@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="10px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>external</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="external" transform="translate(1, 1)" stroke="#12161C" stroke-width="1.25">
+            <path d="M6.66666667,4.44444444 L6.66666667,7.11111111 C6.66666667,7.60203089 6.26869756,8 5.77777778,8 L0.888888889,8 C0.397969111,8 0,7.60203089 0,7.11111111 L0,2.22222222 C0,1.73130244 0.397969111,1.33333333 0.888888889,1.33333333 L3.55555556,1.33333333" id="Path"></path>
+            <polyline id="Path" points="5.33333333 0 8 0 8 2.66666667"></polyline>
+            <line x1="3.11111111" y1="4.88888889" x2="8" y2="0" id="Path"></line>
+        </g>
+    </g>
+</svg>

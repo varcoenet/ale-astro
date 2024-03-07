@@ -1,0 +1,383 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import SupportLinks from '../../components/support-links.astro';
+import Map from '../../components/map.astro';
+import CompareTable from '../../components/compare-table.astro';
+import GamePanel from '../../components/game-panel.astro';
+import ThreeGuarantees from '../../components/three-guarantees.astro'
+import GamePlan from '../../components/GamePlan.astro'
+import TPWidget from '../../components/TPWidget.astro'
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+
+    <div class="top-bg" id="gamebg-valheim">
+		<Header />
+
+      <div id="banner" class="subbanner game-banner pb-4">
+        <div class="container">
+              <h1 class="font-48">Valheim Server Hosting</h1>
+              <p>Battle, build, and conquer your way to a saga worthy of Odin’s patronage!</p>
+              <strong class="font-20 block pb-3">Play vanilla or modded with Thunderstore mods in your own mystical Valheim world.</strong>
+              <div class="text-center relative mt-4">
+                    <ul class="nav nav-tabs newgs-tabs float-none" role="tablist">
+                      <li>
+                        <a href="javascript:void(0)" id="newgs-tab1" data-bs-toggle="tab" data-bs-target="#newgs-tabs-1" role="tab" aria-controls="newgs-tabs-1" aria-selected="true" class="active" tabindex="-1">Standard</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" id="newgs-tab2" data-bs-toggle="tab" data-bs-target="#newgs-tabs-2" role="tab" aria-controls="newgs-tabs-2" aria-selected="false" class="" tabindex="-1">
+                          <div class="more-performance"><div class="more-label">Better Hardware & Network!</div></div>Premium<strong class="block font-12 green">30% Faster</strong>
+                        </a>
+                      </li>
+                    </ul>
+              <div class="tab-content">
+                <div class="tab-pane active" id="newgs-tabs-1" role="tabpanel">
+                  <div class="row" id="newgs-plans">
+                    <div class="col col-lg-4">
+						<GamePlan
+						img="/images/gameicon-1-valheim.webp"
+						title="Vanilla"
+						description="The classic game experience"
+						ram="4GB"
+						ssd="10GB"
+						slots="&#8734;"
+						price="$7.99"
+						link="https://billing.aleforge.net/store/standard/valheim-vanilla"
+						cores="Includes 2 CPU Cores"
+						/>
+                    </div>
+                    <div class="col col-lg-4 has-popular">
+						<GamePlan
+						img="/images/gameicon-2-valheim.webp"
+						title="Modded"
+						description="Enough power for all the mods. Powered by BepinEX"
+						ram="5GB"
+						ssd="15GB"
+						slots="&#8734;"
+						price="$9.99"
+						link="https://billing.aleforge.net/store/standard/valheim-modded"
+						cores="Includes 2 CPU Cores"
+						/>
+                    </div>
+                    <div class="col col-lg-4">
+						<GamePlan
+						img="/images/gameicon-3-valheim.webp"
+						title="Custom"
+						description="Create your own perfect server"
+						ram="6GB+"
+						ssd="50GB+"
+						slots="&#8734;"
+						price="$11.99+"
+						link="https://billing.aleforge.net/store/standard/valheim-custom-to-order"
+						cores="Includes 2 CPU Cores"
+						/>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="newgs-tabs-2" role="tabpanel">
+                  <div class="row" id="newgs-plans">
+                    <div class="col col-lg-4">
+						<GamePlan
+						img="/images/gameicon-1-valheim.webp"
+						title="Vanilla"
+						description="The classic game experience"
+						ram="4GB"
+						ssd="10GB"
+						slots="&#8734;"
+						price="$11.99"
+						link="https://billing.aleforge.net/store/premium/valheim-vanilla"
+						cores="Ultimate Performance with 4 CPU Cores"
+						/>
+                    </div>
+                    <div class="col col-lg-4 has-popular">
+						<GamePlan
+						img="/images/gameicon-2-valheim.webp"
+						title="Modded"
+						description="Enough power for all the mods. Powered by BepinEX"
+						ram="5GB"
+						ssd="15GB"
+						slots="&#8734;"
+						price="$14.99"
+						link="https://billing.aleforge.net/store/premium/valheim-modded"
+						cores="Ultimate Performance with 4 CPU Cores"
+						/>
+                    </div>
+                    <div class="col col-lg-4">
+						<GamePlan
+						img="/images/gameicon-3-valheim.webp"
+						title="Custom"
+						description="Create your own perfect server"
+						ram="6GB+"
+						ssd="50GB+"
+						slots="&#8734;"
+						price="$17.99+" 
+						link="https://billing.aleforge.net/store/premium/valheim-custom-to-order"
+						cores="Ultimate Performance with 4 CPU Cores"
+						/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <TPWidget />
+      </div>
+  </div>
+
+  <section id="newgs-features">
+    <div class="container">
+      <div class="title">
+        <h2>
+            <small>Included Features</small>What's Included?
+          </h2>
+        <p>All the latest industry-standard features and more are here, ready for you and your friends to enjoy. Experience luxury gaming at budget prices on our extreme-performance hardware.</p>
+      </div>
+      <div class="row">
+        <div class="col col-lg-4">
+          <div class="absolute-feature">
+            <img src="/images/newgs-icon-mobile.svg" />
+            <h4>Crossplay Support</h4>
+            <p>Enable cross play by turning on a switch in our panel and restarting your server.</p>
+          </div>
+        </div>
+        <div class="col col-lg-4">
+          <div class="absolute-feature">
+            <img src="/images/newgs-icon-plugins.svg" />
+            <h4>Mod Support</h4>
+            <p>Install your mods and their dependencies with our one-click mod installer.</p>
+          </div>
+        </div>
+        <div class="col col-lg-4">
+          <div class="absolute-feature">
+            <img src="/images/newgs-icon-uptime.svg" />
+            <h4><span class="numberfix">99.9%</span> Uptime Guarantee</h4>
+            <p>High-availability means our game servers remain fully operational guaranteed.</p>
+          </div>
+        </div>
+        <div class="col col-lg-4">
+          <div class="absolute-feature">
+            <img src="/images/newgs-icon-locations.svg" />
+            <h4>Global Locations</h4>
+            <p>Locations worldwide for the fastest gaming near you.</p>
+          </div>
+        </div>
+        <div class="col col-lg-4"> 
+          <div class="absolute-feature">
+            <img src="/images/newgs-icon-hardware.svg" />
+            <h4>Enterprise Hardware</h4>
+            <p>The best hardware and networking equipment so you can play without worries.</p>
+          </div>
+        </div>
+        <div class="col col-lg-4">
+          <div class="absolute-feature">
+            <img src="/images/newgs-icon-network.svg" />
+            <h4>Dwarven Tunneling</h4>
+            <p>All our game servers come equiped with gigabit networking standard.</p>
+          </div>
+        </div>
+        <div class="col col-lg-4">
+          <div class="absolute-feature">
+            <img src="/images/newgs-icon-subdomain.svg" />
+            <h4>Free Subdomain</h4>
+            <p>Create a custom url for your friends to join your game through.</p>
+          </div>
+        </div>
+        <div class="col col-lg-4">
+          <div class="absolute-feature">
+            <img src="/images/newgs-icon-budget.svg"/>
+            <h4>Budget Friendly</h4>
+            <p>Gaming at every price point, so no one is left out.</p>
+          </div>
+        </div>
+        <div class="col col-lg-4">
+          <div class="absolute-feature">
+            <img src="/images/newgs-icon-ddos.svg" style="left:5px;"  />
+            <h4>DDoS Protection</h4>
+            <p>Our smart protection services keep you safe from all distributed denial-of-service threats.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="grey-bg no-bg-after" id="newgs-rows">
+    <div class="container">
+      <div class="row">
+        <div class="col col-lg-6">
+          <h2>
+              <small>ABOUT VALHEIM</small>About The Game
+            </h2>
+          <p>As a fallen Viking, you must craft tools, build shelter, and fight creatures of legend to flourish and make your way to the afterlife to prove yourself to Odin. Explore the world with bloodthirsty monsters and unknown lands, or sail the seas.</p>
+          <p> Perhaps instead, you should build a great hall and many longhouses or gather and craft weapons, armor, tools, and defenses. The choices are limitless while you explore purgatory and fight the evils found about while on your journey toward the afterlife. </p>
+          <strong>In the World of Valheim, the choice is yours!</strong>
+        </div>
+        <div class="col col-lg-5  ml-auto">
+          <div class="newgs-game-feature check-feature mt-0">
+            <img src="/images/game-check.svg" />
+            <h5>Gather, Craft, and Survive</h5>
+            <p> Struggle to survive as you gather materials and craft weapons, armor, tools, ships, and defenses. </p>
+          </div>
+          <div class="newgs-game-feature check-feature">
+            <img src="/images/game-check.svg" />
+            <h5>Explore the Tenth World</h5>
+            <p> Explore a world shrouded in mystery. Discover distinct environments with unique enemies to battle, resources to gather, and secrets to uncover. </p>
+          </div>
+          <div class="newgs-game-feature check-feature">
+            <img src="/images/game-check.svg" />
+            <h5>Build Might Halls</h5>
+            <p> Raise Viking longhouses and build bases that offer a reprieve from the dangers ahead. </p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+
+
+      <div class="grey-dark-bg mt-n5">
+        <div class="container">
+      <div class="row">
+        <div class="col col-lg-6">
+          <div class="youtube-embed"><div id=embed-google-map style="height:100%; width:100%;max-width:100%;"><iframe allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/5mHRJ1KFe20?ecver=1&amp;iv_load_policy=1&amp;yt:stretch=16:9&amp;autohide=1&amp;color=red&amp;width=560&amp;width=560" width="560" height="320" allowtransparency="true" frameborder="0"></iframe></div></div>
+        </div>
+        <div class="col col-lg-5 ml-auto">
+          <h2 class="pt-4"><small>MOD SUPPORT</small>BepinEx Supported</h2>
+          <p>Install all your thunderstore mods at a click of a button. Use our integrated mod manager to install your mods and their dependencies effortlessly. Our platform supports all the latest mods for Valheim BepinEx. </p>
+          <a href="https://thunderstore.io/" target="_blank" class="button">View All Mods</a>
+        </div>
+      </div>
+    </div>
+</div>
+
+  <Map />
+  <ThreeGuarantees />
+  <GamePanel />
+  <CompareTable />
+
+  <section class="faq grey-bg" id="newgs-faq">
+    <div class="container">
+      <div class="flex-grid one">
+        <div class="col">
+          <h2>FAQ</h2>Have your own question? <a href="https://billing.aleforge.net/submitticket.php?step=2&deptid=1">Ask us here &raquo;</a>
+        </div>
+      </div>
+      <div class="flex-grid two">
+        <div class="col">
+          <div class="toggle">
+            <div class="toggle-title">
+              <h3>
+                  <i></i>
+                  <span class="title-name">What is the difference between Standard and Premium?</span>
+                </h3>
+            </div>
+            <div class="toggle-inner">
+              <p>Standard was designed cost-effective for a small group of friends who want to play together. Premium is the best hardware we can source that runs at the fastest speeds, so your server will never lag or slow down. Each has its advantages and disadvantages.</p>
+            </div>
+          </div>
+          <!-- END OF TOGGLE -->
+          <div class="toggle">
+            <div class="toggle-title">
+              <h3>
+                  <i></i>
+                  <span class="title-name">How do I know the best location to pick?</span>
+                </h3>
+            </div>
+            <div class="toggle-inner">
+              <p>You can use the <a href="#map">map</a> on this page above to show your real-time pings to each of our locations. Just refresh the page to recalculate your live latency.</p>
+            </div>
+          </div>
+          <!-- END OF TOGGLE -->
+          <div class="toggle">
+            <div class="toggle-title  ">
+              <h3>
+                  <i></i>
+                  <span class="title-name"> Can I use mods, workshop content, or other custom resources on my server?</span>
+                </h3>
+            </div>
+            <div class="toggle-inner">
+              <p>Of course. We offer one-click installs for Valheim mods with our mod manager. You can install whole mod packs with a click for other games, such as Minecraft.</p>
+            </div>
+          </div>
+          <!-- END OF TOGGLE -->
+          <div class="toggle">
+            <div class="toggle-title  ">
+              <h3>
+                  <i></i>
+                  <span class="title-name"> Are the player slots adjustable?</span>
+                </h3>
+            </div>
+            <div class="toggle-inner">
+              <p>All Valheim plans are unlimited and you can change your slots via our control panel. We can recommended a number of slots based on your plans resources.</p>
+            </div>
+          </div>
+          <!-- END OF TOGGLE -->
+        </div>
+        <div class="col">
+          <div class="toggle">
+            <div class="toggle-title">
+              <h3>
+                  <i></i>
+                  <span class="title-name">When will my server be set up?</span>
+                </h3>
+            </div>
+            <div class="toggle-inner">
+              <p>Once your order payment has been processed, the server will start installing and should be ready within a few minutes. If there are any unusual delays, don't hesitate to contact us with the details so we can correct any issues at once.</p>
+            </div>
+          </div>
+          <!-- END OF TOGGLE -->
+          <div class="toggle">
+            <div class="toggle-title ">
+              <h3>
+                  <i></i>
+                  <span class="title-name">Do you provide DDoS protection?</span>
+                </h3>
+            </div>
+            <div class="toggle-inner">
+              <p>Yes, of course! Our automated systems tackle the brunt of these attackers but if you find yourself under attack let our staff know and they will make sure additional mitigators are put in place for your server.</p>
+            </div>
+          </div>
+          <!-- END OF TOGGLE -->
+          <div class="toggle">
+            <div class="toggle-title  ">
+              <h3>
+                  <i></i>
+                  <span class="title-name"> Can I upgrade or downgrade my server?</span>
+                </h3>
+            </div>
+            <div class="toggle-inner">
+              <p>Yes. You can change your plan/resources at any time and your server will automatically have resources added or removed based on your choice.</p>
+            </div>
+          </div>
+          <!-- END OF TOGGLE -->
+          <div class="toggle">
+            <div class="toggle-title  ">
+              <h3>
+                  <i></i>
+                  <span class="title-name"> Do you offer dedicated IPs?</span>
+                </h3>
+            </div>
+            <div class="toggle-inner">
+              <p>Yes, we have dedicated IPs available at checkout. Dedicated IPs are now an additional cost due to the increasing cost due to the IPV4 address shortage.</p>
+            </div>
+          </div>
+          <!-- END OF TOGGLE -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <SupportLinks />
+  <Footer />
+	</body>
+</html>
+

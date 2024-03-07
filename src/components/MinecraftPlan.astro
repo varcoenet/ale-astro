@@ -1,0 +1,30 @@
+
+---
+interface Props {
+	img: string;
+	title: string;
+	ram: string;
+	ssd: string;
+	price: string;
+	link: string;
+	cores: string;
+}
+
+const { img, title, ram, ssd, price, link, cores } = Astro.props;
+---
+
+
+
+                          <a href={link} class="mc-bg">
+                          <span class="label redbg mc-popular">Popular</span>
+                          <h4>{title}</h4>
+                          <img src={img}>
+                          <h2>{price}</h2>
+                          <ul>
+                            <li><strong>{cores}</strong> CPU Cores</li>
+                            <li><strong>{ram}</strong> Memory</li>
+                            <li><strong>{ssd}</strong> SSD Storage</li>
+                          </ul>
+                          <strong class="blue block mt-3">Order Now &raquo;</strong>
+                          </a>
+
