@@ -6598,3 +6598,8 @@ section {
   opacity: 1 !important;
   background: var(--blue) !important;
 }
+
+::selection {
+  background: var(--blue);
+  color: #fff;
+}
