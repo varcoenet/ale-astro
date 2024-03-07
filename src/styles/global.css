@@ -2446,6 +2446,9 @@ strong {
 .timeline .button:focus {
   color: var(--blue) !important;
 }
+.timeline .button:hover {
+  color: #fff !important;
+}
 
 .timeline .hidden {
   display: none;
