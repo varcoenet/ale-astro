@@ -396,15 +396,6 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
                         bgimg="/images/game-veloren.webp"
                     />
                 </div>
-                <div class="col gridcol popular survival game-soon">
-                    <GameBox
-                        link="/games/veloren/"
-                        title="Veloren"
-                        price="$0.60/slot"
-                        keywords="stations"
-                        bgimg="/images/game-veloren.webp"
-                    />
-                </div>
             </div>
             <div class="row">
                 <div class="col">
@@ -653,7 +644,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     <script src="/js/isotope.pkgd.min.js" type="text/javascript"></script>
 
     <script type="text/javascript">
-    $(window).load(function(){
+     $(window).on('load', function () {
         // quick search regex
         var qsRegex;
         var buttonFilter;
