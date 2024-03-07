@@ -6603,3 +6603,7 @@ section {
   background: var(--blue);
   color: #fff;
 }
+
+#newgs-plans .mc-bg:hover {
+  transform: scale(1) !important;
+}
