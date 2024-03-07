@@ -687,23 +687,24 @@ p {
 }
 
 #top-head {
-  background: url("/images/topbg.webp") center bottom repeat-x;
-  background-size: 1280px;
   width: 100%;
   height: auto;
   position: relative;
-  padding: 10px 0px 18px 0px;
+  padding: 10px 0px 6px 0px;
+  background: #292e35;
+  margin-bottom: 14px;
 }
 
-#top-head:before {
-  height: 30px;
+#top-head:after {
+  height: 20px;
   position: absolute;
-  top: 0;
+  bottom: -14px;
   left: 0;
   right: 0;
   content: " ";
   display: block;
-  background: #292e35;
+  background: url("/images/topbg.webp") center bottom repeat-x;
+  background-size: 1280px;
 }
 
 #top-head .mnav {
@@ -742,6 +743,11 @@ img {
 
 #top-head .tiny {
   text-transform: capitalize;
+}
+
+#top-head .mnav {
+  position: relative;
+  z-index: 1000;
 }
 
 .hnav ul li {
