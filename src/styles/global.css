@@ -4567,7 +4567,7 @@ strong {
   filter: brightness(100) !important;
   height: 9px;
   opacity: 1 !important;
-  vertical-align: baseline;
+  vertical-align: text-bottom;
   margin-bottom: 1px !important;
 }
 
