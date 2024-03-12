@@ -1,0 +1,22 @@
+
+---
+interface Props {
+	q: string;
+	a: string;
+}
+
+const { q, a} = Astro.props;
+---
+
+
+<div class="toggle">
+            <div class="toggle-title  ">
+              <h3>
+                  <i></i>
+                  <span class="title-name"> {q}</span>
+                </h3>
+            </div>
+            <div class="toggle-inner">
+              <p>{a}</p>
+            </div>
+          </div>

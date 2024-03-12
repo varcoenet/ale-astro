@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>explore-network</title>
+    <g id="Panel-Page-v1.0" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-101, -2849)" stroke="#060000" stroke-width="1.25">
+            <g id="Group-23" transform="translate(102, 2206)">
+                <g id="explore-network" transform="translate(0, 644)">
+                    <polygon id="Path" points="16.2005372 18.6252691 16.2005372 16.0995067 17.8586259 16.0995067 17.8586259 13.5732871 20.3848454 13.5732871 20.3848454 5.28375779 3.61515457 5.28375779 3.61515457 13.5732871 6.14045982 13.5732871 6.14045982 16.0995067 7.79946285 16.0995067 7.79946285 18.6252691"></polygon>
+                    <g id="Group" transform="translate(7.1348, 7.2765)">
+                        <line x1="0.228575782" y1="0" x2="0.228575782" y2="4.1934513" id="Path"></line>
+                        <line x1="3.31937751" y1="0" x2="3.31937751" y2="4.1934513" id="Path"></line>
+                        <line x1="6.41063639" y1="0" x2="6.41063639" y2="4.1934513" id="Path"></line>
+                        <line x1="9.50189527" y1="0" x2="9.50189527" y2="4.1934513" id="Path"></line>
+                    </g>
+                    <path d="M24,21.2570906 C24,22.7656908 22.7656908,24 21.2570906,24 L2.74290939,24 C1.23430922,24 0,22.7656908 0,21.2570906 L0,2.74290939 C0,1.23430922 1.23430922,0 2.74290939,0 L21.2570906,0 C22.7656908,0 24,1.23430922 24,2.74290939 L24,21.2570906 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

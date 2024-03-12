@@ -6607,3 +6607,7 @@ section {
 #newgs-plans .mc-bg:hover {
   transform: scale(1) !important;
 }
+
+#game-check-col .check-feature:nth-child(1) {
+  margin-top: 0px !important;
+}

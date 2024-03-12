@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="37px" viewBox="0 0 50 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>terraria-icon-setup</title>
+    <g id="Network" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-1286.000000, -2196.000000)" stroke-width="2">
+            <g id="Group-8" transform="translate(1287.000000, 2028.000000)">
+                <g id="terraria-icon-setup" transform="translate(0.000000, 169.000000)">
+                    <g id="Group">
+                        <g transform="translate(12.825835, 0.000000)" id="Path" stroke="#060000">
+                            <path d="M1.11057391,12.0234191 C1.93559023,9.49796723 3.35284093,7.12372412 5.36033643,5.11556543 C12.1806482,-1.70540954 23.2394482,-1.70474634 30.0584335,5.11490223 C36.8794085,11.935214 36.8794085,22.994014 30.0584335,29.8143257 C23.2374586,36.6353007 12.1806482,36.6339743 5.36033643,29.8129993 C3.16979873,27.623788 1.6829124,24.9955407 0.89967745,22.2134318"></path>
+                            <path d="M0.337286903,19.2615446 C0.191383695,17.8456203 0.218574748,16.4137793 0.418196864,15.0024973"></path>
+                        </g>
+                        <line x1="20.7580473" y1="22.1033412" x2="8.02799241" y2="22.1033412" id="Path" stroke="#3781C3" stroke-linecap="round" stroke-linejoin="round"></line>
+                        <line x1="13.9231452" y1="26.8790185" x2="9.47707655" y2="26.8790185" id="Path" stroke="#3781C3" stroke-linecap="round" stroke-linejoin="round"></line>
+                        <line x1="13.3169837" y1="8.05020949" x2="5.05488296" y2="8.05020949" id="Path" stroke="#3781C3" stroke-linecap="round" stroke-linejoin="round"></line>
+                        <line x1="19.8428363" y1="14.9501048" x2="11.6503711" y2="14.9501048" id="Path" stroke="#3781C3" stroke-linecap="round" stroke-linejoin="round"></line>
+                        <line x1="6.16109455" y1="26.8790185" x2="3.02815476" y2="26.8790185" id="Path" stroke="#3781C3" stroke-linecap="round" stroke-linejoin="round"></line>
+                        <line x1="8.33438915" y1="14.9501048" x2="5.20211256" y2="14.9501048" id="Path" stroke="#3781C3" stroke-linecap="round" stroke-linejoin="round"></line>
+                        <line x1="1.88613056" y1="14.9501048" x2="0" y2="14.9501048" id="Path" stroke="#3781C3" stroke-linecap="round" stroke-linejoin="round"></line>
+                    </g>
+                    <g id="Group" transform="translate(24.698097, 0.531552)" stroke="#060000">
+                        <g transform="translate(5.493256, 0.000000)" id="Path" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="0.499001996" y1="0" x2="0.499001996" y2="4.31939815"></line>
+                            <line x1="0.500998004" y1="29.5288197" x2="0.500998004" y2="33.848881"></line>
+                        </g>
+                        <line x1="22.6574418" y1="16.9241089" x2="18.3373804" y2="16.9241089" id="Path" stroke-linecap="round" stroke-linejoin="round"></line>
+                        <polyline id="Path" points="14.8662105 9.59777829 5.86729855 18.5953638 0 13.0490524"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

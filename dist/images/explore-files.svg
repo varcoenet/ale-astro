@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="26px" viewBox="0 0 24 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>explore-files</title>
+    <g id="Panel-Page-v1.0" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-367, -2974)">
+            <g id="Group-23" transform="translate(102, 2206)">
+                <g id="explore-files" transform="translate(265, 769)">
+                    <g id="Group" transform="translate(7.2227, 11.6596)" stroke="#060000" stroke-linecap="round" stroke-width="1.25">
+                        <line x1="0" y1="0.207709484" x2="9.55463625" y2="0.207709484" id="Path"></line>
+                        <line x1="0" y1="3.72963149" x2="9.55463625" y2="3.72963149" id="Path"></line>
+                        <line x1="0" y1="7.25196891" x2="9.55463625" y2="7.25196891" id="Path"></line>
+                    </g>
+                    <path d="M19.338428,0 L7.63773735,0 L3,4.02540979 L3,22.3383241 C3,23.2518304 3.74775414,24 4.66167587,24 L19.338428,24 C20.2523497,24 21.0001039,23.2518304 21.0001039,22.3383241 L21.0001039,1.66167587 C21.0001039,0.747754141 20.2523497,0 19.338428,0 Z" id="Path" stroke="#060000" stroke-width="1.25"></path>
+                    <polyline id="Path" stroke="#060000" stroke-width="1.25" points="9.13864608 0.109255188 9.13864608 5.43492635 6.01760338 5.43492635"></polyline>
+                    <rect id="Rectangle" stroke-opacity="0" stroke="#979797" x="0.5" y="13.5" width="23" height="6"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

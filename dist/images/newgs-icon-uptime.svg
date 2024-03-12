@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="41px" viewBox="0 0 50 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>terraria-icon-uptime</title>
+    <g id="Network" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
+        <g id="Desktop-HD" transform="translate(-1684.000000, -2327.000000)" stroke="#060000" stroke-width="2">
+            <g id="Group-8" transform="translate(1287.000000, 2028.000000)">
+                <g id="terraria-icon-uptime" transform="translate(398.000000, 300.000000)">
+                    <circle id="Oval" fill="#3781C3" cx="23.9659068" cy="33.9552188" r="4.57173781"></circle>
+                    <path d="M38.7493743,22.378137 C35.31083,17.9898532 29.9736183,15.1633633 23.9659068,15.1633633 C17.9963472,15.1633633 12.6851113,17.95576 9.24413177,22.2985862" id="Path"></path>
+                    <path d="M13.6518974,28.1983359 C15.6723263,24.5820199 19.5264831,22.1289319 23.965095,22.1289319 C28.4402354,22.1289319 32.3260502,24.6193601 34.3351147,28.2851925" id="Path"></path>
+                    <path d="M4.70729892,16.2259352 C9.4925252,11.0283434 16.343638,7.76351214 23.9659068,7.76351214 C31.6263275,7.76351214 38.5042278,11.0600014 43.2902658,16.2998038" id="Path"></path>
+                    <path d="M48,9.99580599 C41.8551038,3.82736928 33.3618345,-2.88389124e-15 23.965095,-2.88389124e-15 C14.6040722,-2.88389124e-15 6.14002571,3.79895826 2.88389124e-15,9.92680782" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

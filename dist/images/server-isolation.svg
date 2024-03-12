@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="47px" height="54px" viewBox="0 0 47 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>server-isolation</title>
+    <g id="Panel-Page-v1.0" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-959, -3898)" stroke-width="2">
+            <g id="Group-18" transform="translate(-324, 3093)">
+                <g id="Group-30" transform="translate(661, 124)">
+                    <g id="Group-29" transform="translate(328, 404)">
+                        <g id="server-isolation" transform="translate(295, 279)">
+                            <g id="Group" transform="translate(10.2285, 11.4865)" stroke="#367FCA">
+                                <polygon id="Path" points="11.9711107 0 0 6.18696206 0 20.1202146 11.9711107 27.0262615 24.0618067 20.1202146 24.0618067 6.18696206"></polygon>
+                                <g transform="translate(4.3476, 8.6471)" id="Path" stroke-linecap="round">
+                                    <line x1="0" y1="0" x2="7.6833509" y2="4.22796721"></line>
+                                    <line x1="15.3667018" y1="0" x2="7.6833509" y2="4.22796721"></line>
+                                </g>
+                                <line x1="12.0309033" y1="13.0025333" x2="12.0309033" y2="21.9257942" id="Path" stroke-linecap="round"></line>
+                            </g>
+                            <polygon id="Path" stroke="#060000" points="22.148443 0 0 11.4455651 0 37.2232625 22.2404922 50 44.5179614 37.2232625 44.5179614 11.4455651"></polygon>
+                            <g id="Group" transform="translate(0.31, 11.6179)" stroke="#060000" stroke-linecap="round">
+                                <line x1="0" y1="0" x2="6.23652699" y2="3.53484493" id="Path"></line>
+                                <line x1="43.8987931" y1="0" x2="37.6622661" y2="3.53484493" id="Path"></line>
+                            </g>
+                            <line x1="22.2601608" y1="42.8461284" x2="22.2601608" y2="49.8725473" id="Path" stroke="#060000" stroke-linecap="round"></line>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
