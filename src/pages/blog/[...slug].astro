@@ -15,10 +15,10 @@ console.log("Current Post:", post); // Log current post
 
 const relatedPosts = posts
   .filter(otherPost =>
-    otherPost.categories && // Ensure categories exist
-    otherPost.categories.some(category =>
-      post.categories && post.categories.includes(category)
-    ) && otherPost.slug !== post.slug
+    otherPost.data.categories && // Ensure categories exist
+    otherPost.data.categories.some(category =>
+      post.data.categories && post.data.categories.includes(category)
+    ) && otherPost.slug !== post.data.slug
   )
   .slice(0, 3); // Adjust the number of related posts to display as needed
 

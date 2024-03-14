@@ -143,6 +143,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"markdown-style-guide copy.md": {
+	id: "markdown-style-guide copy.md";
+  slug: "markdown-style-guide-copy";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "markdown-style-guide.md": {
 	id: "markdown-style-guide.md";
   slug: "markdown-style-guide";
