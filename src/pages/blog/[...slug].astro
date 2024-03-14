@@ -10,6 +10,9 @@ const { slug } = Astro.params;
 const post = posts.find((page) => page.slug === slug);
 if (!post) return Astro.redirect("/404");
 
+
+console.log("Current Post:", post); // Log current post
+
 const relatedPosts = posts
   .filter(otherPost =>
     otherPost.categories && // Ensure categories exist
@@ -20,6 +23,7 @@ const relatedPosts = posts
   .slice(0, 3); // Adjust the number of related posts to display as needed
 
   
+console.log("Related Posts:", relatedPosts); // Log related posts
 
 const { Content } = await post.render();
 ---
