@@ -4,13 +4,36 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Map from '../components/map.astro'
 import SupportLinks from '../components/support-links.astro'
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<BaseHead />
+
+        <title>About Us | AleForge</title>
+        <meta name="description" content="Take a brief tour of our history and core values that define AleForge. We prove everyday why our customers should use our services." />
+
+        <!-- Schema -->
+        <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "AleForge",
+        "url": "https://aleforge.net/",
+        "logo": "https://aleforge.net/images/logo.webp",
+        "sameAs": [
+            "https://www.facebook.com/AleForgeHosting",
+            "https://twitter.com/aleforgehosting",
+            "https://www.linkedin.com/company/aleforge/"
+            ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": 4.8,
+            "reviewCount": 121
+            }
+        }
+        </script>
 	</head>
 	<body>
 

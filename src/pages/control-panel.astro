@@ -2,15 +2,59 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import Map from '../components/map.astro'
-import SupportLinks from '../components/support-links.astro'
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<BaseHead />
+
+    <title>Control Panel | AleForge</title>
+    <meta name="keywords" content="aleforge, game server hosting, game control panel" />
+    <meta name="description" content="Stop paying for slots. Join us on our next gen game server hosting where security and your experience are our priority and gaming is your only concern." />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Game Server, Discord Bot, and Web Hosting Provider | AleForge" />
+    <link rel="canonical" href="https://aleforge.net/" />
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@AleForgeHosting">
+    <meta name="twitter:title" content="Game Server, Discord Bot, and Web Hosting Provider | AleForge">
+    <meta name="twitter:description" content="Stop paying for slots. Join us on our next gen game server hosting where security and your experience are our priority and gaming is your only concern."/>
+    <meta name="twitter:creator" content="@AleForgeHosting">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Game Server, Discord Bot, and Web Hosting Provider | AleForge"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://aleforge.net/"/>
+    <meta property="og:description" content="Stop paying for slots. Join us on our next gen game server hosting where security and your experience are our priority and gaming is your only concern."/>
+    <meta property="og:site_name" content="AleForge"/>
+    <meta property="fb:app_id" content="2877703308935482"/> 
+
+     <!-- Schema -->
+     <script type="application/ld+json">
+        {
+         "@context": "https://schema.org",
+         "@type": "Corporation",
+         "name": "AleForge",
+         "url": "https://aleforge.net/",
+         "logo": "https://aleforge.net/images/logo.webp",
+         "sameAs": [
+         "https://www.facebook.com/AleForgeHosting",
+         "https://twitter.com/aleforgehosting",
+         "https://www.linkedin.com/company/aleforge/"
+           ],
+           "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": 4.8,
+            "reviewCount": 121
+            }
+         }
+    </script>
 	</head>
 	<body>
 

@@ -10,14 +10,61 @@ import ThreeGuarantees from '../../components/three-guarantees.astro'
 import TPWidget from '../../components/TPWidget.astro'
 import MinecraftPlan from '../../components/MinecraftPlan.astro'
 
-import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
-
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<BaseHead />
+
+    <meta name="description" content="Extreme performance Minecraft server hosting for only $2.00/GB. Affordable, 99.9% uptime, and DDoS Protection. Fewer issues, more fun." />
+    <meta name="keywords" content="minecraft server hosting, minecraft servers, minecraft server, mc server host, game server hosting" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta itemprop="name" content="Minecraft Server Hosting | AleForge">
+    <meta itemprop="description" content="Create your own lag free Minecraft server for only $1.50/GB. Affordable, 99.9% uptime, and DDoS Protection. Fewer issues, more fun.">
+    <meta itemprop="image" content="https://aleforge.net/images/game-minecraft.webp">
+    <link rel="canonical" href="https://aleforge.net/games/minecraft" />
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@AleForgeHosting">
+    <meta name="twitter:title" content="Minecraft Server Hosting | AleForge">
+    <meta name="twitter:description" content="Create your own lag free Minecraft server for only $1.50/GB. Affordable, 99.9% uptime, and DDoS Protection. Fewer issues, more fun."/>
+    <meta name="twitter:creator" content="@AleForgeHosting">
+    <meta name="twitter:image" content="https://aleforge.net/images/game-minecraft.webp">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Minecraft Server Hosting | AleForge"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://aleforge.net/games/minecraft"/>
+    <meta property="og:description" content="Create your own lag free Minecraft server for only $1.50/GB. Affordable, 99.9% uptime, and DDoS Protection. Fewer issues, more fun."/>
+    <meta property="og:site_name" content="AleForge"/>
+    <meta property="og:image" content="https://aleforge.net/images/game-minecraft.webp">
+    <meta property="fb:app_id" content="2877703308935482"/> 
+    
+    <!-- schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org/", 
+        "@type": "Product", 
+        "name": "Minecraft Server Hosting",
+        "image": "https://aleforge.net/images/logo.webp",
+        "description": "High performing Minecraft servers with NvME SSD Storage, High Clock speed processors, Extreme Connection Speeds. Your players won't play on a laggy server, so purchase an AleForge server.",
+        "brand": {
+        "@type": "Brand",
+        "name": "AleForge"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": 4.8,
+          "reviewCount": 121
+          }
+    }
+    </script>
 	</head>
 	<body>
 
