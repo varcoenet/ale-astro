@@ -1,0 +1,365 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import SupportLinks from '../../components/support-links.astro';
+import Map from '../../components/map.astro';
+import CompareTable from '../../components/compare-table.astro';
+import GamePanel from '../../components/game-panel.astro';
+import ThreeGuarantees from '../../components/three-guarantees.astro'
+import GamePlan from '../../components/GamePlan.astro'
+import TPWidget from '../../components/TPWidget.astro'
+import Feature from '../../components/AbsLeftFeature.astro'
+import GameCheck from '../../components/GameCheck.astro'
+import FAQ from '../../components/FAQ.astro'
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead />
+    <title>Palworld Hosting | AleForge</title>
+    <meta name="description" content="Create your own lag free Palworld server for only $1.50/GB. Affordable, 99.9% uptime, and DDoS Protection. Fewer issues, more fun." />
+    <meta name="keywords" content="Palworld server hosting, Palworld server, Palworld server host" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta itemprop="name" content="Palworld Server Hosting | AleForge">
+    <meta itemprop="description" content="Create your own lag free Palworld server for only $1.50/GB. Affordable, 99.9% uptime, and DDoS Protection. Fewer issues, more fun.">
+    <meta itemprop="image" content="https://aleforge.net/images/game-palworld.webp">
+    <link rel="canonical" href="https://aleforge.net/games/palworld" />
+  
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@AleForgeHosting">
+    <meta name="twitter:title" content="Palworld Server Hosting | AleForge">
+    <meta name="twitter:description" content="Create your own lag free Palworld server for only $1.50/GB. Affordable, 99.9% uptime, and DDoS Protection. Fewer issues, more fun."/>
+    <meta name="twitter:creator" content="@AleForgeHosting">
+    <meta name="twitter:image" content="https://aleforge.net/images/game-palworld.webp">
+  
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Palworld Server Hosting | AleForge"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://aleforge.net/games/palworld"/>
+    <meta property="og:description" content="Create your own lag free Palworld server for only $1.50/GB. Affordable, 99.9% uptime, and DDoS Protection. Fewer issues, more fun."/>
+    <meta property="og:site_name" content="AleForge"/>
+    <meta property="og:image" content="https://aleforge.net/images/game-palworld.webp">
+    <meta property="fb:app_id" content="2877703308935482"/> 
+    <!-- Schema -->
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org/", 
+    "@type": "Product", 
+    "name": "Palworld Server Hosting",
+    "image": "https://aleforge.net/images/logo.webp",
+    "description": "Explore an endless cavern of creatures, relics and resources in a mining sandbox adventure. Play vanilla or modded in your own Palworld server.",
+    "brand": {
+     "@type": "Brand",
+     "name": "AleForge"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.8,
+        "reviewCount": 121
+      }
+    }
+  </script>
+	</head>
+	<body>
+
+    <div class="top-bg" id="gamebg-valheim">
+		<Header />
+
+      <div id="banner" class="subbanner game-banner ">
+        <div class="container">
+          <h1 class="font-48">Palworld Server Hosting</h1>
+          <p>Palworld is the brand new crafting game made by combining excellent features of various existing crafting games. </p>
+          <strong class="font-20 block">Plans are customizable on the next page. Ram can be adjusted from 12-128 GB.</strong>
+          <strong class="font-20 block">Promotion discount will show on the Review & Checkout page.</strong>
+              <div class="text-center relative mt-4">
+                    <ul class="nav nav-tabs newgs-tabs float-none" role="tablist">
+                      <li>
+                        <a href="javascript:void(0)" id="newgs-tab1" data-bs-toggle="tab" data-bs-target="#newgs-tabs-1" role="tab" aria-controls="newgs-tabs-1" aria-selected="true" class="active" tabindex="-1">Standard</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" id="newgs-tab2" data-bs-toggle="tab" data-bs-target="#newgs-tabs-2" role="tab" aria-controls="newgs-tabs-2" aria-selected="false" class="" tabindex="-1">
+                          <div class="more-performance"><div class="more-label">Better Hardware & Network!</div></div>Premium<strong class="block font-12 green">30% Faster</strong>
+                        </a>
+                      </li>
+                    </ul>
+              <div class="tab-content">
+                <div class="tab-pane active" id="newgs-tabs-1" role="tabpanel">
+                  <div class="row" id="newgs-plans">
+                    <div class="col col-lg-4">
+                      <GamePlan
+                      img="/images/gameicon-1-palworld.webp"
+                      title="Cattiva"
+                      description="Prefect for getting started"
+                      ram="10GB"
+                      ssd="40GB"
+                      slots="&#8734;"
+                      price="$15.99"
+                      link="https://billing.aleforge.net/cart.php?a=add&pid=381&promocode=palworld"
+                      cores="Includes 2 CPU Cores"
+                      />
+                    </div>
+                    <div class="col col-lg-4 has-popular">
+                      <GamePlan
+                      img="/images/gameicon-2-palworld.webp"
+                      title="Gumoss"
+                      description="Powerful enough for small community server"
+                      ram="16GB"
+                      ssd="40GB"
+                      slots="&#8734;"
+                      price="$25.60"
+                      link="https://billing.aleforge.net/cart.php?a=add&pid=381&configoption[227]=2056&promocode=palworld"
+                      cores="Includes 2 CPU Cores"
+                      />
+                    </div>
+                    <div class="col col-lg-4">
+                      <GamePlan
+                      img="/images/gameicon-3-palworld.webp"
+                      title="Dedicated"
+                      description="Dedicated Server Resources"
+                      ram="24GB+"
+                      ssd="Unlimited"
+                      slots="&#8734;"
+                      price="$72.00+"
+                      link="https://billing.aleforge.net/store/dedicated-game-servers/palworld"
+                      cores="Includes 2 CPU Cores"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="newgs-tabs-2" role="tabpanel">
+                  <div class="row" id="newgs-plans">
+                      <div class="col col-lg-4">
+                        <GamePlan
+                        img="/images/gameicon-1-palworld.webp"
+                        title="Daedream"
+                        description="Prefect for getting started"
+                        ram="Unlimited"
+                        ssd="10GB"
+                        slots="&#8734;"
+                        price="$28.80"
+                        link="https://billing.aleforge.net/cart.php?a=add&pid=382&promocode=palworld"
+                        cores="Ultimate Performance with 4 CPU Cores"
+                        />
+                    </div>
+                    <div class="col col-lg-4 has-popular">
+                      <GamePlan
+                      img="/images/gameicon-2-palworld.webp"
+                      title="Woolipop"
+                      description="Powerful enough for small community server"
+                      ram="16GB"
+                      ssd="Unlimited"
+                      slots="&#8734;"
+                      price="$38.40"
+                      link="https://billing.aleforge.net/cart.php?a=add&pid=382&configoption[228]=2070&promocode=palworld"
+                      cores="Ultimate Performance with 4 CPU Cores"
+                      />
+                    </div>
+                    <div class="col col-lg-4">
+                      <GamePlan
+                      img="/images/gameicon-3-palworld.webp"
+                      title="Dedicated"
+                      description="Dedicated Server Resources"
+                      ram="24GB+"
+                      ssd="Unlimited"
+                      slots="&#8734;"
+                      price="$72.00" 
+                      link="https://billing.aleforge.net/store/dedicated-game-servers/palworld"
+                      cores="Ultimate Performance with 4 CPU Cores"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <TPWidget />
+      </div>
+  </div>
+
+  <section id="newgs-features">
+    <div class="container">
+      <div class="title">
+        <h2>
+            <small>Included Features</small>What's Included?
+          </h2>
+        <p>All the latest industry-standard features and more are here, ready for you and your friends to enjoy. Experience luxury gaming at budget prices on our extreme-performance hardware.</p>
+      </div>
+      <div class="row">
+        <div class="col col-lg-4">
+          <Feature 
+          img="/images/newgs-icon-mobile.svg"
+          title="Massive Worlds"
+          description="Enough power to run the largest Palworld servers."
+          />
+        </div>
+        <div class="col col-lg-4">
+          <Feature 
+          img="/images/newgs-icon-plugins.svg"
+          title="Mod Support"
+          description="Install your mods easily with our file manager."
+          />
+        </div>
+        <div class="col col-lg-4">
+          <Feature 
+          img="/images/newgs-icon-uptime.svg"
+          title="99.9% Uptime Guarantee"
+          description="High-availability means our game servers remain fully operational guaranteed."
+          />
+        </div>
+        <div class="col col-lg-4">
+          <Feature 
+          img="/images/newgs-icon-locations.svg"
+          title="Global Locations"
+          description="Locations worldwide for the fastest gaming near you."
+          />
+        </div>
+        <div class="col col-lg-4"> 
+          <Feature 
+          img="/images/newgs-icon-hardware.svg"
+          title="Enterprise Hardware"
+          description="The best hardware and networking equipment so you can play without worries."
+          />
+        </div>
+        <div class="col col-lg-4">
+          <Feature 
+          img="/images/newgs-icon-network.svg"
+          title="Dwarven Tunneling"
+          description="All our game servers come equiped with gigabit networking standard."
+          />
+        </div>
+        <div class="col col-lg-4">
+          <Feature 
+          img="/images/newgs-icon-subdomain.svg"
+          title="Free Subdomain"
+          description="Create a custom url for your friends to join your game through."
+          />
+        </div>
+        <div class="col col-lg-4">
+          <Feature 
+          img="/images/newgs-icon-budget.svg"
+          title="Budget Friendly"
+          description="Gaming at every price point, so no one is left out."
+          />
+        </div>
+        <div class="col col-lg-4">
+          <Feature 
+          img="/images/newgs-icon-ddos.svg"
+          title="DDoS Protection"
+          description="Our smart protection services keep you safe from all distributed denial-of-service threats."
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="grey-bg no-bg-after" id="newgs-rows">
+    <div class="container">
+      <div class="row">
+        <div class="col col-lg-6">
+          <h2>
+              <small>ABOUT PALWORLD</small>About The Game
+            </h2>
+            <p>Palworld is home to over 100 unique Pals, each equipped with a diverse set of skills to enhance the player's adventure. Along your journey, you will also encounter formidable boss Pals that pose a challenge even for the most seasoned Pal tamers. Naturally, these boss Pals are also capturable.</p>
+            <p> Work together with fellow players for shared adventures in an open-world setting. Multiplayer not only allows for cooperation but also conflict, enabling players to attack one another, steal Pals, and even steal items. Players can engage in Pal battles, pitting their Pals against each other in combat.</p>
+            <strong>In Palworld, the choice is yours!</strong>
+        </div>
+        <div class="col col-lg-5 ml-auto" id="game-check-col">
+          <GameCheck
+            title="Survival"
+            description="In a harsh environment where food is scarce and vicious poachers roam, danger waits around every corner."
+          />
+          <GameCheck
+            title="Building"
+            description="Want to build a pyramid? Put an army of Pals on the job. Don't worry; there are no labor laws for Pals."
+          />
+          <GameCheck
+            title="Breeding"
+            description="Breed a Pal and it will inherit the characteristics of its parents. Combine rare pals to create the strongest Pal of them all!"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+    <div class="grey-dark-bg mt-n4">
+      <div class="container">
+        <div class="row">
+          <div class="col col-lg-6">
+            <div class="youtube-embed"><div id=embed-google-map style="height:100%; width:100%;max-width:100%;"><iframe allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/uV0zfAwazcs?ecver=1&amp;iv_load_policy=1&amp;yt:stretch=16:9&amp;autohide=1&amp;color=red&amp;width=560&amp;width=560" width="560" height="320" allowtransparency="true" frameborder="0"></iframe></div></div>
+          </div>
+          <div class="col col-lg-5 ml-auto">
+            <h2 class="pt-4"><small>MOD SUPPORT</small>Support For All Mods</h2>
+            <p>Upload and install all your mods to your server to make the perfect Palworld experience. </p>
+            <a href="https://www.nexusmods.com/palworld" target="_blank" class="button">View All Mods</a>
+          </div>
+        </div>
+    </div>
+</div>
+
+  <Map />
+  <ThreeGuarantees />
+  <GamePanel />
+  <CompareTable />
+
+  <section class="faq grey-bg" id="newgs-faq">
+    <div class="container">
+      <div class="flex-grid one">
+        <div class="col">
+          <h2>FAQ</h2>Have your own question? <a href="https://billing.aleforge.net/submitticket.php?step=2&deptid=1">Ask us here &raquo;</a>
+        </div>
+      </div>
+      <div class="flex-grid two">
+        <div class="col">
+          <FAQ
+            q="What is the difference between Standard and Premium?"
+            a="Standard was designed cost-effective for a small group of friends who want to play together. Premium is the best hardware we can source that runs at the fastest speeds, so your server will never lag or slow down. Each has its advantages and disadvantages."
+          />
+          <FAQ
+            q="How do I know the best location to pick?"
+            a="You can use the map on this page above to show your real-time pings to each of our locations. Just refresh the page to recalculate your live latency."
+          />
+          <FAQ
+            q="Can I use mods, workshop content, or other custom resources on my server?"
+            a="Of course. We offer one-click installs for Valheim mods with our mod manager. You can install whole mod packs with a click for other games, such as Minecraft."
+          />
+          <FAQ
+            q="Are the player slots adjustable?"
+            a="All Valheim plans are unlimited and you can change your slots via our control panel. We can recommended a number of slots based on your plans resources."
+          />
+        </div>
+        <div class="col">
+          <FAQ
+            q="When will my server be set up?"
+            a="Once your order payment has been processed, the server will start installing and should be ready within a few minutes. If there are any unusual delays, don't hesitate to contact us with the details so we can correct any issues at once."
+          />
+          <FAQ
+            q="Do you provide DDoS protection?"
+            a="Yes, of course! Our automated systems tackle the brunt of these attackers but if you find yourself under attack let our staff know and they will make sure additional mitigators are put in place for your server."
+          />
+          
+          <FAQ
+            q="Can I upgrade or downgrade my server?"
+            a="Yes. You can change your plan/resources at any time and your server will automatically have resources added or removed based on your choice."
+          />
+          <FAQ
+            q="Do you offer dedicated IPs?"
+            a="Yes, we have dedicated IPs available at checkout. Dedicated IPs are now an additional cost due to the increasing cost due to the IPV4 address shortage."
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <SupportLinks />
+  <Footer />
+
+	</body>
+</html>
+
