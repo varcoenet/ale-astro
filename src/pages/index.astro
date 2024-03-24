@@ -96,14 +96,14 @@ import TPWidget from "../components/TPWidget.astro";
 							</div>
 						</div>
 
-						<a class="carousel-control-prev prev" href="javascript:void(0)" data-bs-target="#carouselGames" data-bs-slide="prev" aria-label="Previous">
+						<span class="carousel-control-prev prev" data-bs-target="#carouselGames" data-bs-slide="prev" aria-label="Previous">
 							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 							<span class="sr-only">Previous</span>
-						</a>
-						<a class="carousel-control-next next" href="javascript:void(0)" data-bs-target="#carouselGames" data-bs-slide="next" aria-label="Next">
+						</span>
+						<span class="carousel-control-next next" data-bs-target="#carouselGames" data-bs-slide="next" aria-label="Next">
 							<span class="carousel-control-next-icon" aria-hidden="true"></span>
 							<span class="sr-only">Next</span>
-						</a>
+						</span>
 					</div>
 
 					<!-- Game Boxes -->
@@ -180,7 +180,7 @@ import TPWidget from "../components/TPWidget.astro";
 				<div class="row">
 					<div class="col col-lg-4 border-right">
 						<div class="service-box">
-							<img src="/images/server.svg" class="block mx-auto mb-4" />
+							<img src="/images/server.svg" class="block mx-auto mb-4" alt="" />
 							<h4 class="pb-2">Shared Hosting</h4>
 							<p class="pb-0">Web hosting designed to provide cutting edge performance with free SSL certificates, and daily backups included by default.</p>
 							<div class="block pb-3 mt-n1">
@@ -192,7 +192,7 @@ import TPWidget from "../components/TPWidget.astro";
 					</div>
 					<div class="col col-lg-4 border-right">
 						<div class="service-box">
-							<img src="/images/server.svg" class="block mx-auto mb-4" />
+							<img src="/images/server.svg" class="block mx-auto mb-4" alt="" />
 							<h4 class="pb-2">WordPress Hosting</h4>
 							<p class="pb-0">Web hosting designed to provide cutting edge performance with free SSL certificates, and daily backups included by default.</p>
 							<div class="block pb-3 mt-n1">
@@ -204,7 +204,7 @@ import TPWidget from "../components/TPWidget.astro";
 					</div>
 					<div class="col col-lg-4">
 						<div class="service-box">
-							<img src="/images/server.svg" class="block mx-auto mb-4" />
+							<img src="/images/server.svg" class="block mx-auto mb-4" alt="" />
 							<h4 class="pb-2">Dedicated Servers</h4>
 							<p class="pb-0">Web hosting designed to provide cutting edge performance with free SSL certificates, and daily backups included by default.</p>
 							<div class="block pb-3 mt-n1">
@@ -308,11 +308,12 @@ import TPWidget from "../components/TPWidget.astro";
 				<div class="row">
 					<div class="col col-lg-3">
 						<h4 class="mt-0">Excellent</h4>
-						<a href="#">
+						<a href="https://www.trustpilot.com/review/aleforge.net" target="_blank">
 							<img src="/images/trustpilot-stars.svg" class="mt-1 mb-2" alt="" />
 						</a>
 						<span class="block pt-3">
-							Based on over <strong>100+ reviews</strong> at <a href="#">
+							Based on over <strong>100+ reviews</strong> at
+							<a href="https://www.trustpilot.com/review/aleforge.net" target="_blank">
 								<img src="/images/tp-logo.svg" class="va-mid tp-logo-home" alt="" />
 							</a>
 						</span>
