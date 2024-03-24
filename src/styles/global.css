@@ -2424,7 +2424,7 @@ strong {
 	clear: both;
 	background: url("/images/timeline-pin.webp") left top repeat-y;
 	position: relative;
-	padding-bottom: 24px;
+	padding-bottom: 16px;
 	text-align: left;
 }
 
@@ -2449,29 +2449,28 @@ strong {
 
 .timeline ul li h5 {
 	line-height: 22px;
-	margin-top: -4px;
-	margin-bottom: 10px;
+	margin-top: 4px;
+	margin-bottom: 0px;
 	font-size: 18px;
 }
 
 .timeline ul li h5 small {
 	color: var(--blue);
-	font-size: 13px;
-	letter-spacing: 0.5px;
-	text-transform: uppercase;
-	font-weight: 800;
-}
+	font-size: 12px;
 
-.timeline ul li img {
-	float: left;
-	margin-right: 32px;
-	height: auto;
-	margin-bottom: 42px;
-	display: none;
+	text-transform: uppercase;
+	font-weight: 700;
 }
 
 .timeline ul li p {
 	padding-bottom: 0px;
+	font-size: 13px;
+	padding-top: 10px;
+	line-height: 22px;
+}
+
+.timeline ul li img {
+	display: none;
 }
 
 .timeline ul li.inverted {
