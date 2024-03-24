@@ -1,9 +1,9 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import Map from '../components/map.astro';
-import GameBox from '../components/GameBox.astro'
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Map from "../components/map.astro";
+import GameBox from "../components/GameBox.astro";
 ---
 
 <!doctype html>
@@ -11,723 +11,495 @@ import GameBox from '../components/GameBox.astro'
 	<head>
 		<BaseHead />
 
-    <title>Game Server Hosting | AleForge</title>
-    <meta name="keywords" content="game server hosting" />
-    <meta name="description" content="Get lag-free server hosting for your favorite games starting at $1.50/GB. Affordable, 99.9% uptime, DDoS protection. Less hassle, more fun!" />
-    <meta name="robots" content="index, follow" />
-    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Game Server Hosting | AleForge" />
-    <link rel="canonical" href="https://aleforge.net/gameservers" />
+		<title>Game Server Hosting | AleForge</title>
+		<meta name="keywords" content="game server hosting" />
+		<meta name="description" content="Get lag-free server hosting for your favorite games starting at $1.50/GB. Affordable, 99.9% uptime, DDoS protection. Less hassle, more fun!" />
+		<meta name="robots" content="index, follow" />
+		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Game Server Hosting | AleForge" />
+		<link rel="canonical" href="https://aleforge.net/gameservers" />
 
-    <!-- Twitter Card data -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@AleForgeHosting">
-    <meta name="twitter:title" content="Game Server Hosting | AleForge">
-    <meta name="twitter:description" content="Get lag-free server hosting for your favorite games starting at $1.50/GB. Affordable, 99.9% uptime, DDoS protection. Less hassle, more fun!"/>
-    <meta name="twitter:creator" content="@AleForgeHosting">
+		<!-- Twitter Card data -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@AleForgeHosting" />
+		<meta name="twitter:title" content="Game Server Hosting | AleForge" />
+		<meta name="twitter:description" content="Get lag-free server hosting for your favorite games starting at $1.50/GB. Affordable, 99.9% uptime, DDoS protection. Less hassle, more fun!" />
+		<meta name="twitter:creator" content="@AleForgeHosting" />
 
-    <!-- Open Graph data -->
-    <meta property="og:title" content="Game Server Hosting | AleForge"/>
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://aleforge.net/gameservers"/>
-    <meta property="og:description" content="Get lag-free server hosting for your favorite games starting at $1.50/GB. Affordable, 99.9% uptime, DDoS protection. Less hassle, more fun!"/>
-    <meta property="og:site_name" content="AleForge"/>
-    <meta property="fb:app_id" content="2877703308935482"/> 
-
-
+		<!-- Open Graph data -->
+		<meta property="og:title" content="Game Server Hosting | AleForge" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://aleforge.net/gameservers" />
+		<meta property="og:description" content="Get lag-free server hosting for your favorite games starting at $1.50/GB. Affordable, 99.9% uptime, DDoS protection. Less hassle, more fun!" />
+		<meta property="og:site_name" content="AleForge" />
+		<meta property="fb:app_id" content="2877703308935482" />
 	</head>
 	<body>
+		<div class="top-bg">
+			<Header />
 
-    <div class="top-bg">
-		<Header />
+			<div id="banner" class="subbanner gs-banner">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<span class="gslink">All Games</span>
+							<h1>Game Server Hosting</h1>
+							<p>Our top games include Minecraft, a sandbox game where you build and explore, and Factorio, a time consuming factory constructing, pollution producing game.</p>
+						</div>
+					</div>
+					<div class="filter-button-group relative" id="filters">
+						<div class="searchwrap">
+							<input type="text" class="quicksearch" placeholder="Search for your game here..." id="gamesearch" />
+							<select class="input-group-right filterselect">
+								<option value="*" class="active">All Games</option>
+								<option value=".popular">Popular</option>
+								<option value=".fps">FPS</option>
+								<option value=".survival">Survival</option>
+								<option value=".sandbox">Sandbox</option>
+								<option value=".space">Space</option>
+								<option value=".game-soon">Coming Soon</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-        <div id="banner" class="subbanner gs-banner">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <span class="gslink">All Games</span>
-                        <h1>Game Server Hosting</h1>
-                        <p>Our top games include Minecraft, a sandbox game where you build and explore, and Factorio, a time consuming factory constructing, pollution producing game.</p>
-                    </div>
-                </div>
-                <div class="filter-button-group relative" id="filters">
-                    <div class="searchwrap ">
-                        <input type="text" class="quicksearch" placeholder="Search for your game here..." id="gamesearch" />
-                        <select class="input-group-right filterselect">
-                            <option value="*" class="active">All Games</option>
-                            <option value=".popular">Popular</option>
-                            <option value=".fps">FPS</option>
-                            <option value=".survival">Survival</option>
-                            <option value=".sandbox">Sandbox</option>
-                            <option value=".space">Space</option>
-                            <option value=".game-soon">Coming Soon</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+		<section class="allgames">
+			<div class="container">
+				<div class="row gamecontainer" id="all-games">
+					<div class="col gridcol sandbox survival popular">
+						<GameBox link="/games/minecraft/" title="Minecraft" price="$1.99/GB" keywords="mc, mine, craft, mined craft, bedrock" bgimg="/images/game-minecraft.webp" />
+					</div>
+					<div class="col gridcol popular survival sandbox">
+						<GameBox link="/games/valheim/" title="Valheim" price="$1.99/GB" keywords="" bgimg="/images/game-valheim.webp" />
+					</div>
+					<div class="col gridcol popular sandbox survival">
+						<GameBox link="/games/factorio/" title="Factorio" price="$1.50/GB" keywords="factory" bgimg="/images/game-factorio.webp" />
+					</div>
+					<div class="col gridcol popular survival">
+						<GameBox link="/games/palworld/" title="Palworld" price="$1.99/GB" keywords="pal world, pokemon, pokemon guns" bgimg="/images/game-palworld.webp" />
+					</div>
+					<div class="col gridcol survival">
+						<GameBox link="/games/7d2d/" title="7 Days to Die" price="$1.99/GB" keywords="7d2d, zombie" bgimg="/images/game-7d2d.webp" />
+					</div>
+					<div class="col gridcol sandbox space">
+						<GameBox link="/games/avorion/" title="Avorion" price="$1.99/GB" keywords="avorion, space, ships" bgimg="/images/game-avorion.webp" />
+					</div>
+					<div class="col gridcol sandbox survival">
+						<GameBox link="/games/conanexiles/" title="Conan Exiles" price="$1.99/GB" keywords="conan, exiles, conan exiles" bgimg="/images/game-conan.webp" />
+					</div>
+					<div class="col gridcol sandbox survival">
+						<GameBox link="/games/core-keeper/" title="Core Keeper" price="$1.50/GB" keywords="core keeper, core, keeper" bgimg="/images/game-core-keeper.webp" />
+					</div>
+					<div class="col gridcol popular fps">
+						<GameBox link="/games/csgo-counter-strike-global-offensive/" title="Counter-Strike 2" price="$0.50/slot" keywords="csgo, counter strike, cs:go, global, cs2, cs:2" bgimg="/images/game-csgo.webp" />
+					</div>
+					<div class="col gridcol fps">
+						<GameBox link="/games/counter-strike-source/" title="Counter-Strike Source" price="$0.50/slot" keywords="css, cs:s, counter strike, source" bgimg="/images/game-css.webp" />
+					</div>
+					<div class="col gridcol fps">
+						<GameBox link="/games/craftopia/" title="Craftopia" price="$1.99/GB" keywords="craftopia" bgimg="/images/game-craftopia.webp" />
+					</div>
+					<div class="col gridcol sandbox survival">
+						<GameBox link="/games/dont-starve-together/" title="Dont Starve Together" price="$2.99/GB" keywords="don't starve, dont starve, don't starve together, dont starve together" bgimg="/images/game-dontstarve.webp" />
+					</div>
+					<div class="col gridcol popular sandbox survival">
+						<GameBox link="/games/enshrouded/" title="Enshrouded" price="$3.00/GB" keywords="enshrouded, in shrouded, shrouded" bgimg="/images/game-enshrouded.webp" />
+					</div>
+					<div class="col gridcol fps">
+						<GameBox link="/games/fistful/" title="Fistful of Frags" price="$1.50/GB" keywords="fistful of frags, frags, fistful" bgimg="/images/game-fistful.webp" />
+					</div>
+					<div class="col gridcol sandbox">
+						<GameBox link="/games/garrysmod/" title="Garry's Mod" price="$2.99/GB" keywords="gmod, garry mod, g mod, source" bgimg="/images/game-gmod.webp" />
+					</div>
+					<div class="col gridcol sandbox">
+						<GameBox link="/games/holdfast/" title="Holdfast: Nations at War" price="$0.30/slot" keywords="holdfast, hold fast, hold, fast" bgimg="/images/game-holdfast.webp" />
+					</div>
+					<div class="col gridcol popular survival fps">
+						<GameBox link="/games/killingfloor/" title="Killing Floor 2" price="$1.50/GB" keywords="killing floor" bgimg="/images/game-killingfloor.webp" />
+					</div>
+					<div class="col gridcol sandbox survival popular">
+						<GameBox link="/games/minecraft/" title="Minecraft Bedrock" price="$1.99/GB" keywords="mc, mine, craft, mined craft, bedrock" bgimg="/images/game-minecraftbedrock.webp" />
+					</div>
+					<div class="col gridcol other">
+						<GameBox link="/games/mordhau/" title="Mordhau" price="$2.99/GB" keywords="mord, mordhai" bgimg="/images/game-mordhau.webp" />
+					</div>
+					<div class="col gridcol other">
+						<GameBox link="/games/mountandblade/" title="Mount & Blade II: Bannerlord" price="$1.99/GB" keywords="mount and blade, mnb, warband, mount & blade" bgimg="/images/game-mountandblade.webp" />
+					</div>
+					<div class="col gridcol other">
+						<GameBox link="/games/necesse/" title="Necesse" price="$1.50/GB" keywords="necess" bgimg="/images/game-necesse.webp" />
+					</div>
+					<div class="col gridcol other survival sandbox">
+						<GameBox link="/games/project-zomboid/" title="Project Zomboid" price="$1.99/GB" keywords="project zomboid, zombie" bgimg="/images/game-project-zomboid.webp" />
+					</div>
+					<div class="col gridcol popular fps survival sandbox">
+						<GameBox link="/games/rust/" title="Rust" price="$0.30/slot" keywords="" bgimg="/images/game-rust.webp" />
+					</div>
+					<div class="col gridcol sandbox">
+						<GameBox link="/games/satisfactory/" title="Satisfactory" price="$1.99/GB" keywords="factory" bgimg="/images/game-satisfactory.webp" />
+					</div>
+					<div class="col gridcol space survival sandbox">
+						<GameBox link="/games/starbound/" title="Starbound" price="$0.70/slot" keywords="star" bgimg="/images/game-starbound.webp" />
+					</div>
+					<div class="col gridcol popular survival sandbox">
+						<GameBox link="/games/terraria/" title="Terraria" price="$1.50/GB" keywords="terraria" bgimg="/images/game-terraria.webp" />
+					</div>
+					<div class="col gridcol fps">
+						<GameBox link="/games/teamfortress2/" title="Team Fortress 2" price="$0.60/slot" keywords="team fortress 2" bgimg="/images/game-teamfortress.webp" />
+					</div>
+					<div class="col gridcol popular survival sandbox">
+						<GameBox link="/games/unturned/" title="Unturned" price="$1.50/GB" keywords="turned" bgimg="/images/game-unturned.webp" />
+					</div>
+					<div class="col gridcol popular survival sandbox">
+						<GameBox link="/games/v-rising/" title="V Rising" price="$2.99/GB" keywords="vrising" bgimg="/images/game-vrising.webp" />
+					</div>
+					<div class="col gridcol popular survival sandbox game-soon">
+						<GameBox link="/games/hytale/" title="Hytale" price="$0.60/slot" keywords="" bgimg="/images/game-hytale.webp" />
+					</div>
+					<div class="col gridcol survival game-soon">
+						<GameBox link="/games/mindustry/" title="Mindustry" price="$0.60/slot" keywords="" bgimg="/images/game-mindustry.webp" />
+					</div>
+					<div class="col gridcol other game-soon">
+						<GameBox link="/games/riskofrain/" title="Risk of Rain 2" price="$2.99/GB" keywords="" bgimg="/images/game-riskofrain.webp" />
+					</div>
+					<div class="col gridcol sandbox game-soon">
+						<GameBox link="/games/sbox/" title="s&box" price="$4.50/GB" keywords="sandbox, sbox, s & box" bgimg="/images/game-sbox.webp" />
+					</div>
+					<div class="col gridcol popular survival space sandbox game-soon">
+						<GameBox link="/games/space-engineers/" title="Space Engineers" price="$2.99/GB" keywords="" bgimg="/images/game-space-engineers.webp" />
+					</div>
+					<div class="col gridcol popular survival space game-soon">
+						<GameBox link="/games/stationeers/" title="Stationeers" price="$0.60/slot" keywords="stations" bgimg="/images/game-stationeers.webp" />
+					</div>
+					<div class="col gridcol popular survival game-soon">
+						<GameBox link="/games/veloren/" title="Veloren" price="$0.60/slot" keywords="stations" bgimg="/images/game-veloren.webp" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div id="gamenothere">
+							<strong>Is your game not here?</strong>
+							<p>We're constantly adding new games to our library, if you have a request please <a href="https://billing.aleforge.net/submitticket.php?step=2&deptid=1">contact us</a>.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
+		<section class="dark-bg-small text-center" id="panel-reviews">
+			<div class="container">
+				<div class="row">
+					<div class="col col-lg-3">
+						<h4 class="mt-0">Excellent</h4>
+						<a href="#">
+							<img src="/images/trustpilot-stars.svg" class="mt-1 mb-2" alt="" />
+						</a>
+						<span class="block pt-3">
+							Based on over <strong>100+ reviews</strong> at <a href="#">
+								<img src="/images/tp-logo.svg" class="va-mid tp-logo-home" alt="" />
+							</a>
+						</span>
+					</div>
+					<div class="col col-lg-9">
+						<div class="block testimonials-has-left-info pt-2">
+							<div id="carousel-testimonials" class="carousel slide" data-bs-ride="carousel">
+								<div class="carousel-inner">
+									<div class="carousel-item">
+										<div class="flex-grid one">
+											<div class="col slider">
+												<p>"Was off to a rough start at first since I know nothing about server hosting, but the support team is really great and the server performs great as well. Definitely worth the subscription if you need a gaming server or web domain.”</p>
+												<h4>Chloe</h4>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item active">
+										<div class="flex-grid one">
+											<div class="col slider">
+												<p>"Servers had great connection, and the UI was easy to navigate. If I ever had trouble with it, the customer support was phenomenal, with quick responses and great advice/instructions.”</p>
+												<h4>Andrew</h4>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<div class="flex-grid one">
+											<div class="col slider">
+												<p>"The online chat was well manned, a human being got back to me right away, and stayed on until my problem was solved - jumping in and making sure my Terraria game was set up properly. Top notch.”</p>
+												<h4>Rivers</h4>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<div class="flex-grid one">
+											<div class="col slider">
+												<p>"The signup process is fast and easy, and the pricing is very competitive. I had an issue with my server, and support took care of it within literal seconds. I would highly recommend AleForge to anyone.”</p>
+												<h4>Domantas</h4>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<div class="flex-grid one">
+											<div class="col slider">
+												<p>"Absolutely in love with the clean aesthetic of this host. Every other host I've used has seemed cluttered and messy, this is definitely a breath of fresh air. Support is great as well, always a bonus!”</p>
+												<h4>Brandon</h4>
+											</div>
+										</div>
+									</div>
+									<!-- Add more carousel items for other testimonials -->
+								</div>
 
+								<button class="carousel-control-prev" type="button" data-bs-target="#carousel-testimonials" data-bs-slide="prev" name="previous testimonial">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Previous</span>
+								</button>
+								<button class="carousel-control-next" type="button" data-bs-target="#carousel-testimonials" data-bs-slide="next" name="next testimonial">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Next</span>
+								</button>
+								<ol class="carousel-indicators bullet-indicators">
+									<li data-bs-target="#carousel-testimonials" data-bs-slide-to="0" class=""></li>
+									<li data-bs-target="#carousel-testimonials" data-bs-slide-to="1" class="active"></li>
+									<li data-bs-target="#carousel-testimonials" data-bs-slide-to="2" class=""></li>
+									<li data-bs-target="#carousel-testimonials" data-bs-slide-to="3" class=""></li>
+									<li data-bs-target="#carousel-testimonials" data-bs-slide-to="4" class=""></li>
+									<!-- Add more carousel indicators for other testimonials -->
+								</ol>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
+		<section class="four-feats">
+			<div class="container">
+				<div class="title">
+					<h2><small>Included Features</small>Affordable Game Hosting</h2>
+					<p></p>
+				</div>
+				<div class="row">
+					<div class="col col-lg-3">
+						<img src="/images/newgs-icon-locations.svg" alt="" class="height-50" />
+						<h4>99.9% Uptime</h4>
+						<p>High-availability means our gamer servers remain fully operational with our guaranteed SLA of 99.9%.</p>
+					</div>
+					<div class="col col-lg-3">
+						<img src="/images/stats.svg" alt="" class="height-50" />
+						<h4>Public Stats</h4>
+						<p>We go the extra mile and prove our service by publicly showing our <a href="https://status.aleforge.net">server statistics</a> for everyone to view.</p>
+					</div>
+					<div class="col col-lg-3">
+						<img src="/images/never.svg" alt="" class="height-50" />
+						<h4>Never Oversold</h4>
+						<p>We never over provision our servers so our customers never have to deal with the noisy neighbor issues you have with other providers.</p>
+					</div>
+					<div class="col col-lg-3">
+						<img src="/images/reverse-proxy.svg" alt="" class="height-50" />
+						<h4>Free DDoS Protection</h4>
+						<p>Our smart protection services keep you safe from all distributed denial-of-service threats.</p>
+					</div>
+					<div class="col col-lg-3">
+						<img src="/images/server.svg" alt="" class="height-50" />
+						<h4>Dwarven Machines</h4>
+						<p>Top of the line AMD and Intel hardware so you can game with without fear of lag.</p>
+					</div>
+					<div class="col col-lg-3">
+						<img src="/images/newgs-icon-network.svg" alt="" class="height-50" />
+						<h4>Dwarven Tunneling</h4>
+						<p>All game servers come with gigabit networking standard.</p>
+					</div>
+					<div class="col col-lg-3">
+						<img src="/images/wallet.svg" alt="" class="height-50" />
+						<h4>Affordable Pricing</h4>
+						<p>Get stable hosting and rapid technical support for an exceptional deal. Our pricing starts at $2.99 per GB of ram.</p>
+					</div>
+					<div class="col col-lg-3">
+						<img src="/images/ssd.svg" alt="" class="height-50" />
+						<h4>Unlimited Players</h4>
+						<p>No restrictions on your players slots. You determine how many players will be able to join your server simultaneously.</p>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <section class="allgames">
-        <div class="container">
-            <div class="row gamecontainer" id="all-games">
-                <div class="col gridcol sandbox survival popular">
-                    <GameBox
-                        link="/games/minecraft/"
-                        title="Minecraft"
-                        price="$1.99/GB"
-                        keywords="mc, mine, craft, mined craft, bedrock"
-                        bgimg="/images/game-minecraft.webp"
-                    />
-                </div>
-                <div class="col gridcol popular survival sandbox">
-                    <GameBox
-                        link="/games/valheim/"
-                        title="Valheim"
-                        price="$1.99/GB"
-                        keywords=""
-                        bgimg="/images/game-valheim.webp"
-                    />
-                </div>
-                <div class="col gridcol popular sandbox survival">
-                    <GameBox
-                        link="/games/factorio/"
-                        title="Factorio"
-                        price="$1.50/GB"
-                        keywords="factory"
-                        bgimg="/images/game-factorio.webp"
-                    />
-                </div>
-                <div class="col gridcol popular survival">
-                    <GameBox
-                        link="/games/palworld/"
-                        title="Palworld"
-                        price="$1.99/GB"
-                        keywords="pal world, pokemon, pokemon guns"
-                        bgimg="/images/game-palworld.webp"
-                    />
-                </div>
-                <div class="col gridcol survival">
-                    <GameBox
-                        link="/games/7d2d/"
-                        title="7 Days to Die"
-                        price="$1.99/GB"
-                        keywords="7d2d, zombie"
-                        bgimg="/images/game-7d2d.webp"
-                    />
-                </div>
-                <div class="col gridcol sandbox space">
-                    <GameBox
-                        link="/games/avorion/"
-                        title="Avorion"
-                        price="$1.99/GB"
-                        keywords="avorion, space, ships"
-                        bgimg="/images/game-avorion.webp"
-                    />
-                </div>
-                <div class="col gridcol sandbox survival">
-                    <GameBox
-                        link="/games/conanexiles/"
-                        title="Conan Exiles"
-                        price="$1.99/GB"
-                        keywords="conan, exiles, conan exiles"
-                        bgimg="/images/game-conan.webp"
-                    />
-                </div>
-                <div class="col gridcol sandbox survival">
-                    <GameBox
-                        link="/games/core-keeper/"
-                        title="Core Keeper"
-                        price="$1.50/GB"
-                        keywords="core keeper, core, keeper"
-                        bgimg="/images/game-core-keeper.webp"
-                    />
-                </div>
-                <div class="col gridcol popular fps">
-                    <GameBox
-                        link="/games/csgo-counter-strike-global-offensive/"
-                        title="Counter-Strike 2"
-                        price="$0.50/slot"
-                        keywords="csgo, counter strike, cs:go, global, cs2, cs:2"
-                        bgimg="/images/game-csgo.webp"
-                    />
-                </div>
-                <div class="col gridcol fps">
-                    <GameBox
-                        link="/games/counter-strike-source/"
-                        title="Counter-Strike Source"
-                        price="$0.50/slot"
-                        keywords="css, cs:s, counter strike, source"
-                        bgimg="/images/game-css.webp"
-                    />
-                </div>
-                <div class="col gridcol fps">
-                    <GameBox
-                        link="/games/craftopia/"
-                        title="Craftopia"
-                        price="$1.99/GB"
-                        keywords="craftopia"
-                        bgimg="/images/game-craftopia.webp"
-                    />
-                </div>
-                <div class="col gridcol sandbox survival">
-                    <GameBox
-                        link="/games/dont-starve-together/"
-                        title="Dont Starve Together"
-                        price="$2.99/GB"
-                        keywords="don't starve, dont starve, don't starve together, dont starve together"
-                        bgimg="/images/game-dontstarve.webp"
-                    />
-                </div>
-                <div class="col gridcol popular sandbox survival">
-                    <GameBox
-                        link="/games/enshrouded/"
-                        title="Enshrouded"
-                        price="$3.00/GB"
-                        keywords="enshrouded, in shrouded, shrouded"
-                        bgimg="/images/game-enshrouded.webp"
-                    />
-                </div>
-                <div class="col gridcol fps">
-                    <GameBox
-                        link="/games/fistful/"
-                        title="Fistful of Frags"
-                        price="$1.50/GB"
-                        keywords="fistful of frags, frags, fistful"
-                        bgimg="/images/game-fistful.webp"
-                    />
-                </div>
-                <div class="col gridcol sandbox">
-                    <GameBox
-                        link="/games/garrysmod/"
-                        title="Garry's Mod"
-                        price="$2.99/GB"
-                        keywords="gmod, garry mod, g mod, source"
-                        bgimg="/images/game-gmod.webp"
-                    />
-                </div>
-                <div class="col gridcol sandbox">
-                    <GameBox
-                        link="/games/holdfast/"
-                        title="Holdfast: Nations at War"
-                        price="$0.30/slot"
-                        keywords="holdfast, hold fast, hold, fast"
-                        bgimg="/images/game-holdfast.webp"
-                    />
-                </div>
-                <div class="col gridcol popular survival fps">
-                    <GameBox
-                        link="/games/killingfloor/"
-                        title="Killing Floor 2"
-                        price="$1.50/GB"
-                        keywords="killing floor"
-                        bgimg="/images/game-killingfloor.webp"
-                    />
-                </div>
-                <div class="col gridcol sandbox survival popular">
-                    <GameBox
-                        link="/games/minecraft/"
-                        title="Minecraft Bedrock"
-                        price="$1.99/GB"
-                        keywords="mc, mine, craft, mined craft, bedrock"
-                        bgimg="/images/game-minecraftbedrock.webp"
-                    />
-                </div>
-                <div class="col gridcol other">
-                    <GameBox
-                        link="/games/mordhau/"
-                        title="Mordhau"
-                        price="$2.99/GB"
-                        keywords="mord, mordhai"
-                        bgimg="/images/game-mordhau.webp"
-                    />
-                </div>
-                <div class="col gridcol other">
-                    <GameBox
-                        link="/games/mountandblade/"
-                        title="Mount & Blade II: Bannerlord"
-                        price="$1.99/GB"
-                        keywords="mount and blade, mnb, warband, mount & blade"
-                        bgimg="/images/game-mountandblade.webp"
-                    />
-                </div>
-                <div class="col gridcol other">
-                    <GameBox
-                        link="/games/necesse/"
-                        title="Necesse"
-                        price="$1.50/GB"
-                        keywords="necess"
-                        bgimg="/images/game-necesse.webp"
-                    />
-                </div>
-                <div class="col gridcol other survival sandbox">
-                    <GameBox
-                        link="/games/project-zomboid/"
-                        title="Project Zomboid"
-                        price="$1.99/GB"
-                        keywords="project zomboid, zombie"
-                        bgimg="/images/game-project-zomboid.webp"
-                    />
-                </div>
-                <div class="col gridcol popular fps survival sandbox">
-                    <GameBox
-                        link="/games/rust/"
-                        title="Rust"
-                        price="$0.30/slot"
-                        keywords=""
-                        bgimg="/images/game-rust.webp"
-                    />
-                </div>
-                <div class="col gridcol sandbox">
-                    <GameBox
-                        link="/games/satisfactory/"
-                        title="Satisfactory"
-                        price="$1.99/GB"
-                        keywords="factory"
-                        bgimg="/images/game-satisfactory.webp"
-                    />
-                </div>
-                <div class="col gridcol space survival sandbox">
-                    <GameBox
-                        link="/games/starbound/"
-                        title="Starbound"
-                        price="$0.70/slot"
-                        keywords="star"
-                        bgimg="/images/game-starbound.webp"
-                    />
-                </div>
-                <div class="col gridcol popular survival sandbox">
-                    <GameBox
-                        link="/games/terraria/"
-                        title="Terraria"
-                        price="$1.50/GB"
-                        keywords="terraria"
-                        bgimg="/images/game-terraria.webp"
-                    />
-                </div>
-                <div class="col gridcol fps">
-                    <GameBox
-                        link="/games/teamfortress2/"
-                        title="Team Fortress 2"
-                        price="$0.60/slot"
-                        keywords="team fortress 2"
-                        bgimg="/images/game-teamfortress.webp"
-                    />
-                </div>
-                <div class="col gridcol popular survival sandbox">
-                    <GameBox
-                        link="/games/unturned/"
-                        title="Unturned"
-                        price="$1.50/GB"
-                        keywords="turned"
-                        bgimg="/images/game-unturned.webp"
-                    />
-                </div>
-                <div class="col gridcol popular survival sandbox">
-                    <GameBox
-                        link="/games/v-rising/"
-                        title="V Rising"
-                        price="$2.99/GB"
-                        keywords="vrising"
-                        bgimg="/images/game-vrising.webp"
-                    />
-                </div>
-                <div class="col gridcol popular survival sandbox game-soon">
-                    <GameBox
-                        link="/games/hytale/"
-                        title="Hytale"
-                        price="$0.60/slot"
-                        keywords=""
-                        bgimg="/images/game-hytale.webp"
-                    />
-                </div>
-                <div class="col gridcol survival game-soon">
-                    <GameBox
-                        link="/games/mindustry/"
-                        title="Mindustry"
-                        price="$0.60/slot"
-                        keywords=""
-                        bgimg="/images/game-mindustry.webp"
-                    />
-                </div>
-                <div class="col gridcol other game-soon">
-                    <GameBox
-                        link="/games/riskofrain/"
-                        title="Risk of Rain 2"
-                        price="$2.99/GB"
-                        keywords=""
-                        bgimg="/images/game-riskofrain.webp"
-                    />
-                </div>
-                <div class="col gridcol sandbox game-soon">
-                    <GameBox
-                        link="/games/sbox/"
-                        title="s&box"
-                        price="$4.50/GB"
-                        keywords="sandbox, sbox, s & box"
-                        bgimg="/images/game-sbox.webp"
-                    />
-                </div>
-                <div class="col gridcol popular survival space sandbox game-soon">
-                    <GameBox
-                        link="/games/space-engineers/"
-                        title="Space Engineers"
-                        price="$2.99/GB"
-                        keywords=""
-                        bgimg="/images/game-space-engineers.webp"
-                    />
-                </div>
-                <div class="col gridcol popular survival space game-soon">
-                    <GameBox
-                        link="/games/stationeers/"
-                        title="Stationeers"
-                        price="$0.60/slot"
-                        keywords="stations"
-                        bgimg="/images/game-stationeers.webp"
-                    />
-                </div>
-                <div class="col gridcol popular survival game-soon">
-                    <GameBox
-                        link="/games/veloren/"
-                        title="Veloren"
-                        price="$0.60/slot"
-                        keywords="stations"
-                        bgimg="/images/game-veloren.webp"
-                    />
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div id="gamenothere">
-                    <strong>Is your game not here?</strong>
-                    <p>We're constantly adding new games to our library, if you have a request please <a href="https://billing.aleforge.net/submitticket.php?step=2&deptid=1">contact us</a>.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-        
-    
-<section class="dark-bg-small text-center" id="panel-reviews">
-  <div class="container">
-    <div class="row">
-        <div class="col col-lg-3">
-            <h4 class="mt-0">Excellent</h4>
-            <a href="#">      
-                <img src="/images/trustpilot-stars.svg" class="mt-1 mb-2" alt="">
-            </a>
-            <span class="block pt-3">Based on over <strong>100+ reviews</strong> at <a href="#">
-                <img src="/images/tp-logo.svg" class="va-mid tp-logo-home" alt="">
-            </a>
-            </span>
-        </div>
-        <div class="col col-lg-9">
-    <div class="block testimonials-has-left-info pt-2">
-      <div id="carousel-testimonials" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item">
-            <div class="flex-grid one">
-              <div class="col slider">
-                <p>"Was off to a rough start at first since I know nothing about server hosting, but the support team is really great and the server performs great as well. Definitely worth the subscription if you need a gaming server or web domain.”</p>
-                <h4>Chloe</h4>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item active">
-            <div class="flex-grid one">
-              <div class="col slider">
-                <p>"Servers had great connection, and the UI was easy to navigate. If I ever had trouble with it, the customer support was phenomenal, with quick responses and great advice/instructions.”</p>
-                <h4>Andrew</h4>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="flex-grid one">
-              <div class="col slider">
-                <p>"The online chat was well manned, a human being got back to me right away, and stayed on until my problem was solved - jumping in and making sure my Terraria game was set up properly. Top notch.”</p>
-                <h4>Rivers</h4>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="flex-grid one">
-              <div class="col slider">
-                <p>"The signup process is fast and easy, and the pricing is very competitive. I had an issue with my server, and support took care of it within literal seconds. I would highly recommend AleForge to anyone.”</p>
-                <h4>Domantas</h4>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="flex-grid one">
-              <div class="col slider">
-                <p>"Absolutely in love with the clean aesthetic of this host. Every other host I've used has seemed cluttered and messy, this is definitely a breath of fresh air. Support is great as well, always a bonus!”</p>
-                <h4>Brandon</h4>
-              </div>
-            </div>
-          </div>
-          <!-- Add more carousel items for other testimonials -->
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-testimonials" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carousel-testimonials" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-        <ol class="carousel-indicators bullet-indicators">
-          <li data-bs-target="#carousel-testimonials" data-bs-slide-to="0" class=""></li>
-          <li data-bs-target="#carousel-testimonials" data-bs-slide-to="1" class="active"></li>
-          <li data-bs-target="#carousel-testimonials" data-bs-slide-to="2" class=""></li>
-          <li data-bs-target="#carousel-testimonials" data-bs-slide-to="3" class=""></li>
-          <li data-bs-target="#carousel-testimonials" data-bs-slide-to="4" class=""></li>
-          <!-- Add more carousel indicators for other testimonials -->
-        </ol>
-      </div>
-    </div>
-        </div>
-    </div>
-  </div>
-</section>
+		<div class="gs-locations grey-bg-small">
+			<Map />
+		</div>
 
-    <section class="four-feats">
-        <div class="container">
-            <div class="title">
-                <h2><small>Included Features</small>Affordable Game Hosting</h2>
-                <p></p>
-            </div>
-            <div class="row">
-                <div class="col col-lg-3">
-                    <img src="/images/newgs-icon-locations.svg" alt="" class="height-50">
-                    <h4>99.9% Uptime</h4>
-                    <p>High-availability means our gamer servers remain fully operational with our guaranteed SLA of 99.9%.</p>
-                </div>
-                <div class="col col-lg-3">
-                    <img src="/images/stats.svg" alt="" class="height-50">
-                    <h4>Public Stats</h4>
-                    <p>We go the extra mile and prove our service by publicly showing our <a href="https://status.aleforge.net">server statistics</a> for everyone to view.</p>
-                </div>
-                <div class="col col-lg-3">
-                    <img src="/images/never.svg" alt="" class="height-50">
-                    <h4>Never Oversold</h4>
-                    <p>We never over provision our servers so our customers never have to deal with the noisy neighbor issues you have with other providers.</p>
-                </div>
-                <div class="col col-lg-3">
-                    <img src="/images/reverse-proxy.svg" alt="" class="height-50">
-                    <h4>Free DDoS Protection</h4>
-                    <p>Our smart protection services keep you safe from all distributed denial-of-service threats.</p>
-                </div>
-                <div class="col col-lg-3">
-                    <img src="/images/server.svg" alt="" class="height-50">
-                    <h4>Dwarven Machines</h4>
-                    <p>Top of the line AMD and Intel hardware so you can game with without fear of lag.</p>
-                </div>
-                <div class="col col-lg-3">
-                    <img src="/images/newgs-icon-network.svg" alt="" class="height-50">
-                    <h4>Dwarven Tunneling</h4>
-                    <p>All game servers come with gigabit networking standard.</p>
-                </div>
-                <div class="col col-lg-3">
-                    <img src="/images/wallet.svg" alt="" class="height-50">
-                    <h4>Affordable Pricing</h4>
-                    <p>Get stable hosting and rapid technical support for an exceptional deal. Our pricing starts at $2.99 per GB of ram.</p>
-                </div>
-                <div class="col col-lg-3">
-                    <img src="/images/ssd.svg" alt="" class="height-50">
-                    <h4>Unlimited Players</h4>
-                    <p>No restrictions on your players slots. You determine how many players will be able to join your server simultaneously.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+		<section class="faq">
+			<div class="container">
+				<h2>FAQ</h2>Have your own question? <a href="https://billing.aleforge.net/submitticket.php?step=2&deptid=1">Ask us here &raquo;</a>
+				<div class="row mt-4 pt-2">
+					<div class="col col-lg-6">
+						<div class="toggle">
+							<div class="toggle-title">
+								<h3>
+									<i></i>
+									<span class="title-name">How long does it take to setup my server?</span>
+								</h3>
+							</div>
+							<div class="toggle-inner">
+								<p>Servers are setup automagically within 60 seconds after payment is received. If there are any issues with your server deployment please open a ticket with our support and they will get you sorted out ASAP as you are our top priority.</p>
+							</div>
+						</div><!-- END OF TOGGLE -->
+						<div class="toggle">
+							<div class="toggle-title">
+								<h3>
+									<i></i>
+									<span class="title-name">How many slots am I limited to?</span>
+								</h3>
+							</div>
+							<div class="toggle-inner">
+								<p>
+									We do not limit our customers to a specifc slot amount. Instead our customers order the amount of ram and cpu power they need and can set the slot count to their desired amount. Selling servers this way allows us to offer you a lower price than our competition and to allow you to only order exactly the
+									resources your need.
+								</p>
+							</div>
+						</div><!-- END OF TOGGLE -->
+						<div class="toggle">
+							<div class="toggle-title">
+								<h3>
+									<i></i>
+									<span class="title-name">Do you offer dedicated IPs?</span>
+								</h3>
+							</div>
+							<div class="toggle-inner">
+								<p>Yes, we have dedicated IPs available at checkout. If you purchase a dedicated IP please open a ticket request the setup of the address after your payment has processed.</p>
+							</div>
+						</div><!-- END OF TOGGLE -->
+						<div class="toggle">
+							<div class="toggle-title">
+								<h3>
+									<i></i>
+									<span class="title-name">Can I use mods, workshop content, or other custom resources on my server?</span>
+								</h3>
+							</div>
+							<div class="toggle-inner">
+								<p>Yes you can. We offer several automated tools to get you started but our support staff is standing by to assist you get your server setup exactly how you want it.</p>
+							</div>
+						</div><!-- END OF TOGGLE -->
+					</div>
+					<div class="col col-lg-6">
+						<div class="toggle">
+							<div class="toggle-title">
+								<h3>
+									<i></i>
+									<span class="title-name">Which control panel do you use?</span>
+								</h3>
+							</div>
+							<div class="toggle-inner">
+								<p>We use an internal maintained version of the open source Pterodactyl Panel which we heavly modify to make it easier for our cusotmers to utilize and automate many functions of operating a game server.</p>
+							</div>
+						</div><!-- END OF TOGGLE -->
+						<div class="toggle">
+							<div class="toggle-title">
+								<h3>
+									<i></i>
+									<span class="title-name">Can I use my own save/map?</span>
+								</h3>
+							</div>
+							<div class="toggle-inner">
+								<p>Yes. if you have an existing map you want to use it can easily be uploaded to your server using our file manager.</p>
+							</div>
+						</div><!-- END OF TOGGLE -->
+						<div class="toggle">
+							<div class="toggle-title">
+								<h3>
+									<i></i>
+									<span class="title-name">Can I upgrade or downgrade my server?</span>
+								</h3>
+							</div>
+							<div class="toggle-inner">
+								<p>Yes. You can change your plan/resources at any time and your server will automatically have resources added or removed based on your choice.</p>
+							</div>
+						</div><!-- END OF TOGGLE -->
+						<div class="toggle">
+							<div class="toggle-title">
+								<h3>
+									<i></i>
+									<span class="title-name">Do you provide DDoS protection?</span>
+								</h3>
+							</div>
+							<div class="toggle-inner">
+								<p>Yes, of course! Our automated systems tackle the brunt of these attackers but if you find yourself under attack let our staff know and they will make sure additional mitigators are put in place for your server.</p>
+							</div>
+						</div><!-- END OF TOGGLE -->
+					</div>
+				</div>
+			</div>
+		</section>
 
+		<script src="/js/isotope.pkgd.min.js" type="text/javascript"></script>
 
-    <div class="gs-locations grey-bg-small">
+		<script type="text/javascript">
+			$(window).on("load", function () {
+				// quick search regex
+				var qsRegex;
+				var buttonFilter;
 
-            <Map />
-    </div>
+				// init Isotope
+				var $grid = $(".gamecontainer").isotope({
+					itemSelector: ".gridcol",
+					layoutMode: "fitRows",
+					filter: function () {
+						var $this = $(this);
+						var searchResult = qsRegex ? $this.text().match(qsRegex) : true;
+						var buttonResult = buttonFilter ? $this.is(buttonFilter) : true;
+						return searchResult && buttonResult;
+					},
+				});
 
-    <section class="faq">
-        <div class="container">
-                    <h2>FAQ</h2>Have your own question? <a href="https://billing.aleforge.net/submitticket.php?step=2&deptid=1">Ask us here &raquo;</a>
+				// use value of search field to filter
+				var $quicksearch = $(".quicksearch").keyup(
+					debounce(function () {
+						$(".filter-button-group").find(".active").removeClass("active");
+						$(".all").addClass("active");
+						buttonFilter = $("*").attr("data-filter");
+						qsRegex = new RegExp($quicksearch.val(), "gi");
+						$grid.isotope();
+					})
+				);
 
-            <div class="row mt-4 pt-2">
-                <div class="col col-lg-6">
-                    <div class="toggle">
-                        <div class="toggle-title">
-                            <h3>
-                                <i></i>
-                                <span class="title-name">How long does it take to setup my server?</span>
-                            </h3>
-                        </div>
-                        <div class="toggle-inner">
-                            <p>Servers are setup automagically within 60 seconds after payment is received. If there are any issues with your server deployment please open a ticket with our support and they will get you sorted out ASAP as you are our top priority.</p>
-                        </div>
-                    </div><!-- END OF TOGGLE -->
-                    <div class="toggle">
-                        <div class="toggle-title">
-                            <h3>
-                                <i></i>
-                                <span class="title-name">How many slots am I limited to?</span>
-                            </h3>
-                        </div>
-                        <div class="toggle-inner">
-                            <p>We do not limit our customers to a specifc slot amount. Instead our customers order the amount of ram and cpu power they need and can set the slot count to their desired amount. Selling servers this way allows us to offer you a lower price than our competition and to allow you to only order exactly the resources your need.</p>
-                        </div>
-                    </div><!-- END OF TOGGLE -->
-                    <div class="toggle">
-                        <div class="toggle-title  ">
-                            <h3>
-                                <i></i>
-                                <span class="title-name"> Do you offer dedicated IPs?</span>
-                            </h3>
-                        </div>
-                        <div class="toggle-inner">
-                            <p>Yes, we have dedicated IPs available at checkout. If you purchase a dedicated IP please open a ticket request the setup of the address after your payment has processed.</p>
-                        </div>
-                    </div><!-- END OF TOGGLE -->
-                    <div class="toggle">
-                        <div class="toggle-title  ">
-                            <h3>
-                                <i></i>
-                                <span class="title-name"> Can I use mods, workshop content, or other custom resources on my server?</span>
-                            </h3>
-                        </div>
-                        <div class="toggle-inner">
-                            <p>Yes you can. We offer several automated tools to get you started but our support staff is standing by to assist you get your server setup exactly how you want it.</p>
-                        </div>
-                    </div><!-- END OF TOGGLE -->
-                </div>
-                <div class="col col-lg-6">
-                    <div class="toggle">
-                        <div class="toggle-title">
-                            <h3>
-                                <i></i>
-                                <span class="title-name">Which control panel do you use?</span>
-                            </h3>
-                        </div>
-                        <div class="toggle-inner">
-                            <p>We use an internal maintained version of the open source Pterodactyl Panel which we heavly modify to make it easier for our cusotmers to utilize and automate many functions of operating a game server.</p>
-                        </div>
-                    </div><!-- END OF TOGGLE -->
-                    <div class="toggle">
-                        <div class="toggle-title ">
-                            <h3>
-                                <i></i>
-                                <span class="title-name">Can I use my own save/map?</span>
-                            </h3>
-                        </div>
-                        <div class="toggle-inner">
-                            <p>Yes. if you have an existing map you want to use it can easily be uploaded to your server using our file manager.</p>
-                        </div>
-                    </div><!-- END OF TOGGLE -->
-                    <div class="toggle">
-                        <div class="toggle-title  ">
-                            <h3>
-                                <i></i>
-                                <span class="title-name">Can I upgrade or downgrade my server?</span>
-                            </h3>
-                        </div>
-                        <div class="toggle-inner">
-                            <p>Yes. You can change your plan/resources at any time and your server will automatically have resources added or removed based on your choice.</p>
-                        </div>
-                    </div><!-- END OF TOGGLE -->
-                    <div class="toggle">
-                        <div class="toggle-title  ">
-                            <h3>
-                                <i></i>
-                                <span class="title-name">Do you provide DDoS protection?</span>
-                            </h3>
-                        </div>
-                        <div class="toggle-inner">
-                            <p>Yes, of course! Our automated systems tackle the brunt of these attackers but if you find yourself under attack let our staff know and they will make sure additional mitigators are put in place for your server.</p>
-                        </div>
-                    </div><!-- END OF TOGGLE -->
-                </div>
-            </div>
-        </div>
-    </section>
+				$(".filterselect").on("change", function () {
+					document.getElementById("gamesearch").value = "";
+					qsRegex = new RegExp("");
 
+					buttonFilter = $(this).val();
+					$grid.isotope();
+				});
 
-    <script src="/js/isotope.pkgd.min.js" type="text/javascript"></script>
+				// change is-checked class on buttons
+				$(".filter-button-group").each(function (i, buttonGroup) {
+					var $buttonGroup = $(buttonGroup);
+					document.getElementById("gamesearch").value = "";
+					$buttonGroup.on("click", "li", function () {
+						$buttonGroup.find(".active").removeClass("active");
+						$(this).addClass("active");
+					});
+				});
 
-    <script type="text/javascript">
-     $(window).on('load', function () {
-        // quick search regex
-        var qsRegex;
-        var buttonFilter;
+				// debounce so filtering doesn't happen every millisecond
+				function debounce(fn, threshold) {
+					var timeout;
+					threshold = threshold || 100;
+					return function debounced() {
+						clearTimeout(timeout);
+						var args = arguments;
+						var _this = this;
 
-        // init Isotope
-        var $grid = $('.gamecontainer').isotope({
-            itemSelector: '.gridcol',
-            layoutMode: 'fitRows',
-            filter: function() {
-                var $this = $(this);
-                var searchResult = qsRegex ? $this.text().match(qsRegex) : true;
-                var buttonResult = buttonFilter ? $this.is(buttonFilter) : true;
-                return searchResult && buttonResult;
-            }
-        });
-
-
-        // use value of search field to filter
-        var $quicksearch = $('.quicksearch').keyup(debounce(function() {
-            $('.filter-button-group').find('.active').removeClass('active');
-            $('.all').addClass('active');
-            buttonFilter = $('*').attr('data-filter');
-            qsRegex = new RegExp($quicksearch.val(), 'gi');
-            $grid.isotope();
-        }));
-
-
-        $('.filterselect').on('change', function() {
-          document.getElementById('gamesearch').value = "";
-          qsRegex = new RegExp('');
-
-          buttonFilter = $(this).val();
-          $grid.isotope();
-        });
-
-
-
-        // change is-checked class on buttons
-        $('.filter-button-group').each(function(i, buttonGroup) {
-            var $buttonGroup = $(buttonGroup);
-          document.getElementById('gamesearch').value = "";
-            $buttonGroup.on('click', 'li', function() {
-                $buttonGroup.find('.active').removeClass('active');
-                $(this).addClass('active');
-            });
-        });
-
-
-        // debounce so filtering doesn't happen every millisecond
-        function debounce(fn, threshold) {
-            var timeout;
-            threshold = threshold || 100;
-            return function debounced() {
-                clearTimeout(timeout);
-                var args = arguments;
-                var _this = this;
-
-                function delayed() {
-                    fn.apply(_this, args);
-                }
-                timeout = setTimeout(delayed, threshold);
-            };
-        }
-    });
-
-    </script>
+						function delayed() {
+							fn.apply(_this, args);
+						}
+						timeout = setTimeout(delayed, threshold);
+					};
+				}
+			});
+		</script>
 
 		<Footer />
 	</body>
 </html>
-
