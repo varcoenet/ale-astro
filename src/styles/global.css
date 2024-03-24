@@ -2829,11 +2829,6 @@ strong {
 	display: none;
 }
 
-#banner img {
-	height: 60px;
-	margin-bottom: 28px;
-}
-
 #hb-cstwo {
 	background: url("/images/cstwo-bg@2x.webp") center top no-repeat;
 	background-size: auto 100%;
@@ -3641,16 +3636,9 @@ strong {
 #cpanel-accordions .toggle {
 	border-bottom: 0px;
 }
-#cpanel-accordions .toggle .toggle-title h3 img {
-	float: left;
-	margin-right: 10px;
-	height: 24px;
-	max-width: 24px;
-	margin-top: 3px;
-}
 
 #cpanel-accordions .toggle .toggle-inner {
-	padding: 8px 40px 12px 0px;
+	padding: 10px 0px 18px 0px;
 }
 
 .text-right {
@@ -4638,12 +4626,12 @@ strong {
 }
 
 #newgs-panel .title p {
-	color: rgba(255, 255, 255, 0.75);
+	color: rgba(255, 255, 255, 1);
 }
 
 #newgs-panel .toggle {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-	color: rgba(255, 255, 255, 0.75);
+	color: rgba(255, 255, 255, 1);
 }
 
 #newgs-panel .toggle .toggle-title h3,
@@ -4652,8 +4640,8 @@ strong {
 	color: #fff !important;
 }
 
-#newgs-panel {
-	background: #367fca;
+#newgs-panel .toggle .toggle-title i {
+	filter: brightness(100);
 }
 
 .compare-table {
@@ -6512,4 +6500,45 @@ section {
 
 .page-homepage .cta {
 	display: none !important;
+}
+
+#newgs-tabs-more {
+	position: absolute;
+	right: 20px;
+	top: 18px;
+}
+
+#newgs-tabs-more img {
+	float: left;
+	margin-right: 25px;
+	margin-top: 25px;
+}
+
+#newgs-tabs-more p {
+	color: #fff !important;
+	display: inline-block;
+	font-size: 13px !important;
+	line-height: 20px !important;
+	padding-bottom: 0 !important;
+}
+
+#newgs-tabs-more a {
+	text-decoration: underline;
+	color: #fff;
+	display: inline-block;
+	line-height: 14px;
+	margin-top: 4px;
+	padding: 6px 2px 0;
+}
+#newgs-tabs-more a:hover {
+	color: var(--blue);
+}
+
+.newgs-more-game {
+	right: 7.5% !important;
+	top: 2px !important;
+}
+
+.newgs-more-game img {
+	margin-right: 35px !important;
 }
