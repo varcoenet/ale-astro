@@ -3958,7 +3958,7 @@ strong {
 .mnav li .dropdown-menu a span {
 	color: #4b525c;
 	opacity: 1;
-	font-weight: 500;
+	font-weight: 400;
 	white-space: nowrap;
 	opacity: 0.8;
 	font-size: 13px;
@@ -5578,6 +5578,7 @@ html {
 
 .responsive-img {
 	max-width: 100%;
+	height: auto;
 }
 
 .panel-three-lines .row {
