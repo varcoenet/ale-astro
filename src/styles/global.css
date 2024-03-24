@@ -2798,13 +2798,13 @@ strong {
 
 #banner .carousel-control-prev-icon {
 	background-image: url("/images/home-prev.svg");
-	width: 33px;
+	width: 63px;
 	height: 129px;
 }
 
 #banner .carousel-control-next-icon {
 	background-image: url("/images/home-next.svg");
-	width: 33px;
+	width: 63px;
 	height: 129px;
 }
 
