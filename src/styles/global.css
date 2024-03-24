@@ -5462,17 +5462,6 @@ html {
 	padding-top: 4px;
 }
 
-#gamebg-minecraft {
-	background: url(/images/gamebg/gamebg-minecraft.webp) top no-repeat var(--dark-bg);
-}
-
-#gamebg-valheim {
-	background: url(/images/gamebg/gamebg-valheim.webp) top no-repeat var(--dark-bg);
-}
-#gamebg-hosting {
-	background: url(/images/gamebg/gamebg-hosting.webp) top no-repeat var(--dark-bg);
-}
-
 #newgs-tabs-2 .newgs-cores {
 	color: #fff;
 	font-weight: 600;
@@ -6541,4 +6530,21 @@ section {
 
 .newgs-more-game img {
 	margin-right: 35px !important;
+}
+
+#gamebg-minecraft {
+	background: url(/images/gamebg/gamebg-minecraft.webp) top no-repeat var(--dark-bg);
+}
+
+#gamebg-valheim {
+	background: url(/images/gamebg/gamebg-valheim.webp) top no-repeat var(--dark-bg);
+}
+#gamebg-hosting {
+	background: url(/images/gamebg/gamebg-hosting.webp) top no-repeat var(--dark-bg);
+}
+#gamebg-factorio {
+	background: url(/images/gamebg/gamebg-factorio.webp) top no-repeat var(--dark-bg);
+}
+#gamebg-palworld {
+	background: url(/images/gamebg/gamebg-palworld.webp) top no-repeat var(--dark-bg);
 }
