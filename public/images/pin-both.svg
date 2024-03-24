@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>pin-both</title>
     <defs>
         <linearGradient x1="55.8675699%" y1="50%" x2="50%" y2="50%" id="linearGradient-1">
@@ -7,15 +7,15 @@
             <stop stop-color="#367FCA" offset="100%"></stop>
         </linearGradient>
         <linearGradient x1="50%" y1="50%" x2="50%" y2="50%" id="linearGradient-2">
-            <stop stop-color="#2261A4" offset="0%"></stop>
+            <stop stop-color="#194F89" offset="0%"></stop>
             <stop stop-color="#55606D" offset="100%"></stop>
         </linearGradient>
         <linearGradient x1="50%" y1="50%" x2="50%" y2="50%" id="linearGradient-3">
-            <stop stop-color="#367FCA" stop-opacity="0.198754371" offset="0%"></stop>
-            <stop stop-color="#748292" stop-opacity="0.286822552" offset="100%"></stop>
+            <stop stop-color="#367FCA" stop-opacity="0.149038462" offset="46.8558785%"></stop>
+            <stop stop-color="#748292" stop-opacity="0.200666521" offset="46.9596809%"></stop>
         </linearGradient>
         <circle id="path-4" cx="1676" cy="1370" r="6"></circle>
-        <filter x="-50.0%" y="-50.0%" width="200.0%" height="200.0%" filterUnits="objectBoundingBox" id="filter-5">
+        <filter x="-41.7%" y="-41.7%" width="183.3%" height="183.3%" filterUnits="objectBoundingBox" id="filter-5">
             <feGaussianBlur stdDeviation="1" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
             <feOffset dx="0" dy="-2" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
             <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
@@ -23,12 +23,12 @@
         </filter>
     </defs>
     <g id="Panel-Page-v1.0" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Desktop-HD" transform="translate(-1666, -1360)">
+        <g id="Desktop-HD" transform="translate(-1667, -1361)">
             <g id="pin-both" transform="translate(1676, 1370) scale(-1, 1) translate(-1676, -1370)">
                 <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-4"></use>
                 <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
                 <circle stroke="url(#linearGradient-2)" stroke-width="1" stroke-linejoin="square" cx="1676" cy="1370" r="5.5"></circle>
-                <circle stroke="url(#linearGradient-3)" stroke-width="4" cx="1676" cy="1370" r="8"></circle>
+                <circle stroke="url(#linearGradient-3)" stroke-width="3" cx="1676" cy="1370" r="7.5"></circle>
             </g>
         </g>
     </g>
