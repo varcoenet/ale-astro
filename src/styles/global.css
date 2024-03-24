@@ -2467,6 +2467,7 @@ strong {
 	margin-right: 32px;
 	height: auto;
 	margin-bottom: 42px;
+	display: none;
 }
 
 .timeline ul li p {
