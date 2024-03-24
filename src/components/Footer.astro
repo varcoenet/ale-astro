@@ -3,194 +3,183 @@ const today = new Date();
 ---
 
 <!-- Bootstrap -->
-
-
 <script src="/js/bootstrap.min.js" type="text/javascript"></script>
 
 <script type="text/javascript">
-    jQuery(document).ready(function(e) {
-        function t(t) {
-            e(t).bind("click", function(t) {
-                t.preventDefault();
-                e(this).parent().fadeOut()
-            })
-        }
-        e(".dropdown-toggle").click(function() {
-            var t = e(this).parents(".button-dropdown").children(".dropdown-menu").is(":hidden");
-            e(".button-dropdown .dropdown-menu").hide();
-            e(".button-dropdown .dropdown-toggle").removeClass("active");
-            if (t) {
-                e(this).parents(".button-dropdown").children(".dropdown-menu").toggle().parents(".button-dropdown").children(".dropdown-toggle").addClass("active")
-            }
-        });
-        e(document).bind("click", function(t) {
-            var n = e(t.target);
-            if (!n.parents().hasClass("button-dropdown")) e(".button-dropdown .dropdown-menu").hide();
-        });
-        e(document).bind("click", function(t) {
-            var n = e(t.target);
-            if (!n.parents().hasClass("button-dropdown")) e(".button-dropdown .dropdown-toggle").removeClass("active");
-        })
+	jQuery(document).ready(function (e) {
+		function t(t) {
+			e(t).bind("click", function (t) {
+				t.preventDefault();
+				e(this).parent().fadeOut();
+			});
+		}
+		e(".dropdown-toggle").click(function () {
+			var t = e(this).parents(".button-dropdown").children(".dropdown-menu").is(":hidden");
+			e(".button-dropdown .dropdown-menu").hide();
+			e(".button-dropdown .dropdown-toggle").removeClass("active");
+			if (t) {
+				e(this).parents(".button-dropdown").children(".dropdown-menu").toggle().parents(".button-dropdown").children(".dropdown-toggle").addClass("active");
+			}
+		});
+		e(document).bind("click", function (t) {
+			var n = e(t.target);
+			if (!n.parents().hasClass("button-dropdown")) e(".button-dropdown .dropdown-menu").hide();
+		});
+		e(document).bind("click", function (t) {
+			var n = e(t.target);
+			if (!n.parents().hasClass("button-dropdown")) e(".button-dropdown .dropdown-toggle").removeClass("active");
+		});
 
-        $('#toggle').click(function() {
-            $(this).toggleClass('active');
-            $('#overlay').toggleClass('open');
-            $('.button_container').toggleClass('fixed');
-        });
+		$("#toggle").click(function () {
+			$(this).toggleClass("active");
+			$("#overlay").toggleClass("open");
+			$(".button_container").toggleClass("fixed");
+		});
 
-        $('#tabselect').on('change', function(e) {
-            $('#home-tabs li a').eq($(this).val()).tab('show');
-        });
+		$("#tabselect").on("change", function (e) {
+			$("#home-tabs li a").eq($(this).val()).tab("show");
+		});
 
+		if ($(window).width() < 768 || $(window).height() < 480) {
+			$(".footer-links h5").click(function () {
+				$(this).next("ul").slideToggle("fast");
+				$(this).toggleClass("active");
+			});
+		}
 
-        if ($(window).width() < 768 || $(window).height() < 480) {
-            $(".footer-links h5").click(function() {
-                $(this).next("ul").slideToggle("fast");
-                $(this).toggleClass('active');
-            });
-        }
+		setInterval(function time() {
+			var d = new Date();
+			var hours = 24 - d.getHours();
+			var min = 60 - d.getMinutes();
+			if ((min + "").length == 1) {
+				min = "0" + min;
+			}
+			var sec = 60 - d.getSeconds();
+			if ((sec + "").length == 1) {
+				sec = "0" + sec;
+			}
+			if ((hours + "").length == 1) {
+				hours = "0" + hours;
+			}
+			jQuery("#clock").html("<h2>0<small>days</small></h2><h2>" + hours + "<small>hours</small></h2><h2>" + min + "<small>mins</small></h2><h2>" + sec + "<small>secs</small></h2>");
+		}, 1000);
 
-            setInterval(function time() {
-        var d = new Date();
-        var hours = 24 - d.getHours();
-        var min = 60 - d.getMinutes();
-        if ((min + '').length == 1) {
-            min = '0' + min;
-        }
-        var sec = 60 - d.getSeconds();
-        if ((sec + '').length == 1) {
-            sec = '0' + sec;
-        }
-        if ((hours + '').length == 1) {
-            hours = '0' + hours;
-        }
-        jQuery('#clock').html('<h2>0<small>days</small></h2><h2>' + hours + '<small>hours</small></h2><h2>' + min + '<small>mins</small></h2><h2>' + sec + '<small>secs</small></h2>')
-    }, 1000);
+		if (jQuery(".toggle .toggle-title").hasClass("active")) {
+			jQuery(".toggle .toggle-title.active").closest(".toggle").find(".toggle-inner").show();
+		}
+		jQuery(".toggle .toggle-title").click(function () {
+			if (jQuery(this).hasClass("active")) {
+				jQuery(this).removeClass("active").closest(".toggle").find(".toggle-inner").slideUp(200);
+			} else {
+				jQuery(this).addClass("active").closest(".toggle").find(".toggle-inner").slideDown(200);
+			}
+		});
 
-    if (jQuery(".toggle .toggle-title").hasClass('active')) {
-        jQuery(".toggle .toggle-title.active").closest('.toggle').find('.toggle-inner').show();
-    }
-    jQuery(".toggle .toggle-title").click(function() {
-        if (jQuery(this).hasClass('active')) {
-            jQuery(this).removeClass("active").closest('.toggle').find('.toggle-inner').slideUp(200);
-        } else {
-            jQuery(this).addClass("active").closest('.toggle').find('.toggle-inner').slideDown(200);
-        }
-    });
-
-    
-if (jQuery(".toggle .toggle-title").hasClass('active')) {
-    jQuery(".toggle .toggle-title.active").closest('.toggle').find('.toggle-inner').show();
-}
-
-    
-    });
-
+		if (jQuery(".toggle .toggle-title").hasClass("active")) {
+			jQuery(".toggle .toggle-title.active").closest(".toggle").find(".toggle-inner").show();
+		}
+	});
 </script>
 
-
-
 <footer id="footer">
-    <div class="cta">
-        <div class="container">
-            <div class="row text-left">
-                <div class="col">
-                    <h2>Ready to Order?</h2>
-                    <p class="pb-0">AleForge provides quality game hosting services protected by cutting-edge security systems.</p>
-                </div>
-                <div class="col ml-auto text-right pt-4 mt-2">
-                    <a href="/about" class="button outline mr-2">Learn More</a>
-                    <a href="https://billing.aleforge.net/cart.php" class="button">Get Started</a>
+	<div class="cta">
+		<div class="container">
+			<div class="row text-left">
+				<div class="col">
+					<h2>Ready to Order?</h2>
+					<p class="pb-0">AleForge provides quality game hosting services protected by cutting-edge security systems.</p>
 				</div>
-            </div>
-        </div>
-    </div>
+				<div class="col ml-auto text-right pt-4 mt-2">
+					<a href="/about" class="button outline mr-2">Learn More</a>
+					<a href="https://billing.aleforge.net/cart.php" class="button">Get Started</a>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <div class="footer-bottom">
+	<div class="footer-bottom">
+		<div class="footer-links">
+			<div class="container">
+				<div class="flex-grid five">
+					<div class="col">
+						<h5>Top Game Servers</h5>
+						<ul>
+							<li><a href="/games/minecraft">Minecraft</a></li>
+							<li><a href="/games/terraria">Terraria</a></li>
+							<li><a href="/games/factorio">Factorio</a></li>
+							<li><a href="/games/garrysmod">Garry's Mod</a></li>
+							<li><a href="/games/rust">Rust</a></li>
+							<li><a href="/games/starbound">Starbound</a></li>
+						</ul>
+					</div>
+					<div class="col">
+						<h5>Support</h5>
+						<ul>
+							<li><a href="https://billing.aleforge.net/knowledgebase.php">Knowledgebase</a></li>
+							<li><a href="https://billing.aleforge.net/submitticket.php?step=2&deptid=1">Open a Ticket</a></li>
+							<li><a href="https://www.tidio.com/talk/ngvrd3qge3zp6wonytswsxmor747esrj">Live Chat</a></li>
+							<li><a href="https://discord.gg/e5aRjKJ">Discord</a></li>
+							<li><a href="https://status.aleforge.net/">Status</a></li>
+						</ul>
+					</div>
+					<div class="col">
+						<h5>Company</h5>
+						<ul>
+							<li><a href="/about">About Us</a></li>
+							<li><a href="/about">Datacenters</a></li>
+							<li><a href="https://billing.aleforge.net/submitticket.php?step=2&deptid=1">Contact Us</a></li>
+							<li><a href="/blog">Blog</a></li>
+							<li><a href="https://billing.aleforge.net/knowledgebase/25/AleForge-Affiliate-Program.html">Affiliate Program</a></li>
+						</ul>
+					</div>
+					<div class="col">
+						<h5>Social</h5>
+						<ul>
+							<li><a href="https://www.facebook.com/AleForgeHosting">Facebook</a></li>
+							<li><a href="https://twitter.com/aleforgehosting">Twitter</a></li>
+							<li><a href="https://discord.gg/e5aRjKJ">Discord</a></li>
+							<li><a href="https://www.linkedin.com/company/28660323">LinkedIn</a></li>
+						</ul>
+					</div>
+					<div class="col">
+						<h5>Legal Resources</h5>
+						<ul>
+							<li><a href="/terms-of-service">Terms of Service</a></li>
+							<li><a href="/acceptable-use">Acceptable Use Policy</a></li>
+							<li><a href="/privacy-policy">Privacy Policy</a></li>
+							<li><a href="/refund-policy">Refund Policy</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
 
-        <div class="footer-links">
-            <div class="container">
-                <div class="flex-grid five">
-                    <div class="col">
-                        <h5>Top Game Servers</h5>
-                        <ul>
-                            <li><a href="/games/minecraft">Minecraft</a></li>
-                            <li><a href="/games/terraria">Terraria</a></li>
-                            <li><a href="/games/factorio">Factorio</a></li>
-                            <li><a href="/games/garrysmod">Garry's Mod</a></li>
-                            <li><a href="/games/rust">Rust</a></li>
-                            <li><a href="/games/starbound">Starbound</a></li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <h5>Support</h5>
-                        <ul>
-                            <li><a href="https://billing.aleforge.net/knowledgebase.php">Knowledgebase</a></li>
-                            <li><a href="https://billing.aleforge.net/submitticket.php?step=2&deptid=1">Open a Ticket</a></li>
-                            <li><a href="https://www.tidio.com/talk/ngvrd3qge3zp6wonytswsxmor747esrj">Live Chat</a></li>
-                            <li><a href="https://discord.gg/e5aRjKJ">Discord</a></li>
-                            <li><a href="https://status.aleforge.net/">Status</a></li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <h5>Company</h5>
-                        <ul>
-                            <li><a href="/about">About Us</a></li>
-                            <li><a href="/about">Datacenters</a></li>
-                            <li><a href="https://billing.aleforge.net/submitticket.php?step=2&deptid=1">Contact Us</a></li>
-                            <li><a href="/blog">Blog</a></li>
-                            <li><a href="https://billing.aleforge.net/knowledgebase/25/AleForge-Affiliate-Program.html">Affiliate Program</a></li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <h5>Social</h5>
-                        <ul>
-                            <li><a href="https://www.facebook.com/AleForgeHosting">Facebook</a></li>
-                            <li><a href="https://twitter.com/aleforgehosting">Twitter</a></li>
-                            <li><a href="https://discord.gg/e5aRjKJ">Discord</a></li>
-                            <li><a href="https://www.linkedin.com/company/28660323">LinkedIn</a></li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <h5>Legal Resources</h5>
-                        <ul>
-                            <li><a href="/terms-of-service">Terms of Service</a></li>
-                            <li><a href="/acceptable-use">Acceptable Use Policy</a></li>
-                            <li><a href="/privacy-policy">Privacy Policy</a></li>
-                            <li><a href="/refund-policy">Refund Policy</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+		<div class="footer-divider">
+			<div class="container">
+				<div class="row" id="fdiv">
+					<div class="col">
+						<div class="footer-logo"><a href="#"><img src="/images/logo.webp" alt="" /></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-
-        <div class="footer-divider">
-            <div class="container">
-                <div class="row" id="fdiv">
-                    <div class="col">
-                        <div class="footer-logo"><a href="#"><img src="/images/logo.webp" alt=""></a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer-copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <p>&copy; Copyright {today.getFullYear()} Ale Forge Ltd. All Rights Reserved.</p>
+		<div class="footer-copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<p>&copy; Copyright {today.getFullYear()} Ale Forge Ltd. All Rights Reserved.</p>
 						<div class="mute-links">
-                        <a href="/terms-of-service">Terms of Service</a> &nbsp;|&nbsp; <a href="/privacy-policy">Privacy Policy</a> &nbsp;|&nbsp; <a href="https://billing.aleforge.net/submitticket.php">Report Abuse</a>
+							<a href="/terms-of-service">Terms of Service</a> &nbsp;|&nbsp; <a href="/privacy-policy">Privacy Policy</a> &nbsp;|&nbsp; <a href="https://billing.aleforge.net/submitticket.php">Report Abuse</a>
 						</div>
 						<div class="block mt-3 font-13">
-							<span class="font-12 block mt-2">We're rated <strong>Excellent</strong> on <img src="/images/trustpilot.svg" class="va-mid ml-1 mb-2"></span>
-                        
-                       <strong> <a href="#" target="_blank" rel="noopener noreferrer">Read Reviews &raquo;</a></strong>
+							<span class="font-12 block mt-2">We're rated <strong>Excellent</strong> on <img src="/images/trustpilot.svg" class="va-mid ml-1 mb-2" /></span>
+
+							<strong><a href="#" target="_blank" rel="noopener noreferrer">Read Reviews &raquo;</a></strong>
 						</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-	
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>

@@ -1,31 +1,26 @@
 ---
-import BaseHead from '../../components/BaseHead.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
-import { getCollection } from 'astro:content';
-import FormattedDate from '../../components/FormattedDate.astro';
+import BaseHead from "../../components/BaseHead.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import { getCollection } from "astro:content";
+import FormattedDate from "../../components/FormattedDate.astro";
 
-const posts = (await getCollection('blog')).sort(
-	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
-);
+const posts = (await getCollection("blog")).sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf());
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<BaseHead />
-        <title>Blog | AleForge</title>
-		
+		<title>Blog | AleForge</title>
 	</head>
 	<body>
+		<div class="top-bg">
+			<Header />
+		</div>
 
-    <div class="top-bg">
-		<Header />
-	</div>
-
-
-    <section class="blog" id="blog-home">
-		<div class="container">
+		<section class="blog" id="blog-home">
+			<div class="container">
 				<div class="row">
 					{
 						posts.map((post) => (
@@ -41,9 +36,9 @@ const posts = (await getCollection('blog')).sort(
 						))
 					}
 				</div>
-				</div>
-			</section>
-			
+			</div>
+		</section>
+
 		<Footer />
 	</body>
 </html>

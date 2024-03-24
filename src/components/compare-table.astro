@@ -1,319 +1,321 @@
 <a name="comparetables"></a>
 
-  <section id="newgs-tables">
-    <div class="container">
-      <div class="title">
-        <h2>
-            <small>COMPARE</small>Premium vs Standard
-          </h2>
-        <p>We have hardware for every budget with no performance compromises. If you need the ultimate power for your power-hungry modded mayhem, we can handle that too. All comparison data was gathered from publicly available information.</p>
-      </div>
-      <div class="compare-table">
-        <!-- New Row -->
-        <div class="compare-table-row hidemobile">
-          <div class="flex-grid">
-            <div class="col" id="newgs-table-col-1"></div>
-            <div class="col" id="newgs-table-col-2">
-              <div class="flex-grid two">
-                <div class="col">
-                  <h4 class="blue-text">Premium</h4>
-                </div>
-                <div class="col">
-                  <h4 class="standard-color">Standard</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- New Row -->
-        <div class="compare-table-row light-bg">
-          <div class="flex-grid">
-            <div class="col" id="newgs-table-col-1">
-              <strong class="block">CPU/Processors</strong>
-              <span class="block">How fast your server changes to the game process.</span>
-            </div>
-            <div class="col" id="newgs-table-col-2">
-              <div class="flex-grid two">
-                <div class="col pts">
-                  <span class="showmobile blue-text">Performance</span>
-                  <img src="/images/newgs-ryzen.webp" class="newgs-cpu" />
-                  <strong>AMD Ryzen 9 7950X or Equivalent</strong>
-                </div>
-                <div class="col pts">
-                  <span class="showmobile">Standard</span>
-                  <img src="/images/newgs-ryzen.webp" class="newgs-cpu" /> 
-                  <span class="block">AMD Ryzen 9 5950X or Equivalent</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="flex-grid one compare-speeds-div first-compare">
-            <div class="col">
-              <a href="javascript:void(0)" class="compare-speeds c-speeds-1">Compare Speeds <img src="/images/newgs-arrow-down.webp" />
-                </a>
-              <div class="the-charts the-charts-all c-speeds-1-chart">
-                <canvas id="bar-chart-cpu" width="800" height="450"></canvas>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- New Row -->
-        <div class="compare-table-row">
-          <div class="flex-grid">
-            <div class="col" id="newgs-table-col-1">
-              <strong class="block">Memory</strong>
-              <span class="block">Holds the data that is regularly used to keep track of all the monsters you kill.</span>
-            </div>
-            <div class="col" id="newgs-table-col-2">
-              <div class="flex-grid two">
-                <div class="col pt">
-                  <span class="showmobile blue-text">Performance</span>
-                  <strong class="block pts">DDR4 ECC 3400 MHz</strong>
-                </div>
-                <div class="col pt">
-                  <span class="showmobile">Standard</span> 
-                  <span class="block pts">DDR4 3200 MHz</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="flex-grid one compare-speeds-div">
-            <div class="col">
-              <a href="javascript:void(0)" class="compare-speeds c-speeds-2">Compare Speeds <img src="/images/newgs-arrow-down.webp" />
-                </a>
-              <div class="the-charts the-charts-all c-speeds-2-chart">
-                <canvas id="bar-chart-ram" width="800" height="450"></canvas>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- New Row -->
-        <div class="compare-table-row light-bg">
-          <div class="flex-grid">
-            <div class="col" id="newgs-table-col-1">
-              <strong class="block">SSD</strong>
-              <span class="block">Controls how fast the large protions of your games data loads.</span>
-            </div>
-            <div class="col" id="newgs-table-col-2">
-              <div class="flex-grid two">
-                <div class="col pt">
-                  <span class="showmobile blue-text">Performance</span>
-                  <strong>Samsung NVMe (5100 MB/s)</strong>
-                </div>
-                <div class="col pt">
-                  <span class="showmobile">Standard</span> Enterprise SSD (4300 MB/s)
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="flex-grid one compare-speeds-div">
-            <div class="col">
-              <a href="javascript:void(0)" class="compare-speeds c-speeds-3">Compare Speeds <img src="/images/newgs-arrow-down.webp" />
-                </a>
-              <div class="the-charts the-charts-all c-speeds-3-chart">
-                <canvas id="bar-chart-ssd" width="800" height="450"></canvas>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- New Row -->
-        <div class="compare-table-row">
-          <div class="flex-grid">
-            <div class="col" id="newgs-table-col-1">
-              <strong class="block">Player Slots</strong>
-              <span class="block">Max players allowed in your server.</span>
-            </div>
-            <div class="col" id="newgs-table-col-2">
-              <div class="flex-grid two">
-                <div class="col pts">
-                  <span class="showmobile blue-text">Performance</span>
-                  <strong>Unlimited</strong>
-                </div>
-                <div class="col pts">
-                  <span class="showmobile">Standard</span>
-                  <span class="block">Unlimited</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- New Row -->
-        <div class="compare-table-row light-bg">
-          <div class="flex-grid">
-            <div class="col" id="newgs-table-col-1">
-              <strong class="block">Cloud Backups</strong>
-              <span class="block">Number of backups you can create per server.</span>
-            </div>
-            <div class="col" id="newgs-table-col-2">
-              <div class="flex-grid two">
-                <div class="col pts">
-                  <span class="showmobile blue-text">Performance</span>
-                  <strong class="block">4</strong>
-                </div>
-                <div class="col">
-                  <span class="showmobile">Standard</span>
-                  <span class="block">Up to 2</span>
-                  <strong class="blue-text">+$2.00/mo per 2 additional backups</strong>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- New Row -->
-        <div class="compare-table-row">
-          <div class="flex-grid">
-            <div class="col" id="newgs-table-col-1">
-              <strong class="block">Locations</strong>
-              <span class="block">Worldwide sites to house your game server.</span>
-            </div>
-            <div class="col" id="newgs-table-col-2">
-              <div class="flex-grid two">
-                <div class="col pts">
-                  <span class="showmobile blue-text">Performance</span>
-                  <strong>5 Locations</strong>
-                </div>
-                <div class="col pts">
-                  <span class="showmobile">Budget</span> 4 Locations
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<section id="newgs-tables">
+	<div class="container">
+		<div class="title">
+			<h2>
+				<small>COMPARE</small>Premium vs Standard
+			</h2>
+			<p>We have hardware for every budget with no performance compromises. If you need the ultimate power for your power-hungry modded mayhem, we can handle that too. All comparison data was gathered from publicly available information.</p>
+		</div>
+		<div class="compare-table">
+			<!-- New Row -->
+			<div class="compare-table-row hidemobile">
+				<div class="flex-grid">
+					<div class="col" id="newgs-table-col-1"></div>
+					<div class="col" id="newgs-table-col-2">
+						<div class="flex-grid two">
+							<div class="col">
+								<h4 class="blue-text">Premium</h4>
+							</div>
+							<div class="col">
+								<h4 class="standard-color">Standard</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- New Row -->
+			<div class="compare-table-row light-bg">
+				<div class="flex-grid">
+					<div class="col" id="newgs-table-col-1">
+						<strong class="block">CPU/Processors</strong>
+						<span class="block">How fast your server changes to the game process.</span>
+					</div>
+					<div class="col" id="newgs-table-col-2">
+						<div class="flex-grid two">
+							<div class="col pts">
+								<span class="showmobile blue-text">Performance</span>
+								<img src="/images/newgs-ryzen.webp" class="newgs-cpu" />
+								<strong>AMD Ryzen 9 7950X or Equivalent</strong>
+							</div>
+							<div class="col pts">
+								<span class="showmobile">Standard</span>
+								<img src="/images/newgs-ryzen.webp" class="newgs-cpu" />
+								<span class="block">AMD Ryzen 9 5950X or Equivalent</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="flex-grid one compare-speeds-div first-compare">
+					<div class="col">
+						<a href="javascript:void(0)" class="compare-speeds c-speeds-1">Compare Speeds <img src="/images/newgs-arrow-down.webp" /></a>
+						<div class="the-charts the-charts-all c-speeds-1-chart">
+							<canvas id="bar-chart-cpu" width="800" height="450"></canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- New Row -->
+			<div class="compare-table-row">
+				<div class="flex-grid">
+					<div class="col" id="newgs-table-col-1">
+						<strong class="block">Memory</strong>
+						<span class="block">Holds the data that is regularly used to keep track of all the monsters you kill.</span>
+					</div>
+					<div class="col" id="newgs-table-col-2">
+						<div class="flex-grid two">
+							<div class="col pt">
+								<span class="showmobile blue-text">Performance</span>
+								<strong class="block pts">DDR4 ECC 3400 MHz</strong>
+							</div>
+							<div class="col pt">
+								<span class="showmobile">Standard</span>
+								<span class="block pts">DDR4 3200 MHz</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="flex-grid one compare-speeds-div">
+					<div class="col">
+						<a href="javascript:void(0)" class="compare-speeds c-speeds-2">Compare Speeds <img src="/images/newgs-arrow-down.webp" /></a>
+						<div class="the-charts the-charts-all c-speeds-2-chart">
+							<canvas id="bar-chart-ram" width="800" height="450"></canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- New Row -->
+			<div class="compare-table-row light-bg">
+				<div class="flex-grid">
+					<div class="col" id="newgs-table-col-1">
+						<strong class="block">SSD</strong>
+						<span class="block">Controls how fast the large protions of your games data loads.</span>
+					</div>
+					<div class="col" id="newgs-table-col-2">
+						<div class="flex-grid two">
+							<div class="col pt">
+								<span class="showmobile blue-text">Performance</span>
+								<strong>Samsung NVMe (5100 MB/s)</strong>
+							</div>
+							<div class="col pt">
+								<span class="showmobile">Standard</span> Enterprise SSD (4300 MB/s)
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="flex-grid one compare-speeds-div">
+					<div class="col">
+						<a href="javascript:void(0)" class="compare-speeds c-speeds-3">Compare Speeds <img src="/images/newgs-arrow-down.webp" /></a>
+						<div class="the-charts the-charts-all c-speeds-3-chart">
+							<canvas id="bar-chart-ssd" width="800" height="450"></canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- New Row -->
+			<div class="compare-table-row">
+				<div class="flex-grid">
+					<div class="col" id="newgs-table-col-1">
+						<strong class="block">Player Slots</strong>
+						<span class="block">Max players allowed in your server.</span>
+					</div>
+					<div class="col" id="newgs-table-col-2">
+						<div class="flex-grid two">
+							<div class="col pts">
+								<span class="showmobile blue-text">Performance</span>
+								<strong>Unlimited</strong>
+							</div>
+							<div class="col pts">
+								<span class="showmobile">Standard</span>
+								<span class="block">Unlimited</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- New Row -->
+			<div class="compare-table-row light-bg">
+				<div class="flex-grid">
+					<div class="col" id="newgs-table-col-1">
+						<strong class="block">Cloud Backups</strong>
+						<span class="block">Number of backups you can create per server.</span>
+					</div>
+					<div class="col" id="newgs-table-col-2">
+						<div class="flex-grid two">
+							<div class="col pts">
+								<span class="showmobile blue-text">Performance</span>
+								<strong class="block">4</strong>
+							</div>
+							<div class="col">
+								<span class="showmobile">Standard</span>
+								<span class="block">Up to 2</span>
+								<strong class="blue-text">+$2.00/mo per 2 additional backups</strong>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- New Row -->
+			<div class="compare-table-row">
+				<div class="flex-grid">
+					<div class="col" id="newgs-table-col-1">
+						<strong class="block">Locations</strong>
+						<span class="block">Worldwide sites to house your game server.</span>
+					</div>
+					<div class="col" id="newgs-table-col-2">
+						<div class="flex-grid two">
+							<div class="col pts">
+								<span class="showmobile blue-text">Performance</span>
+								<strong>5 Locations</strong>
+							</div>
+							<div class="col pts">
+								<span class="showmobile">Budget</span> 4 Locations
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" type="text/javascript"></script>
-  <script type="text/javascript">
-    // CPU chart
-    new Chart(document.getElementById("bar-chart-cpu"), {
-      type: 'bar',
-      data: {
-        labels: ["AleForge Premium", "AleForge Standard", "Bisect Hosting", "Streamline Servers", "Nitrado", "HostHavoc"],
-        datasets: [{
-          label: "CPU Score (Single Core)",
-          backgroundColor: ["rgba(72, 158, 243, 0.25)", "rgba(109, 116, 134, 0.25)", "rgba(3, 221, 255, 0.25)", "rgba(140, 198, 63, 0.25)", "rgba(255, 215, 68, 0.25)", "rgba(254, 153, 0, 0.25)"],
-          borderColor: ["rgba(72, 158, 243, 1)", "rgba(109, 116, 134, 1)", "rgba(3, 221, 255, 1)", "rgba(140, 198, 63, 1)", "rgba(255, 215, 68, 1)", "rgba(254, 153, 0, 1)"],
-          borderWidth: 1,
-          borderRadius: 3,
-          data: [3527, 2923, 2665, 1961, 2440, 2706]
-        }]
-      },
-      options: {
-        indexAxis: 'y',
-        plugins: {
-          legend: {
-            labels: {
-              boxWidth: 0,
-              color: "#12161c",
-              font: {
-                size: 18,
-                family: "Metropolis-Bold",
-              }
-            },
-            onClick: null
-          }
-        },
-        title: {
-          display: false,
-          text: 'CPU Score'
-        }
-      },
-      responsive: true
-    });
-    // RAM chart
-    new Chart(document.getElementById("bar-chart-ram"), {
-      type: 'bar',
-      data: {
-        labels: ["AleForge Premium", "AleForge Standard", "Bisect Hosting", "Streamline Servers", "Nitrado", "HostHavoc"],
-        datasets: [{
-          label: "RAM Speed (Mhz)",
-          backgroundColor: ["rgba(72, 158, 243, 0.25)", "rgba(109, 116, 134, 0.25)", "rgba(3, 221, 255, 0.25)", "rgba(140, 198, 63, 0.25)", "rgba(255, 215, 68, 0.25)", "rgba(254, 153, 0, 0.25)"],
-          borderColor: ["rgba(72, 158, 243, 1)", "rgba(109, 116, 134, 1)", "rgba(3, 221, 255, 1)", "rgba(140, 198, 63, 1)", "rgba(255, 215, 68, 1)", "rgba(254, 153, 0, 1)"],
-          borderWidth: 1,
-          borderRadius: 3,
-          data: [3400, 3200, 2933, 2667, 2666, 2667]
-        }]
-      },
-      options: {
-        indexAxis: 'y',
-        plugins: {
-          legend: {
-            labels: {
-              boxWidth: 0,
-              color: "#12161c",
-              font: {
-                size: 18,
-                family: "Metropolis-Bold",
-              }
-            },
-            onClick: null
-          }
-        },
-        title: {
-          display: false,
-          text: 'CPU Score'
-        }
-      },
-      responsive: true
-    });
-    // SSD chart
-    new Chart(document.getElementById("bar-chart-ssd"), {
-      type: 'bar',
-      data: {
-        labels: ["AleForge Premium", "AleForge Standard", "Bisect Hosting", "Streamline Servers", "Nitrado", "HostHavoc"],
-        datasets: [{
-          label: "Read/Write Speed",
-          backgroundColor: ["rgba(72, 158, 243, 0.25)", "rgba(109, 116, 134, 0.25)", "rgba(3, 221, 255, 0.25)", "rgba(140, 198, 63, 0.25)", "rgba(255, 215, 68, 0.25)", "rgba(254, 153, 0, 0.25)"],
-          borderColor: ["rgba(72, 158, 243, 1)", "rgba(109, 116, 134, 1)", "rgba(3, 221, 255, 1)", "rgba(140, 198, 63, 1)", "rgba(255, 215, 68, 1)", "rgba(254, 153, 0, 1)"],
-          borderWidth: 1,
-          borderRadius: 3,
-          data: [5100, 4300, 3500, 3500, 2300, 3500]
-        }]
-      },
-      options: {
-        indexAxis: 'y',
-        plugins: {
-          legend: {
-            labels: {
-              boxWidth: 0,
-              color: "#12161c",
-              font: {
-                size: 18,
-                family: "Metropolis-Bold",
-              }
-            },
-            onClick: null
-          }
-        },
-        title: {
-          display: false,
-          text: 'CPU Score'
-        }
-      },
-      responsive: true
-    });
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+	// CPU chart
+	new Chart(document.getElementById("bar-chart-cpu"), {
+		type: "bar",
+		data: {
+			labels: ["AleForge Premium", "AleForge Standard", "Bisect Hosting", "Streamline Servers", "Nitrado", "HostHavoc"],
+			datasets: [
+				{
+					label: "CPU Score (Single Core)",
+					backgroundColor: ["rgba(72, 158, 243, 0.25)", "rgba(109, 116, 134, 0.25)", "rgba(3, 221, 255, 0.25)", "rgba(140, 198, 63, 0.25)", "rgba(255, 215, 68, 0.25)", "rgba(254, 153, 0, 0.25)"],
+					borderColor: ["rgba(72, 158, 243, 1)", "rgba(109, 116, 134, 1)", "rgba(3, 221, 255, 1)", "rgba(140, 198, 63, 1)", "rgba(255, 215, 68, 1)", "rgba(254, 153, 0, 1)"],
+					borderWidth: 1,
+					borderRadius: 3,
+					data: [3527, 2923, 2665, 1961, 2440, 2706],
+				},
+			],
+		},
+		options: {
+			indexAxis: "y",
+			plugins: {
+				legend: {
+					labels: {
+						boxWidth: 0,
+						color: "#12161c",
+						font: {
+							size: 18,
+							family: "Metropolis-Bold",
+						},
+					},
+					onClick: null,
+				},
+			},
+			title: {
+				display: false,
+				text: "CPU Score",
+			},
+		},
+		responsive: true,
+	});
+	// RAM chart
+	new Chart(document.getElementById("bar-chart-ram"), {
+		type: "bar",
+		data: {
+			labels: ["AleForge Premium", "AleForge Standard", "Bisect Hosting", "Streamline Servers", "Nitrado", "HostHavoc"],
+			datasets: [
+				{
+					label: "RAM Speed (Mhz)",
+					backgroundColor: ["rgba(72, 158, 243, 0.25)", "rgba(109, 116, 134, 0.25)", "rgba(3, 221, 255, 0.25)", "rgba(140, 198, 63, 0.25)", "rgba(255, 215, 68, 0.25)", "rgba(254, 153, 0, 0.25)"],
+					borderColor: ["rgba(72, 158, 243, 1)", "rgba(109, 116, 134, 1)", "rgba(3, 221, 255, 1)", "rgba(140, 198, 63, 1)", "rgba(255, 215, 68, 1)", "rgba(254, 153, 0, 1)"],
+					borderWidth: 1,
+					borderRadius: 3,
+					data: [3400, 3200, 2933, 2667, 2666, 2667],
+				},
+			],
+		},
+		options: {
+			indexAxis: "y",
+			plugins: {
+				legend: {
+					labels: {
+						boxWidth: 0,
+						color: "#12161c",
+						font: {
+							size: 18,
+							family: "Metropolis-Bold",
+						},
+					},
+					onClick: null,
+				},
+			},
+			title: {
+				display: false,
+				text: "CPU Score",
+			},
+		},
+		responsive: true,
+	});
+	// SSD chart
+	new Chart(document.getElementById("bar-chart-ssd"), {
+		type: "bar",
+		data: {
+			labels: ["AleForge Premium", "AleForge Standard", "Bisect Hosting", "Streamline Servers", "Nitrado", "HostHavoc"],
+			datasets: [
+				{
+					label: "Read/Write Speed",
+					backgroundColor: ["rgba(72, 158, 243, 0.25)", "rgba(109, 116, 134, 0.25)", "rgba(3, 221, 255, 0.25)", "rgba(140, 198, 63, 0.25)", "rgba(255, 215, 68, 0.25)", "rgba(254, 153, 0, 0.25)"],
+					borderColor: ["rgba(72, 158, 243, 1)", "rgba(109, 116, 134, 1)", "rgba(3, 221, 255, 1)", "rgba(140, 198, 63, 1)", "rgba(255, 215, 68, 1)", "rgba(254, 153, 0, 1)"],
+					borderWidth: 1,
+					borderRadius: 3,
+					data: [5100, 4300, 3500, 3500, 2300, 3500],
+				},
+			],
+		},
+		options: {
+			indexAxis: "y",
+			plugins: {
+				legend: {
+					labels: {
+						boxWidth: 0,
+						color: "#12161c",
+						font: {
+							size: 18,
+							family: "Metropolis-Bold",
+						},
+					},
+					onClick: null,
+				},
+			},
+			title: {
+				display: false,
+				text: "CPU Score",
+			},
+		},
+		responsive: true,
+	});
 
-    $(".c-speeds-1").click(function() {
-      $('.compare-speeds').removeClass('opened-speed')
-      $(this).toggleClass('opened-speed')
-      $(".c-speeds-2-chart").slideUp('fast');
-      $(".c-speeds-3-chart").slideUp('fast');
-      $(this).parent().find(".the-charts").slideToggle('slow');
-    });
-    $(".c-speeds-2").click(function() {
-      $('.compare-speeds').removeClass('opened-speed')
-      $(this).toggleClass('opened-speed')
-      $(".c-speeds-1-chart").slideUp('fast');
-      $(".c-speeds-3-chart").slideUp('fast');
-      $(this).parent().find(".the-charts").slideToggle('slow');
-    });
-    $(".c-speeds-3").click(function() {
-      $('.compare-speeds').removeClass('opened-speed')
-      $(this).toggleClass('opened-speed')
-      $(".c-speeds-2-chart").slideUp('fast');
-      $(".c-speeds-1-chart").slideUp('fast');
-      $(this).parent().find(".the-charts").slideToggle('slow');
-    });
-
-  </script>
+	$(".c-speeds-1").click(function () {
+		$(".compare-speeds").removeClass("opened-speed");
+		$(this).toggleClass("opened-speed");
+		$(".c-speeds-2-chart").slideUp("fast");
+		$(".c-speeds-3-chart").slideUp("fast");
+		$(this).parent().find(".the-charts").slideToggle("slow");
+	});
+	$(".c-speeds-2").click(function () {
+		$(".compare-speeds").removeClass("opened-speed");
+		$(this).toggleClass("opened-speed");
+		$(".c-speeds-1-chart").slideUp("fast");
+		$(".c-speeds-3-chart").slideUp("fast");
+		$(this).parent().find(".the-charts").slideToggle("slow");
+	});
+	$(".c-speeds-3").click(function () {
+		$(".compare-speeds").removeClass("opened-speed");
+		$(this).toggleClass("opened-speed");
+		$(".c-speeds-2-chart").slideUp("fast");
+		$(".c-speeds-1-chart").slideUp("fast");
+		$(this).parent().find(".the-charts").slideToggle("slow");
+	});
+</script>

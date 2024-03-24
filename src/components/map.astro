@@ -1,316 +1,332 @@
+<a name="map"></a>
 
-  <a name="map"></a>
-
-  <section id="new-locations-div">
-    <div class="container">
-
-  <div class="title">
-    <h2>
-        <small>OUR LOCATIONS</small>Located all Around The Globe
-      </h2>
-    <p>Pick the server location worldwide that works best for you and your friends. Our map automatically tests your latency to each site in real-time.</p>
-  </div>
-<ul id="new-locations">
-  <li class="all-loc america loc-ca">San Jose, California
-    <div class="ping text-success" id="avg-lac">Loading</div>
-  </li>
-  <li class="all-loc america loc-tx">Dallas, Texas
-    <div class="ping text-success" id="avg-dtx">Loading</div>
-  </li>
-  <li class="all-loc america loc-va active">Vint Hill, Virginia
-    <div class="ping text-success" id="avg-va">Loading</div>
-  </li>
-  <li class="all-loc america loc-chi">Chicago, Illinois
-    <div class="ping text-success" id="avg-chi">Loading</div>
-  </li>
-  <li class="all-loc america loc-org">Bend, Oregon
-    <div class="ping text-success" id="avg-org">Loading</div>
-  </li>
-  <li class="all-loc germany loc-gr">Falkenstein, Germany
-    <div class="ping text-success" id="avg-gr">Loading</div>
-  </li>
-  <li class="all-loc australia loc-au">Sydney, Australia
-    <div class="ping text-warning" id="avg-au">Loading</div>
-  </li>
-  <li class="all-loc singapore loc-sg">Singapore
-    <div class="ping text-warning" id="avg-sg">Loading</div>
-  </li>
-  <!--<li class="all-loc america loc-atl active">Atlanta
+<section id="new-locations-div">
+	<div class="container">
+		<div class="title">
+			<h2>
+				<small>OUR LOCATIONS</small>Located all Around The Globe
+			</h2>
+			<p>Pick the server location worldwide that works best for you and your friends. Our map automatically tests your latency to each site in real-time.</p>
+		</div>
+		<ul id="new-locations">
+			<li class="all-loc america loc-ca">
+				San Jose, California
+				<div class="ping text-success" id="avg-lac">Loading</div>
+			</li>
+			<li class="all-loc america loc-tx">
+				Dallas, Texas
+				<div class="ping text-success" id="avg-dtx">Loading</div>
+			</li>
+			<li class="all-loc america loc-va active">
+				Vint Hill, Virginia
+				<div class="ping text-success" id="avg-va">Loading</div>
+			</li>
+			<li class="all-loc america loc-chi">
+				Chicago, Illinois
+				<div class="ping text-success" id="avg-chi">Loading</div>
+			</li>
+			<li class="all-loc america loc-org">
+				Bend, Oregon
+				<div class="ping text-success" id="avg-org">Loading</div>
+			</li>
+			<li class="all-loc germany loc-gr">
+				Falkenstein, Germany
+				<div class="ping text-success" id="avg-gr">Loading</div>
+			</li>
+			<li class="all-loc australia loc-au">
+				Sydney, Australia
+				<div class="ping text-warning" id="avg-au">Loading</div>
+			</li>
+			<li class="all-loc singapore loc-sg">
+				Singapore
+				<div class="ping text-warning" id="avg-sg">Loading</div>
+			</li>
+			<!--<li class="all-loc america loc-atl active">Atlanta
     <div class="ping text-success" id="avg-atl">Loading</div>
   </li>-->
-  <!--<li class="all-loc amsterdam loc-ams">Amsterdam
+			<!--<li class="all-loc amsterdam loc-ams">Amsterdam
     <div class="ping text-success" id="avg-ams">Loading</div>
   </li>-->
-</ul>
-<div class="rounded-map">
-  <div class="pin pin-both-locations" id="loc-ca">
-    <div class="pin-hover">
-      <strong class="block">San Jose, CA</strong> Test IP: <a href="#">ca1.aleforge.net</a>
-    </div>
-  </div>
-  <div class="pin pin-both-locations" id="loc-chi">
-    <div class="pin-hover">
-      <strong class="block">Chicago, IL</strong> Test IP: <a href="#">il2.aleforge.net</a>
-    </div>
-  </div>
-  <div class="pin pin-both-locations" id="loc-org">
-    <div class="pin-hover">
-      <strong class="block">Bend, OR</strong> Test IP: <a href="#">org.aleforge.net</a>
-    </div>
-  </div>
-  <div class="pin pin-both-locations" id="loc-tx">
-    <div class="pin-hover">
-      <strong class="block">Dallas, TX</strong> Test IP: <a href="#">tx1.aleforge.net</a>
-    </div>
-  </div>
-  <div class="pin pin-both-locations active" id="loc-va">
-    <div class="pin-hover">
-      <strong class="block">Vint Hill, VA</strong> Test IP: <a href="#">va1.aleforge.net</a>
-    </div>
-  </div>
-  <div class="pin pin-both-locations" id="loc-gr">
-    <div class="pin-hover">
-      <strong class="block">Frankfurt, GR</strong> Test IP: <a href="#">fr1.aleforge.net</a>
-    </div>
-  </div>
-  
-  <div class="pin pin-both-locations" id="loc-au">
-    <div class="pin-hover">
-      <strong class="block">Sydney, AU</strong> Test IP: <a href="#">sy1.aleforge.net</a>
-    </div>
-  </div>
-  <div class="pin pin-both-locations" id="loc-sg">
-    <div class="pin-hover">
-      <strong class="block">Singapore, SG</strong> Test IP: <a href="#">sg1.aleforge.net</a>
-    </div>
-  </div>
-  
-</div>
-<ul id="locations-legend">
-  <li class="budget-locations">
-    <img src="/images/pin-budget.webp" />Standard
-  </li>
-    <li class="active-locations">
-      <img src="/images/pin-premium.webp" />Premium
-    </li>
-  <li class="both-locations">
-    <img src="/images/pin-both.webp" /><span class="budget-locations">Standard &</span> <span class="active-locations">Premium</span>
-  </li>
-</ul>
+		</ul>
+		<div class="rounded-map">
+			<div class="pin pin-both-locations" id="loc-ca">
+				<div class="pin-hover">
+					<strong class="block">San Jose, CA</strong> Test IP: <a href="#">ca1.aleforge.net</a>
+				</div>
+			</div>
+			<div class="pin pin-both-locations" id="loc-chi">
+				<div class="pin-hover">
+					<strong class="block">Chicago, IL</strong> Test IP: <a href="#">il2.aleforge.net</a>
+				</div>
+			</div>
+			<div class="pin pin-both-locations" id="loc-org">
+				<div class="pin-hover">
+					<strong class="block">Bend, OR</strong> Test IP: <a href="#">org.aleforge.net</a>
+				</div>
+			</div>
+			<div class="pin pin-both-locations" id="loc-tx">
+				<div class="pin-hover">
+					<strong class="block">Dallas, TX</strong> Test IP: <a href="#">tx1.aleforge.net</a>
+				</div>
+			</div>
+			<div class="pin pin-both-locations active" id="loc-va">
+				<div class="pin-hover">
+					<strong class="block">Vint Hill, VA</strong> Test IP: <a href="#">va1.aleforge.net</a>
+				</div>
+			</div>
+			<div class="pin pin-both-locations" id="loc-gr">
+				<div class="pin-hover">
+					<strong class="block">Frankfurt, GR</strong> Test IP: <a href="#">fr1.aleforge.net</a>
+				</div>
+			</div>
 
+			<div class="pin pin-both-locations" id="loc-au">
+				<div class="pin-hover">
+					<strong class="block">Sydney, AU</strong> Test IP: <a href="#">sy1.aleforge.net</a>
+				</div>
+			</div>
+			<div class="pin pin-both-locations" id="loc-sg">
+				<div class="pin-hover">
+					<strong class="block">Singapore, SG</strong> Test IP: <a href="#">sg1.aleforge.net</a>
+				</div>
+			</div>
+		</div>
+		<ul id="locations-legend">
+			<li class="budget-locations">
+				<img src="/images/pin-budget.svg" />Standard
+			</li>
+			<li class="active-locations">
+				<img src="/images/pin-premium.svg" />Premium
+			</li>
+			<li class="both-locations">
+				<img src="/images/pin-both.svg" /><span class="budget-locations">Standard &</span>
+				<span class="active-locations">Premium</span>
+			</li>
+		</ul>
 
-<script type="text/javascript">
-$(document).ready(function() {
-  const locations = [{
-    id: "dtx",
-    ws: new WebSocket('wss://tx1.aleforge.net:4430/ws')
-  }, {
-    id: "va",
-    ws: new WebSocket('wss://va1.aleforge.net:4430/ws')
-  }, {
-    id: "lac",
-    ws: new WebSocket('wss://ca3.aleforge.net:4430/ws')
-  }, {
-    id: "au",
-    ws: new WebSocket('wss://sy1.aleforge.net:4430/ws')
-  }, {
-    id: "chi",
-    ws: new WebSocket('wss://il2.aleforge.net:4430/ws')
-  }, {
-    id: "ams",
-    ws: new WebSocket('wss://sy1.aleforge.net/ws')
-  }, {
-    id: "atl",
-    ws: new WebSocket('wss://sy1.aleforge.net/ws')
-  }, {
-    id: "org",
-    ws: new WebSocket('wss://sy1.aleforge.net/ws')
-  }, {
-    id: "sg",
-    ws: new WebSocket('wss://sg1.aleforge.net:4430/ws')
-  }, {
-    id: "gr",
-    ws: new WebSocket('wss://fr5.aleforge.net:4430/ws')
-  }]
-  const delay = ms => new Promise(resolve => setTimeout(resolve, ms, ));
+		<script type="text/javascript">
+			$(document).ready(function () {
+				const locations = [
+					{
+						id: "dtx",
+						ws: new WebSocket("wss://tx1.aleforge.net:4430/ws"),
+					},
+					{
+						id: "va",
+						ws: new WebSocket("wss://va1.aleforge.net:4430/ws"),
+					},
+					{
+						id: "lac",
+						ws: new WebSocket("wss://ca3.aleforge.net:4430/ws"),
+					},
+					{
+						id: "au",
+						ws: new WebSocket("wss://sy1.aleforge.net:4430/ws"),
+					},
+					{
+						id: "chi",
+						ws: new WebSocket("wss://il2.aleforge.net:4430/ws"),
+					},
+					{
+						id: "ams",
+						ws: new WebSocket("wss://sy1.aleforge.net/ws"),
+					},
+					{
+						id: "atl",
+						ws: new WebSocket("wss://sy1.aleforge.net/ws"),
+					},
+					{
+						id: "org",
+						ws: new WebSocket("wss://sy1.aleforge.net/ws"),
+					},
+					{
+						id: "sg",
+						ws: new WebSocket("wss://sg1.aleforge.net:4430/ws"),
+					},
+					{
+						id: "gr",
+						ws: new WebSocket("wss://fr5.aleforge.net:4430/ws"),
+					},
+				];
+				const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-  function textcolor(el, val, max_green, max_yellow) {
-    if (val < max_green) {
-      el.removeClass("text-danger");
-      el.removeClass("text-warning");
-      el.addClass("text-success");
-    } else if (val >= max_green && val < max_yellow) {
-      el.removeClass("text-danger");
-      el.addClass("text-warning");
-      el.removeClass("text-success");
-    } else {
-      el.addClass("text-danger");
-      el.removeClass("text-warning");
-      el.removeClass("text-success");
-    }
-  }
+				function textcolor(el, val, max_green, max_yellow) {
+					if (val < max_green) {
+						el.removeClass("text-danger");
+						el.removeClass("text-warning");
+						el.addClass("text-success");
+					} else if (val >= max_green && val < max_yellow) {
+						el.removeClass("text-danger");
+						el.addClass("text-warning");
+						el.removeClass("text-success");
+					} else {
+						el.addClass("text-danger");
+						el.removeClass("text-warning");
+						el.removeClass("text-success");
+					}
+				}
 
-  function blockUntilConnected(loc) {
-    return new Promise((resolve, reject) => {
-      if (!loc.ws) return reject(null);
-      if (loc.ws.readyState === 1) return resolve();
-      else if (loc.ws.readyState === 0) {
-        loc.ws.addEventListener('open', evt => {
-          return resolve();
-        })
-      }
-    });
-  }
-  async function doPing(loc) {
-    await blockUntilConnected(loc);
-    let startTime = Date.now();
-    loc.ws.send('ping-' + startTime);
-    await new Promise((resolve) => {
-      let listener = evt => {
-        resolve(evt.data);
-        loc.ws.removeEventListener('message', listener);
-      }
-      loc.ws.addEventListener('message', listener);
-    });
-    return Date.now() - startTime;
-  }
-  async function pingLocation(id) {
-    let location = null;
-    for (const i in locations) {
-      if (locations[i].id === id) {
-        location = locations[i];
-        break;
-      }
-    }
-    const timeStart = Date.now();
-    while ((Date.now() - timeStart) < 12000) {
-      const ms = await doPing(location);
-      $(`#avg-${location.id}`).text(`${Math.round(ms)}ms`)
-      textcolor($(`#avg-${location.id}`), ms, 150, 300);
-      await delay(Math.max(400 - ms, 10));
-    }
-  }
-  async function main() {
-    await Promise.all(locations.map(loc => pingLocation(loc.id)));
-  }
-  main();
-});
+				function blockUntilConnected(loc) {
+					return new Promise((resolve, reject) => {
+						if (!loc.ws) return reject(null);
+						if (loc.ws.readyState === 1) return resolve();
+						else if (loc.ws.readyState === 0) {
+							loc.ws.addEventListener("open", (evt) => {
+								return resolve();
+							});
+						}
+					});
+				}
+				async function doPing(loc) {
+					await blockUntilConnected(loc);
+					let startTime = Date.now();
+					loc.ws.send("ping-" + startTime);
+					await new Promise((resolve) => {
+						let listener = (evt) => {
+							resolve(evt.data);
+							loc.ws.removeEventListener("message", listener);
+						};
+						loc.ws.addEventListener("message", listener);
+					});
+					return Date.now() - startTime;
+				}
+				async function pingLocation(id) {
+					let location = null;
+					for (const i in locations) {
+						if (locations[i].id === id) {
+							location = locations[i];
+							break;
+						}
+					}
+					const timeStart = Date.now();
+					while (Date.now() - timeStart < 12000) {
+						const ms = await doPing(location);
+						$(`#avg-${location.id}`).text(`${Math.round(ms)}ms`);
+						textcolor($(`#avg-${location.id}`), ms, 150, 300);
+						await delay(Math.max(400 - ms, 10));
+					}
+				}
+				async function main() {
+					await Promise.all(locations.map((loc) => pingLocation(loc.id)));
+				}
+				main();
+			});
 
-$(".loc-ca").hover(function() {
-  $(".pin").removeClass("active");
-  $(".all-loc").removeClass("active");
-  $(this).addClass("active");
-  $("#loc-ca").addClass("active");
-});
+			$(".loc-ca").hover(function () {
+				$(".pin").removeClass("active");
+				$(".all-loc").removeClass("active");
+				$(this).addClass("active");
+				$("#loc-ca").addClass("active");
+			});
 
-$(".loc-tx").hover(function() {
-  $(".all-loc").removeClass("active");
-  $(this).addClass("active");
-  $(".pin").removeClass("active");
-  $("#loc-tx").addClass("active");
-});
+			$(".loc-tx").hover(function () {
+				$(".all-loc").removeClass("active");
+				$(this).addClass("active");
+				$(".pin").removeClass("active");
+				$("#loc-tx").addClass("active");
+			});
 
-$(".loc-va").hover(function() {
-  $(".all-loc").removeClass("active");
-  $(this).addClass("active");
-  $(".pin").removeClass("active");
-  $("#loc-va").addClass("active");
-});
+			$(".loc-va").hover(function () {
+				$(".all-loc").removeClass("active");
+				$(this).addClass("active");
+				$(".pin").removeClass("active");
+				$("#loc-va").addClass("active");
+			});
 
-$(".loc-gr").hover(function() {
-  $(".all-loc").removeClass("active");
-  $(this).addClass("active");
-  $(".pin").removeClass("active");
-  $("#loc-gr").addClass("active");
-});
+			$(".loc-gr").hover(function () {
+				$(".all-loc").removeClass("active");
+				$(this).addClass("active");
+				$(".pin").removeClass("active");
+				$("#loc-gr").addClass("active");
+			});
 
-$(".loc-au").hover(function() {
-  $(".all-loc").removeClass("active");
-  $(this).addClass("active");
-  $(".pin").removeClass("active");
-  $("#loc-au").addClass("active");
-});
+			$(".loc-au").hover(function () {
+				$(".all-loc").removeClass("active");
+				$(this).addClass("active");
+				$(".pin").removeClass("active");
+				$("#loc-au").addClass("active");
+			});
 
-$(".loc-chi").hover(function() {
-  $(".all-loc").removeClass("active");
-  $(this).addClass("active");
-  $(".pin").removeClass("active");
-  $("#loc-chi").addClass("active");
-});
+			$(".loc-chi").hover(function () {
+				$(".all-loc").removeClass("active");
+				$(this).addClass("active");
+				$(".pin").removeClass("active");
+				$("#loc-chi").addClass("active");
+			});
 
-$(".loc-sg").hover(function() {
-  $(".all-loc").removeClass("active");
-  $(this).addClass("active");
-  $(".pin").removeClass("active");
-  $("#loc-sg").addClass("active");
-});
+			$(".loc-sg").hover(function () {
+				$(".all-loc").removeClass("active");
+				$(this).addClass("active");
+				$(".pin").removeClass("active");
+				$("#loc-sg").addClass("active");
+			});
 
-$(".loc-atl").hover(function() {
-  $(".all-loc").removeClass("active");
-  $(this).addClass("active");
-  $(".pin").removeClass("active");
-  $("#loc-atl").addClass("active");
-});
+			$(".loc-atl").hover(function () {
+				$(".all-loc").removeClass("active");
+				$(this).addClass("active");
+				$(".pin").removeClass("active");
+				$("#loc-atl").addClass("active");
+			});
 
-$(".loc-org").hover(function() {
-  $(".all-loc").removeClass("active");
-  $(this).addClass("active");
-  $(".pin").removeClass("active");
-  $("#loc-org").addClass("active");
-});
+			$(".loc-org").hover(function () {
+				$(".all-loc").removeClass("active");
+				$(this).addClass("active");
+				$(".pin").removeClass("active");
+				$("#loc-org").addClass("active");
+			});
 
-$(".loc-ams").hover(function() {
-  $(".all-loc").removeClass("active");
-  $(this).addClass("active");
-  $(".pin").removeClass("active");
-  $("#loc-ams").addClass("active");
-});
+			$(".loc-ams").hover(function () {
+				$(".all-loc").removeClass("active");
+				$(this).addClass("active");
+				$(".pin").removeClass("active");
+				$("#loc-ams").addClass("active");
+			});
 
-$(".pin").hover(function() {
-  $(".pin").removeClass("active");
-  $(this).addClass("active");
-});
+			$(".pin").hover(function () {
+				$(".pin").removeClass("active");
+				$(this).addClass("active");
+			});
 
-// Additional hover handlers for pins
-$("#loc-ca").hover(function() {
-  $(".all-loc").removeClass("active");
-  $(".loc-ca").addClass("active");
-});
+			// Additional hover handlers for pins
+			$("#loc-ca").hover(function () {
+				$(".all-loc").removeClass("active");
+				$(".loc-ca").addClass("active");
+			});
 
-$("#loc-tx").hover(function() {
-  $(".all-loc").removeClass("active");
-  $(".loc-tx").addClass("active");
-});
+			$("#loc-tx").hover(function () {
+				$(".all-loc").removeClass("active");
+				$(".loc-tx").addClass("active");
+			});
 
-$("#loc-va").hover(function() {
-  $(".all-loc").removeClass("active");
-  $(".loc-va").addClass("active");
-});
+			$("#loc-va").hover(function () {
+				$(".all-loc").removeClass("active");
+				$(".loc-va").addClass("active");
+			});
 
-$("#loc-gr").hover(function() {
-  $(".all-loc").removeClass("active");
-  $(".loc-gr").addClass("active");
-});
+			$("#loc-gr").hover(function () {
+				$(".all-loc").removeClass("active");
+				$(".loc-gr").addClass("active");
+			});
 
-$("#loc-au").hover(function() {
-  $(".all-loc").removeClass("active");
-  $(".loc-au").addClass("active");
-});
+			$("#loc-au").hover(function () {
+				$(".all-loc").removeClass("active");
+				$(".loc-au").addClass("active");
+			});
 
-$("#loc-chi").hover(function() {
-  $(".all-loc").removeClass("active");
-  $(".loc-chi").addClass("active");
-});
+			$("#loc-chi").hover(function () {
+				$(".all-loc").removeClass("active");
+				$(".loc-chi").addClass("active");
+			});
 
-$("#loc-sg").hover(function() {
-  $(".all-loc").removeClass("active");
-  $(".loc-sg").addClass("active");
-});
+			$("#loc-sg").hover(function () {
+				$(".all-loc").removeClass("active");
+				$(".loc-sg").addClass("active");
+			});
 
-$("#loc-atl").hover(function() {
-  $(".all-loc").removeClass("active");
-  $(".loc-atl").addClass("active");
-});
-</script>
-    </div>
-  </section>
+			$("#loc-atl").hover(function () {
+				$(".all-loc").removeClass("active");
+				$(".loc-atl").addClass("active");
+			});
+		</script>
+	</div>
+</section>

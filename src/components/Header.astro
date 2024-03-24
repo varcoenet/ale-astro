@@ -1,106 +1,101 @@
 ---
-import { SITE_TITLE } from '../consts';
+import { SITE_TITLE } from "../consts";
 ---
 
-
-		<!--  <HeaderLink href="/blog">Blog</HeaderLink> -->
-
-		
-
-
+<!--  <HeaderLink href="/blog">Blog</HeaderLink> -->
 <header class="header">
-    <div id="top-head">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <ul class="mnav float-none left-ul">
-                        <li><a href="https://billing.aleforge.net/submitticket.php?step=2&deptid=1"><img src="/images/email-us.svg" class="va-mid mr-1" alt=""> sales@aleforge.net</a></li>
-                        <li><a href="https://www.tidio.com/talk/ngvrd3qge3zp6wonytswsxmor747esrj"><img src="/images/live-chat.svg" class="va-mid mr-1" alt=""> Live Chat (7AM-9PM EST)</a></li>
-                    </ul>
-                </div>
-                <div class="col ml-auto text-right">
-                    <ul class="mnav">
+	<div id="top-head">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<ul class="mnav float-none left-ul">
+						<li><a href="https://billing.aleforge.net/submitticket.php?step=2&deptid=1"><img src="/images/email-us.svg" class="va-mid mr-1" alt="" /> sales@aleforge.net</a></li>
+						<li><a href="https://www.tidio.com/talk/ngvrd3qge3zp6wonytswsxmor747esrj"><img src="/images/live-chat.svg" class="va-mid mr-1" alt="" /> Live Chat (7AM-9PM EST)</a></li>
+					</ul>
+				</div>
+				<div class="col ml-auto text-right">
+					<ul class="mnav">
 						<li><a href="/blog/">Blog</a></li>
-                        <li><a href="https://billing.aleforge.net/submitticket.php">Contact</a></li>
+						<li><a href="https://billing.aleforge.net/submitticket.php">Contact</a></li>
 						<li class="button-dropdown">
-                            <a href="#" class="dropdown dropdown-toggle" id="supportDropdown" data-bs-toggle="dropdown" aria-expanded="false">Support <img src="/images/drop-hover.svg" class="va-mid ml-1 drop"></a>
-                            <div class="dropdown-menu single-links-dropdown" aria-labelledby="supportDropdown">
-                                <a class="dropdown-item" href="https://billing.aleforge.net/knowledgebase.php">Knowlegebase</a>
-                                <a class="dropdown-item" href="https://billing.aleforge.net/submitticket.php?step=2&deptid=1">Open Ticket</a>
-                            </div>
-                        </li>
-						<li class="button-dropdown">
-                            <a href="#" class="dropdown dropdown-toggle" id="panelsDropdown" data-bs-toggle="dropdown" aria-expanded="false">Control Panels <img src="/images/drop-hover.svg" class="va-mid ml-1 drop"></a>
-                            <div class="dropdown-menu single-links-dropdown" aria-labelledby="panelsDropdown">
-                                <a href="https://billing.aleforge.net/">Client Area</a>
-                                <a href="#">Game Panel </a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container" id="header">
-        <div class="row">
-            <div class="col col-logo">
-                <a href="/" class="logo"><img src="/images/logo.webp" alt=""></a>
-            </div>
-            <div class="col">
-                <ul class="mnav">
-                    <li><a href="/gameservers">Game Servers</a></li> 
-                    <li><a href="/games/minecraft">Minecraft Servers</a></li> 
-					<li class="button-dropdown">
-                         <a href="#" class="dropdown-toggle dropdown" id="solutionsDropdown" data-bs-toggle="dropdown" aria-expanded="false">Hosting <img src="/images/drop-hover.svg" class="va-mid ml-1 drop"></a>
-                        <div class="dropdown-menu" aria-labelledby="solutionsDropdown">
-                            <a class="dropdown-item" href="/web-hosting/">
-                                <div class="nav-icon"><img src="/images/web-hosting.webp" srcset="/images/web-hosting.webp 1x, /images/web-hosting@2x.webp 2x" class="width-20"></div>
-                                    <strong>Web Hosting</strong>
-                                    <span>A small one liner about the service.</span>
-                                </a>
-                                <a class="dropdown-item" href="https://moonqube.com/virtual-machines" target="_blank">
-                                    <div class="nav-icon qube-icon"><img src="/images/moo-qubes.webp" srcset="/images/moo-qubes.webp 1x, /images/moo-qubes@2x.webp 2x" class="width-20"><span class="is-external"><img src="/images/external.svg" class="va-mid"></span></div>
-                                    <strong>Virtual Machines</strong>
-                                    <span>A small one liner about the service.</span>
-                                </a>
-                                <a class="dropdown-item" href="https://moonqube.com/kubernetes" target="_blank">
-                                    <div class="nav-icon qube-icon"><img src="/images/moo-kubernetes.svg" class="width-20"><span class="is-external"><img src="/images/external.svg" class="va-mid"></span></div>
-                                    <strong>Kubernetes</strong>
-                                    <span>A small one liner about the service.</span>
-                                </a>
-                                <a class="dropdown-item" href="https://moonqube.com/block-storage" target="_blank">
-                                    <div class="nav-icon qube-icon"><img src="/images/moo-block.webp" srcset="/images/moo-block.webp 1x, /images/moo-block@2x.webp 2x" class="width-20"><span class="is-external"><img src="/images/external.svg" class="va-mid"></span></div>
-                                    <strong>Block Storage</strong>
-                                    <span>A small one liner about the service.</span>
-                                </a>
-                                <a class="dropdown-item" href="https://moonqube.com/object-storage" target="_blank">
-                                    <div class="nav-icon qube-icon"><img src="/images/moo-object.webp" srcset="/images/moo-object.webp 1x, /images/moo-object@2x.webp 2x" class="height-20"><span class="is-external"><img src="/images/external.svg" class="va-mid"></span></div>
-                                    <strong>Object Storage</strong>
-                                    <span>A small one liner about the service.</span>
-                                </a>
-                            </div>
-                        </li>
-						<li class="button-dropdown">
-                            <a href="#" class="dropdown dropdown-toggle" id="resourcesDropdown" data-bs-toggle="dropdown" aria-expanded="false">Company <img src="/images/drop-hover.svg" class="va-mid ml-1 drop"></a>
-                            <div class="dropdown-menu single-links-dropdown" aria-labelledby="resourcesDropdown">
-                                <a class="dropdown-item" href="/about/">About Us</a>
-                                <a class="dropdown-item" href="/blog/">Blog</a>
-                                <a class="dropdown-item" href="/control-panel/">Control Panel</a>
-                                <a class="dropdown-item" href="/terms-of-service/">Terms of Service</a>
-                            </div>
-                        </li>
-						<li>&bull;</li>
-						<li><a href="#">Login</a></li>
-						<li><a href="/about.html" class="button">Sign Up</a></li>
-                    	<li>
-							<div class="button_container" id="toggle">
-								<span class="top"></span>
-								<span class="middle"></span>
-								<span class="bottom"></span> 
+							<a href="#" class="dropdown dropdown-toggle" id="supportDropdown" data-bs-toggle="dropdown" aria-expanded="false">Support <img src="/images/drop-hover.svg" class="va-mid ml-1 drop" /></a>
+							<div class="dropdown-menu single-links-dropdown" aria-labelledby="supportDropdown">
+								<a class="dropdown-item" href="https://billing.aleforge.net/knowledgebase.php">Knowlegebase</a>
+								<a class="dropdown-item" href="https://billing.aleforge.net/submitticket.php?step=2&deptid=1">Open Ticket</a>
 							</div>
-                    	</li>
-                	</ul>
-            	</div>
-        	</div>
-    	</div>
-	</header>
+						</li>
+						<li class="button-dropdown">
+							<a href="#" class="dropdown dropdown-toggle" id="panelsDropdown" data-bs-toggle="dropdown" aria-expanded="false">Control Panels <img src="/images/drop-hover.svg" class="va-mid ml-1 drop" /></a>
+							<div class="dropdown-menu single-links-dropdown" aria-labelledby="panelsDropdown">
+								<a href="https://billing.aleforge.net/">Client Area</a>
+								<a href="#">Game Panel</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container" id="header">
+		<div class="row">
+			<div class="col col-logo">
+				<a href="/" class="logo"><img src="/images/logo.webp" alt="" /></a>
+			</div>
+			<div class="col">
+				<ul class="mnav">
+					<li><a href="/gameservers">Game Servers</a></li>
+					<li><a href="/games/minecraft">Minecraft Servers</a></li>
+					<li class="button-dropdown">
+						<a href="#" class="dropdown-toggle dropdown" id="solutionsDropdown" data-bs-toggle="dropdown" aria-expanded="false">Hosting <img src="/images/drop-hover.svg" class="va-mid ml-1 drop" /></a>
+						<div class="dropdown-menu" aria-labelledby="solutionsDropdown">
+							<a class="dropdown-item" href="/web-hosting/">
+								<div class="nav-icon"><img src="/images/web-hosting.webp" srcset="/images/web-hosting.webp 1x, /images/web-hosting@2x.webp 2x" class="width-20" /></div>
+								<strong>Web Hosting</strong>
+								<span>A small one liner about the service.</span>
+							</a>
+							<a class="dropdown-item" href="https://moonqube.com/virtual-machines" target="_blank">
+								<div class="nav-icon qube-icon"><img src="/images/moo-qubes.webp" srcset="/images/moo-qubes.webp 1x, /images/moo-qubes@2x.webp 2x" class="width-20" /><span class="is-external"><img src="/images/external.svg" class="va-mid" /></span></div>
+								<strong>Virtual Machines</strong>
+								<span>A small one liner about the service.</span>
+							</a>
+							<a class="dropdown-item" href="https://moonqube.com/kubernetes" target="_blank">
+								<div class="nav-icon qube-icon"><img src="/images/moo-kubernetes.svg" class="width-20" /><span class="is-external"><img src="/images/external.svg" class="va-mid" /></span></div>
+								<strong>Kubernetes</strong>
+								<span>A small one liner about the service.</span>
+							</a>
+							<a class="dropdown-item" href="https://moonqube.com/block-storage" target="_blank">
+								<div class="nav-icon qube-icon"><img src="/images/moo-block.webp" srcset="/images/moo-block.webp 1x, /images/moo-block@2x.webp 2x" class="width-20" /><span class="is-external"><img src="/images/external.svg" class="va-mid" /></span></div>
+								<strong>Block Storage</strong>
+								<span>A small one liner about the service.</span>
+							</a>
+							<a class="dropdown-item" href="https://moonqube.com/object-storage" target="_blank">
+								<div class="nav-icon qube-icon"><img src="/images/moo-object.webp" srcset="/images/moo-object.webp 1x, /images/moo-object@2x.webp 2x" class="height-20" /><span class="is-external"><img src="/images/external.svg" class="va-mid" /></span></div>
+								<strong>Object Storage</strong>
+								<span>A small one liner about the service.</span>
+							</a>
+						</div>
+					</li>
+					<li class="button-dropdown">
+						<a href="#" class="dropdown dropdown-toggle" id="resourcesDropdown" data-bs-toggle="dropdown" aria-expanded="false">Company <img src="/images/drop-hover.svg" class="va-mid ml-1 drop" /></a>
+						<div class="dropdown-menu single-links-dropdown" aria-labelledby="resourcesDropdown">
+							<a class="dropdown-item" href="/about/">About Us</a>
+							<a class="dropdown-item" href="/blog/">Blog</a>
+							<a class="dropdown-item" href="/control-panel/">Control Panel</a>
+							<a class="dropdown-item" href="/terms-of-service/">Terms of Service</a>
+						</div>
+					</li>
+					<li>&bull;</li>
+					<li><a href="#">Login</a></li>
+					<li><a href="/about.html" class="button">Sign Up</a></li>
+					<li>
+						<div class="button_container" id="toggle">
+							<span class="top"></span>
+							<span class="middle"></span>
+							<span class="bottom"></span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>

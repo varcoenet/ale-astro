@@ -1,4 +1,3 @@
-
 ---
 interface Props {
 	link: string;
@@ -11,14 +10,13 @@ interface Props {
 const { link, title, price, keywords, bgimg } = Astro.props;
 ---
 
+<a href={link} class="game-box">
+	<div class="gametitle">
+		<span class="label coming-soon">Coming Soon</span>
+		<h4>{title}</h4>
+		<span>Starting at {price}</span>
+	</div>
+	<span class="extrakeywords">{keywords}</span>
+	<img src={bgimg} width="289" height="289" />
+</a>
 
-
-                    <a href={link} class="game-box">
-                    <div class="gametitle">
-                      <span class="label coming-soon">Coming Soon</span>
-                        <h4>{title}</h4>
-                        <span>Starting at {price}</span>
-                    </div>
-                    <span class="extrakeywords">{keywords}</span>
-                    <img src={bgimg} width="289" height="289">
-                    </a>

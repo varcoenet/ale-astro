@@ -1,4 +1,3 @@
-
 ---
 interface Props {
 	img: string;
@@ -15,33 +14,31 @@ interface Props {
 const { img, title, description, ram, ssd, slots, price, link, cores } = Astro.props;
 ---
 
-
-                      <div class="mc-bg">
-                            <div class="recommended-newgs mc-popular"></div>
-                        <img src={img} />
-                        <h3>{title}</h3>
-                        <strong>{description}</strong>
-                        <div class="plan-box-specs">
-                          <div class="flex-grid three">
-                            <div class="col">
-                              <strong>{ram}</strong>
-                              <span>Memory</span>
-                            </div>
-                            <div class="col">
-                              <strong>{ssd}</strong>
-                              <span>NVMe SSD</span>
-                            </div>
-                            <div class="col">
-                              <strong>{slots}</strong>
-                              <span>Slots</span>
-                            </div>
-                          </div>
-                        </div> 
-                        <span class="starting-at">Starting at</span>
-                        <h2>{price}</h2>
-                        <a href={link} class="button">order now</a>
-                        <div class="newgs-cores">
-                          {cores}
-                        </div>
-                      </div>
-
+<div class="mc-bg">
+	<div class="recommended-newgs mc-popular"></div>
+	<img src={img} />
+	<h3>{title}</h3>
+	<strong>{description}</strong>
+	<div class="plan-box-specs">
+		<div class="flex-grid three">
+			<div class="col">
+				<strong>{ram}</strong>
+				<span>Memory</span>
+			</div>
+			<div class="col">
+				<strong>{ssd}</strong>
+				<span>NVMe SSD</span>
+			</div>
+			<div class="col">
+				<strong>{slots}</strong>
+				<span>Slots</span>
+			</div>
+		</div>
+	</div>
+	<span class="starting-at">Starting at</span>
+	<h2>{price}</h2>
+	<a href={link} class="button">order now</a>
+	<div class="newgs-cores">
+		{cores}
+	</div>
+</div>

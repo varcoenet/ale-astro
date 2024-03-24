@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>pin-premium</title>
+    <defs>
+        <circle id="path-1" cx="1706" cy="1370" r="6"></circle>
+        <filter x="-50.0%" y="-50.0%" width="200.0%" height="200.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="1" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="-2" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.145405376 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Panel-Page-v1.0" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="pin-premium" transform="translate(-1696, -1360)">
+            <use fill="#367FCA" fill-rule="evenodd" xlink:href="#path-1"></use>
+            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+            <circle stroke="#2161A3" stroke-width="1" stroke-linejoin="square" cx="1706" cy="1370" r="5.5"></circle>
+            <circle stroke-opacity="0.2011309" stroke="#367FCA" stroke-width="4" cx="1706" cy="1370" r="8"></circle>
+        </g>
+    </g>
+</svg>

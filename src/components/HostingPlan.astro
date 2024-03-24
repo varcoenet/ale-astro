@@ -1,4 +1,3 @@
-
 ---
 interface Props {
 	img: string;
@@ -8,27 +7,24 @@ interface Props {
 	price: string;
 	link: string;
 	bandwidth: string;
-  emails: string;
+	emails: string;
 }
 
 const { img, title, sites, ssd, price, link, bandwidth, emails } = Astro.props;
 ---
 
-
-
-                        <div class="mc-bg">
-                          <span class="label redbg mc-popular">Popular</span>
-                          <h4>{title}</h4>
-                          <img src={img}>
-                          <h2>{price}</h2>
-                          <ul>
-                            <li><strong>{ssd}</strong> <span class="nvme"> NVME</span> SSD Storage</li>
-                            <li><strong>{bandwidth}</strong> Transfer</li>
-                            <li><strong>{sites}</strong> Hosted Site(s)</li>
-                            <li><strong>{emails}</strong> Email Accounts</li>
-                            <li class="powered-by"><strong>Powered by</strong> <img src="/images/nginx.svg" class="nginx"></li>
-                            <li class="high-availability"><strong>High-Availability Cluster</strong></li>
-                          </ul>
-                          <a href={link} class="button mt-3">Order Now</a>
-                        </div>
-
+<div class="mc-bg">
+	<span class="label redbg mc-popular">Popular</span>
+	<h4>{title}</h4>
+	<img src={img} />
+	<h2>{price}</h2>
+	<ul>
+		<li><strong>{ssd}</strong> <span class="nvme">NVME</span> SSD Storage</li>
+		<li><strong>{bandwidth}</strong> Transfer</li>
+		<li><strong>{sites}</strong> Hosted Site(s)</li>
+		<li><strong>{emails}</strong> Email Accounts</li>
+		<li class="powered-by"><strong>Powered by</strong> <img src="/images/nginx.svg" class="nginx" /></li>
+		<li class="high-availability"><strong>High-Availability Cluster</strong></li>
+	</ul>
+	<a href={link} class="button mt-3">Order Now</a>
+</div>

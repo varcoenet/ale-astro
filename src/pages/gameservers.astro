@@ -3,7 +3,6 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Map from '../components/map.astro';
-import TPWidget from '../components/TPWidget.astro'
 import GameBox from '../components/GameBox.astro'
 ---
 
@@ -415,13 +414,22 @@ import GameBox from '../components/GameBox.astro'
     </section>
     
         
-    <div class="blue-bg">
-        <TPWidget />
-    </div>
-
-<section class="dark-bg-small testimonial-slider" id="panel-reviews">
+    
+<section class="dark-bg-small text-center" id="panel-reviews">
   <div class="container">
-    <div class="block">
+    <div class="row">
+        <div class="col col-lg-3">
+            <h4 class="mt-0">Excellent</h4>
+            <a href="#">      
+                <img src="/images/trustpilot-stars.svg" class="mt-1 mb-2" alt="">
+            </a>
+            <span class="block pt-3">Based on over <strong>100+ reviews</strong> at <a href="#">
+                <img src="/images/tp-logo.svg" class="va-mid tp-logo-home" alt="">
+            </a>
+            </span>
+        </div>
+        <div class="col col-lg-9">
+    <div class="block testimonials-has-left-info pt-2">
       <div id="carousel-testimonials" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item">
@@ -484,6 +492,8 @@ import GameBox from '../components/GameBox.astro'
         </ol>
       </div>
     </div>
+        </div>
+    </div>
   </div>
 </section>
 
@@ -542,7 +552,6 @@ import GameBox from '../components/GameBox.astro'
     <div class="gs-locations grey-bg-small">
 
             <Map />
-
     </div>
 
     <section class="faq">

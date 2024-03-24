@@ -1,4 +1,3 @@
-
 ---
 interface Props {
 	img: string;
@@ -6,12 +5,11 @@ interface Props {
 	description: string;
 }
 
-const { img, title, description} = Astro.props;
+const { img, title, description } = Astro.props;
 ---
 
-
-          <div class="absolute-feature">
-            <img src={img} />
-            <h4>{title}</h4>
-            <p>{description}</p>
-          </div>
+<div class="absolute-feature">
+	<img src={img} />
+	<h4>{title}</h4>
+	<p>{description}</p>
+</div>

@@ -1,0 +1,120 @@
+<div class="rounded-map small-map">
+	<div class="pin" id="loc-ca">
+		<div class="pin-hover">
+			<strong class="block">San Jose, CA</strong> Test IP: <a href="#">ca1.aleforge.net</a>
+		</div>
+	</div>
+	<div class="pin" id="loc-chi">
+		<div class="pin-hover">
+			<strong class="block">Chicago, IL</strong> Test IP: <a href="#">il2.aleforge.net</a>
+		</div>
+	</div>
+	<div class="pin" id="loc-org">
+		<div class="pin-hover">
+			<strong class="block">Bend, OR</strong> Test IP: <a href="#">org.aleforge.net</a>
+		</div>
+	</div>
+	<div class="pin" id="loc-tx">
+		<div class="pin-hover">
+			<strong class="block">Dallas, TX</strong> Test IP: <a href="#">tx1.aleforge.net</a>
+		</div>
+	</div>
+	<div class="pin active" id="loc-va">
+		<div class="pin-hover">
+			<strong class="block">Vint Hill, VA</strong> Test IP: <a href="#">va1.aleforge.net</a>
+		</div>
+	</div>
+	<div class="pin" id="loc-gr">
+		<div class="pin-hover">
+			<strong class="block">Frankfurt, GR</strong> Test IP: <a href="#">fr1.aleforge.net</a>
+		</div>
+	</div>
+
+	<div class="pin" id="loc-au">
+		<div class="pin-hover">
+			<strong class="block">Sydney, AU</strong> Test IP: <a href="#">sy1.aleforge.net</a>
+		</div>
+	</div>
+	<div class="pin" id="loc-sg">
+		<div class="pin-hover">
+			<strong class="block">Singapore, SG</strong> Test IP: <a href="#">sg1.aleforge.net</a>
+		</div>
+	</div>
+</div>
+
+<script>
+	$(".loc-ca").hover(function () {
+		$(".pin").removeClass("active");
+		$(".all-loc").removeClass("active");
+		$(this).addClass("active");
+		$("#loc-ca").addClass("active");
+	});
+
+	$(".loc-tx").hover(function () {
+		$(".all-loc").removeClass("active");
+		$(this).addClass("active");
+		$(".pin").removeClass("active");
+		$("#loc-tx").addClass("active");
+	});
+
+	$(".loc-va").hover(function () {
+		$(".all-loc").removeClass("active");
+		$(this).addClass("active");
+		$(".pin").removeClass("active");
+		$("#loc-va").addClass("active");
+	});
+
+	$(".loc-gr").hover(function () {
+		$(".all-loc").removeClass("active");
+		$(this).addClass("active");
+		$(".pin").removeClass("active");
+		$("#loc-gr").addClass("active");
+	});
+
+	$(".loc-au").hover(function () {
+		$(".all-loc").removeClass("active");
+		$(this).addClass("active");
+		$(".pin").removeClass("active");
+		$("#loc-au").addClass("active");
+	});
+
+	$(".loc-chi").hover(function () {
+		$(".all-loc").removeClass("active");
+		$(this).addClass("active");
+		$(".pin").removeClass("active");
+		$("#loc-chi").addClass("active");
+	});
+
+	$(".loc-sg").hover(function () {
+		$(".all-loc").removeClass("active");
+		$(this).addClass("active");
+		$(".pin").removeClass("active");
+		$("#loc-sg").addClass("active");
+	});
+
+	$(".loc-atl").hover(function () {
+		$(".all-loc").removeClass("active");
+		$(this).addClass("active");
+		$(".pin").removeClass("active");
+		$("#loc-atl").addClass("active");
+	});
+
+	$(".loc-org").hover(function () {
+		$(".all-loc").removeClass("active");
+		$(this).addClass("active");
+		$(".pin").removeClass("active");
+		$("#loc-org").addClass("active");
+	});
+
+	$(".loc-ams").hover(function () {
+		$(".all-loc").removeClass("active");
+		$(this).addClass("active");
+		$(".pin").removeClass("active");
+		$("#loc-ams").addClass("active");
+	});
+
+	$(".pin").hover(function () {
+		$(".pin").removeClass("active");
+		$(this).addClass("active");
+	});
+</script>
