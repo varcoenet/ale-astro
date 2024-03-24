@@ -1,0 +1,110 @@
+---
+title: "7 Tips for Choosing Your Valheim Server"
+description: "Are you looking for the right server to play Valheim on? Click here for thirteen practical tips for choosing your Valheim server."
+pubDate: "May 9, 2023"
+heroImage: "/images/blog/Valheim-server.jpg"
+categories: ["valheim", "gaming"]
+articleSection: "Gaming"
+articleTag: "Valheim server"
+---
+
+According to ActivePlayer, [60,000–70,000 people](https://activeplayer.io/valheim/#:~:text=How%20many%20people%20play%20Valheim,5%20million%20monthly%20active%20players.) play Valheim every single day. That means there are around five million people who play this game actively every month.
+
+Valheim came out in 2021 on Steam. Iron Gate Studio finally released the full version last month. This game features deceased Vikings in the afterlife, where they fight to earn their place in Valhalla.
+
+If you just purchased this game, you may wonder about the best Valheim server. Those who prefer to play in multiplayer mode have a few options to choose from, which is why we are bringing you this guide.
+
+Want to know which Valheim gaming server options are right for you and your friends? If so, you clicked on the right article. Keep reading for our top seven tips for choosing the best server for you.
+
+## 1\. Understand What a Valheim Server Is
+
+Like all game servers, a [Valheim server](https://aleforge.net/games/valheim) enables gameplay. Without a remote server, you would not be able to play Valheim in multiplayer mode. The server is the authoritative source for what is happening in the game.
+
+The makers of Valheim host the server for you in single-player mode. Valheim does not currently have an official multiplayer server. But you can create your own dedicated server for multiplayer mode.
+
+Servers host all the data needed to play your game and keep it from going down. On multiplayer video games like Valheim, they also enable multiple people to play the game without causing it to crash.
+
+Valheim allows up to nine players to play in multiplayer mode. You can run your game on one of the two servers hosted by the game (more on these next). Or you can set up a dedicated server, which comes with added benefits.
+
+## 2\. Know What Types of Servers Are Available for Valheim
+
+The only way to play in multiplayer mode on Valheim is to start a server. When you log into Valheim and choose Select World, you will see two types of Valheim server options:
+
+1.  The Start Server
+2.  The Community Server
+
+The Start Server is the best choice for people who want to play with their friends. This server allows you to play locally or remotely with up to nine different players of your choosing.
+
+The Community Server is best for people who want to meet new players in Valheim. Anyone who plays Valheim at the same time as you can join your community game.
+
+Regardless of which one you choose, you can start the server in a new world or one you have created already. You also have the option to host your own server in Valheim. We will explain how to do that later in this post.
+
+## 3\. Figure Out How to Start a Server in Valheim
+
+Once you figure out which server you want to start, you need to know how to do it. We will discuss hosting dedicated servers in a moment. But first, here is how to start a Valheim server.
+
+Start by selecting your character. Each character account will have its own stored data, including progress, inventory, and gameplay stats. You can create as many character worlds as you want.
+
+Next, the game will take you to the Select World screen. You can choose a world you created previously or start a new one. Then, the option to choose between Start Server or Community Server will pop up.
+
+With either option, you will have the choice to set up a password. Enabling this function will prevent friends and community players from joining your world without the password.
+
+Finally, press start. The game will automatically load on the server you selected, and your friends or community players can join the game. If you log out of the game, gameplay will end for everyone else on the server.
+
+## 4\. Figure Out How to Join a Server in Valheim
+
+By now, you may be wondering: how do other people join in on friends' and other community players' servers? The first step is to select your character.
+
+You can also create a new character when joining someone else's server. This is beneficial because if you die in multiplayer load, your character can lose its associated data. [Creating a new character](https://meshcontent.com/valheim-how-to-create-a-new-character/) prevents this issue.
+
+Next, a menu will pop up with two options: Start Game and Join Game. Select Join Game. Two more options will pop up now: Friends or Community.
+
+If you select the Friends option, your friends list will come up and show if anyone is hosting a server. This screen will also show how many players are currently on the server and whether you need a password.
+
+If you select the Community option, you will see all the community servers in a list. You can join any server you want as long as it does not require a password and has fewer than nine players.
+
+To start playing, highlight the server you want to join and click Connect. At this point, you will need to enter the server password if required.
+
+## 5. Recognize What You Can and Can't Do on Valheim Servers
+
+You may recall that we mentioned Valheim does not have its own official multiplayer server. Instead, when you play in multiplayer mode, the person who starts the server will host it on their game console.
+
+Unfortunately, this strategy creates some problems. We talked about one of them earlier: if the host logs out, everyone in the game gets kicked out, too. Also, no one can play on the server in the first place without the host.
+
+Another reason playing games like Valheim in multiplayer mode can be problematic is that the person who hosts the server is at a disadvantage. Hosting and playing at the same time can impact your character's performance.
+
+For these reasons, many players decide to host their own dedicated servers or find a third-party host to run the server for them. Learn more about each of these options next.
+
+## 6\. Learn How to Host Your Own Dedicated Valheim Server
+
+You can host your own dedicated server to play Valheim with Steam. Steam is [free to install](https://store.steampowered.com/join/?snr=1_4_4__more-content-login) on Windows, Mac, and Linux. You can also access it through your smartphone if you have an iPhone or Android.
+
+Once you install or open Steam, search for Valheim under the Tools section. You should see an option that says Valheim Dedicated Server. Install the Valheim Dedicated Server tool.
+
+Next, go to the folder where you installed the dedicated server tool. Right-click on the tool and toggle to Browse Local Files. Open the file with the following name: start_headless_server.
+
+Now you need to change the file name. You can create a backup of the file first before changing it. Then, follow these steps:
+
+1.  Enter the name for your server inside the quotes following "-name"
+2.  Enter the name for your new or existing world inside the quotes following "-world"
+3.  Enter the password for your world inside the quotes following "-password"
+
+Once you finish these three steps, save the file. If you are going to host the game on the same server where you play, you need to find your IP address. Jot down the names of the default gateway and the IPv4 address.
+
+The last step is to set up something called port forwarding. This enables your friends and community players to join your dedicated server. [Follow this link](https://www.purevpn.com/blog/port-forward-valheim-servers/) to learn how to do just that.
+
+## 7\. Find the Best Valheim Server Host
+
+The other option to get around the issues with hosting and playing Valheim in multiplayer mode is to work with a third-party server host.
+
+Third-party gaming hosts will set up a multiplayer server for you and your friends. That way, you do not have to worry about the disadvantages that come with hosting your own Valheim server.
+
+Working with a third-party host is also much easier than setting up your own dedicated server. Hosts like AleForge even offer customer support. That way, you can get your questions answered and troubleshoot gameplay as needed.
+
+At AleForge, we offer affordable and reliable hosting services for games like Valheim. Learn more about [our game hosting services](https://aleforge.net/gameservers) and the types of games we can host.
+
+## AleForge Valheim Server Hosting
+
+You have options when it comes to Valheim gaming servers. You can use the server the game provides and host your gameplay locally. Or you can use a dedicated Valheim server from a third-party host like AleForge.
+
+Are you looking for a better way to play Valheim with your friends? We have the affordable hosted server services you have been looking for. [Order your Valheim game server](https://billing.aleforge.net/store/standard) today!
