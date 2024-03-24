@@ -1,0 +1,89 @@
+---
+import MinecraftPlan from "../components/MinecraftPlan.astro";
+---
+
+<div class="tab-pane active show" id="type-tab-1">
+	<div class="text-center relative type-wrap">
+		<strong class="choose-type">Choose server type:</strong>
+		<ul class="nav nav-tabs newgs-tabs" role="tablist">
+			<li>
+				<a href="javascript:void(0)" id="newgs-tab1" data-bs-toggle="tab" data-bs-target="#newgs-tabs-1" role="tab" aria-controls="newgs-tabs-1" aria-selected="true" class="active" tabindex="-1">Standard</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)" id="newgs-tab2" data-bs-toggle="tab" data-bs-target="#newgs-tabs-2" role="tab" aria-controls="newgs-tabs-2" aria-selected="false" class="" tabindex="-1">
+					<div class="more-performance"><div class="more-label">Better Hardware & Network!</div></div>Premium<strong class="block font-12 green">30% Faster</strong>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="tab-content" id="minecraft-tabs-new">
+		<div class="tab-pane active" id="newgs-tabs-1" role="tabpanel">
+			<div class="row">
+				<div class="col col-lg-25">
+					<MinecraftPlan link="https://billing.aleforge.net/store/standard/minecraft-java-slime" title="Slime" img="/images/mc-1.webp" price="$1.99" cores="2" ram="1 GB" ssd="10 GB" />
+				</div>
+				<div class="col col-lg-25">
+					<MinecraftPlan link="https://billing.aleforge.net/store/standard/minecraft-java-wither" title="Wither" img="/images/mc-2.webp" price="$3.99" cores="2" ram="2 GB" ssd="15 GB" />
+				</div>
+				<div class="col col-lg-25">
+					<MinecraftPlan link="https://billing.aleforge.net/store/standard/minecraft-java-skeleton" title="Skeleton" img="/images/mc-3.webp" price="$5.99" cores="2" ram="3 GB" ssd="20 GB" />
+				</div>
+				<div class="col col-lg-25 has-popular">
+					<MinecraftPlan link="https://billing.aleforge.net/store/standard/minecraft-java-creeper" title="Creeper" img="/images/mc-4.webp" price="$7.99" cores="2" ram="4 GB" ssd="25 GB" />
+				</div>
+				<div class="col col-lg-25">
+					<MinecraftPlan link="https://billing.aleforge.net/store/standard/minecraft-java-ghast" title="Ghast" img="/images/mc-5.webp" price="$11.99" cores="2" ram="6 GB" ssd="30 GB" />
+				</div>
+				<div class="col col-lg-25">
+					<MinecraftPlan link="https://billing.aleforge.net/store/standard/minecraft-java-zombie" title="Zombie" img="/images/mc-6.webp" price="$15.99" cores="2" ram="8 GB" ssd="35 GB" />
+				</div>
+				<div class="col col-lg-25">
+					<MinecraftPlan link="https://billing.aleforge.net/store/standard/minecraft-java-spider" title="Spider" img="/images/mc-7.webp" price="$19.99" cores="2" ram="10 GB" ssd="40 GB" />
+				</div>
+				<div class="col col-lg-25">
+					<MinecraftPlan link="https://billing.aleforge.net/store/standard/minecraft-java-zombie-pigman" title="Zombie Pigman" img="/images/mc-8.webp" price="$23.99" cores="2" ram="12 GB" ssd="45 GB" />
+				</div>
+				<div class="col col-lg-25">
+					<MinecraftPlan link="https://billing.aleforge.net/store/standard/minecraft-java-enderman" title="Enderman" img="/images/mc-9.webp" price="$28.99" cores="2" ram="14 GB" ssd="50 GB" />
+				</div>
+				<div class="col col-lg-25">
+					<MinecraftPlan link="https://billing.aleforge.net/store/standard/minecraft-java-ender-dragon-cto" title="Custom to Order" img="/images/mc-10.webp" price="$11.99+" cores="2-4" ram="~64 GB" ssd="~500 GB" />
+				</div>
+			</div>
+		</div>
+		<div class="tab-pane" id="newgs-tabs-2" role="tabpanel">
+			<div class="row">
+				<div class="col col-lg-25">
+					<MinecraftPlan link="https://billing.aleforge.net/store/premium/minecraft-java-slime" title="Slime" img="/images/mc-1.webp" price="$2.99" cores="4" ram="1 GB" ssd="15 GB" />
+				</div>
+				<div class="col col-lg-25">
+					<MinecraftPlan link="https://billing.aleforge.net/store/premium/minecraft-java-wither" title="Wither" img="/images/mc-2.webp" price="$5.99" cores="4" ram="2 GB" ssd="20 GB" />
+				</div>
+				<div class="col col-lg-25">
+					<MinecraftPlan link="https://billing.aleforge.net/store/premium/minecraft-java-skeleton" title="Skeleton" img="/images/mc-3.webp" price="$8.99" cores="4" ram="3 GB" ssd="25 GB" />
+				</div>
+				<div class="col col-lg-25 has-popular">
+					<MinecraftPlan link="https://billing.aleforge.net/store/premium/minecraft-java-creeper" title="Creeper" img="/images/mc-4.webp" price="$11.99" cores="4" ram="4 GB" ssd="30 GB" />
+				</div>
+				<div class="col col-lg-25">
+					<MinecraftPlan link="https://billing.aleforge.net/store/premium/minecraft-java-ghast" title="Ghast" img="/images/mc-5.webp" price="$17.99" cores="4" ram="6 GB" ssd="35 GB" />
+				</div>
+				<div class="col col-lg-25">
+					<MinecraftPlan link="https://billing.aleforge.net/store/premium/minecraft-java-zombie" title="Zombie" img="/images/mc-6.webp" price="$23.99" cores="4" ram="8 GB" ssd="40 GB" />
+				</div>
+				<div class="col col-lg-25">
+					<MinecraftPlan link="https://billing.aleforge.net/store/premium/minecraft-java-spider" title="Spider" img="/images/mc-7.webp" price="$29.99" cores="4" ram="10 GB" ssd="45 GB" />
+				</div>
+				<div class="col col-lg-25">
+					<MinecraftPlan link="https://billing.aleforge.net/store/premium/minecraft-java-zombie-pigman" title="Zombie Pigman" img="/images/mc-8.webp" price="$35.99" cores="4" ram="12 GB" ssd="50 GB" />
+				</div>
+				<div class="col col-lg-25">
+					<MinecraftPlan link="https://billing.aleforge.net/store/premium/minecraft-java-enderman" title="Enderman" img="/images/mc-9.webp" price="$41.99" cores="4" ram="14 GB" ssd="55 GB" />
+				</div>
+				<div class="col col-lg-25">
+					<MinecraftPlan link="https://billing.aleforge.net/store/premium/minecraft-java-ender-dragon-custom-to-order" title="Custom to Order" img="/images/mc-10.webp" price="$17.99+" cores="4-6" ram="~64 GB" ssd="~500 GB" />
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
