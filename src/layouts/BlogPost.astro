@@ -1,19 +1,50 @@
 ---
-import type { CollectionEntry } from 'astro:content';
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import FormattedDate from '../components/FormattedDate.astro';
+import type { CollectionEntry } from "astro:content";
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import FormattedDate from "../components/FormattedDate.astro";
 
-type Props = CollectionEntry<'blog'>['data'];
-
-const { title, description, pubDate, updatedDate, heroImage, categories } = Astro.props;
+type Props = CollectionEntry<"blog">["data"];
+const currentPath = Astro.url.pathname;
+const { title, description, pubDate, updatedDate, heroImage, categories, articleSection, articleTag } = Astro.props;
 ---
 
 <html lang="en">
 	<head>
 		<BaseHead />
+
 		<title>{title} | AleForge</title>
+		<meta name="description" content={description} />
+		<meta name="robots" content="index, follow" />
+		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+		<meta property="og:locale" content="en_US" />
+		<meta name="keywords" content={categories} />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Twitter Card data -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@AleForgeHosting" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:creator" content="@AleForgeHosting" />
+		<!-- Twitter summary card with large image must be at least 280x150px -->
+		<meta name="twitter:image:src" content={heroImage} />
+
+		<!-- Open Graph data -->
+		<meta property="og:title" content={title} />
+		<meta property="og:type" content="article" />
+		<meta property="og:url" content={currentPath} />
+		<meta property="og:image" content="https://aleforge.net/images/blog/digital-nature-photomontage.jpg" />
+		<meta property="og:description" content={description} />
+		<meta property="og:site_name" content="AleForge" />
+		<meta property="article:published_time" content={pubDate} />
+		<meta property="article:modified_time" content={updatedDate} />
+		<meta property="article:section" content={articleSection} />
+		<meta property="article:tag" content={articleTag} />
+		<meta property="fb:app_id" content="2877703308935482" />
+
 		<style>
 			main {
 				width: calc(100% - 2em);
@@ -37,7 +68,7 @@ const { title, description, pubDate, updatedDate, heroImage, categories } = Astr
 				color: rgb(var(--gray-dark));
 			}
 			.prose p img {
-				max-width:100% !important;
+				max-width: 100% !important;
 			}
 			.title {
 				margin-bottom: 1em;
@@ -56,40 +87,40 @@ const { title, description, pubDate, updatedDate, heroImage, categories } = Astr
 				font-style: italic;
 			}
 			hr {
-				opacity:0.33;
+				opacity: 0.33;
 			}
 		</style>
 	</head>
 
 	<body>
 		<div class="top-bg">
-		<Header />
+			<Header />
 		</div>
 		<section id="blog-post">
 			<div class="container">
-			<article>
-				<div class="hero-image">
-					{heroImage && <img width={960} height={420} src={heroImage} alt="" />}
-				</div>
-				<div class="prose">
-					<div class="title">
-						<div class="date">
-							<FormattedDate date={pubDate} />
-							{
-								updatedDate && (
-									<div class="last-updated-on">
-										Last updated on <FormattedDate date={updatedDate} />
-									</div>
-								)
-							}
-						</div>
-						<h1>{title}</h1>
-						<hr />
+				<article>
+					<div class="hero-image">
+						{heroImage && <img width={960} height={420} src={heroImage} alt="" />}
 					</div>
-					<slot />
-				<a href="/blog" class="button tiny mt-5">« Back to Blog</a>
-				</div>
-			</article>
+					<div class="prose">
+						<div class="title">
+							<div class="date">
+								<FormattedDate date={pubDate} />
+								{
+									updatedDate && (
+										<div class="last-updated-on">
+											Last updated on <FormattedDate date={updatedDate} />
+										</div>
+									)
+								}
+							</div>
+							<h1>{title}</h1>
+							<hr />
+						</div>
+						<slot />
+						<a href="/blog" class="button tiny mt-5">« Back to Blog</a>
+					</div>
+				</article>
 			</div>
 		</section>
 		<Footer />

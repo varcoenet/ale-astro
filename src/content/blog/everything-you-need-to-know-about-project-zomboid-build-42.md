@@ -1,9 +1,10 @@
 ---
 title: "Everything You Need To Know about Project Zomboid Build 42"
 description: "Project Zomboid's game-changing Build 42 update introduces new weapons, professions, and mechanics, with the release date set for 2024."
-pubDate: "Feburary 13 2024"
 heroImage: "/images/blog/Project-Zomboid-Build-42-Blog-Image.jpg"
-categories: ["project zomboide", "english"]
+categories: ["project zomboid", "gaming"]
+articleSection: "Gaming"
+articleTag: "Project ZOomboid"
 ---
 
 One of the best things about Project Zomboid is the game's regular, expansive updates. Build 42 promises the biggest update yet, with a range of new features, offering new opportunities and a better experience for players old and new. Keep reading to find out everything you need to know about the upcoming Build 42 and how it could revolutionize this old zombie game.
