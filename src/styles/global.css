@@ -6242,28 +6242,57 @@ section {
 }
 
 #home-game-cstwo {
-	background: url("/images/game-home-cstwo@2x.webp") center center no-repeat;
+	background: url("/images/game-home-cstwo.webp") center center no-repeat;
 	background-size: cover;
 }
 
 #home-game-minecraft {
-	background: url("/images/game-home-minecraft@2x.webp") center center no-repeat;
+	background: url("/images/game-home-minecraft.webp") center center no-repeat;
 	background-size: cover;
 }
 
 #home-game-palworld {
-	background: url("/images/game-home-palworld@2x.webp") center center no-repeat;
+	background: url("/images/game-home-palworld.webp") center center no-repeat;
 	background-size: cover;
 }
 
 #home-game-valheim {
-	background: url("/images/game-home-valheim@2x.webp") center center no-repeat;
+	background: url("/images/game-home-valheim.webp") center center no-repeat;
 	background-size: cover;
 }
 
 #home-game-terraria {
-	background: url("/images/game-home-terraria@2x.webp") center center no-repeat;
+	background: url("/images/game-home-terraria.webp") center center no-repeat;
 	background-size: cover;
+}
+
+/* Retina Screens */
+
+@media (-webkit-min-device-pixel-ratio: 1.5) {
+	#home-game-cstwo {
+		background: url("/images/game-home-cstwo@2x.webp") center center no-repeat;
+		background-size: cover;
+	}
+
+	#home-game-minecraft {
+		background: url("/images/game-home-minecraft@2x.webp") center center no-repeat;
+		background-size: cover;
+	}
+
+	#home-game-palworld {
+		background: url("/images/game-home-palworld@2x.webp") center center no-repeat;
+		background-size: cover;
+	}
+
+	#home-game-valheim {
+		background: url("/images/game-home-valheim@2x.webp") center center no-repeat;
+		background-size: cover;
+	}
+
+	#home-game-terraria {
+		background: url("/images/game-home-terraria@2x.webp") center center no-repeat;
+		background-size: cover;
+	}
 }
 
 .home-game {
