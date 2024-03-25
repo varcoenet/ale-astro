@@ -1,0 +1,71 @@
+---
+title: "How to Choose Between Minecraft Java and Bedrock Editions"
+description: "If you're wondering if the Minecraft bedrock version has advantages over the java edition, we reveal the good, the bad, and the differences."
+pubDate: "June 18, 2019"
+heroImage: "/images/blog/minecraft-bedrock.jpg"
+categories: ["minecraft", "gaming"]
+articleSection: "Gaming"
+articleTag: "minecraft bedrock"
+---
+
+As of 2018, there are [91 million active Minecraft players](https://www.statista.com/statistics/680139/minecraft-active-players-worldwide/) worldwide. That's more than double the number in 2016. Minecraft just keeps getting more and more popular.
+
+If you're interested in joining those tens of millions of players, you might be wondering whether you should be playing Minecraft Bedrock or the Java Edition. Let's look at the differences between the two and how to make the best choice.
+
+## Why Are There Two Versions of Minecraft?
+
+The original version of Minecraft was written in Java, one of the few programming languages that's truly cross-platform. An application written in Java can run on any operating system that supports the language, without having to make any changes. Because it was Java-based, Minecraft could run on various operating systems, including Windows, macOS, and Linux.
+
+Mobile devices, such as iPhone, iPad, and Android smartphones, aren't able to run Java. To release Minecraft on those devices, new versions were written. These became known as "Pocket Edition" or Minecraft PE.
+
+Versions were also released for other platforms such as Xbox, Nintendo Wii U and Switch, Playstation, and Windows Mobile. In late 2017, Microsoft unveiled the _Better Together Update_ that brought the same non-Java version to all the platforms, allowing cross-platform multiplayer games. With this update, it dropped Pocket Edition and all the other platform-specific names, bringing them all under the same "Bedrock" edition.
+
+## What Is Minecraft Bedrock?
+
+Minecraft Bedrock Edition runs on various platforms, the notable exceptions being macOS and Linux. The Windows version is a bit unique as well, only running on Windows 10. You install the Bedrock Edition through each platform's app store. The cost varies, depending on the platform, and you need to buy each version separately.
+
+Minecraft Bedrock lets players on various platforms play one another in multiplayer games. Someone running the Xbox version can play with someone running the iOS version, for example. Bedrock is not compatible with the Java version so you aren't able to play multiplayer games between the two.
+
+The Bedrock Edition supports in-game purchases for things like skin packs and worlds. One of the benefits of the switch from Pocket Edition to Bedrock is that anything you buy on one platform will be available on all the other platforms as well. Before the consolidation, purchases had to be made in each individual version.
+
+There are some features that are unique to the Bedrock Edition:
+
+- Behavior packs that can change things like loot, equipment, and spawn rules.
+- Replace blocks, items, and other things as well as adding new ones.
+- Minecraft Education Edition for educational use.
+
+On top of these unique gameplay features, Bedrock Edition has different controls on each platform and several settings that aren't available in the Java version.
+
+## Pros and Cons of Each Version
+
+Aside from the few features we mentioned, the basic gameplay is the same on both versions. Where Minecraft Bedrock vs Java differ the most is how they handle add-ons, mods, and multiplayer games.
+
+Both the Bedrock and Java let you play on multiplayer servers over the internet. They use different servers so Bedrock can't play on a Java server and vice-versa.
+
+There are a lot more public servers for Minecraft Java than there are for the Bedrock Edition and many of the most popular ones, like Hypixel, only support the Java Edition.
+
+One solution to this problem is to start your own Bedrock server. If you've got a group of friends who want to play together or you want to open your game up to the world, you can start your own server for a pretty reasonable price. AleForge's [Bedrock server plans](../games/minecraftbedrock) give you plenty of power to get started and you can upgrade to larger plans as your server gets more popular.
+
+### Minecraft Mods and Other Add-ons
+
+The Java Edition has more add-ons and mods available than Bedrock, for a couple of reasons. For one thing, it's been around longer so it's had more time for these extras to build up.
+
+But more importantly, anyone with the necessary skills can mod the Java version. Because the Bedrock Editions are more locked down through the various platforms' app stores, creating add-ons and mods isn't easily done. These things are only offered through the official Minecraft Marketplace.
+
+Because the Java version is so much more flexible, there's a large community of modders that have created some impressive ways to change the game. Mods like [CraftBukkit and Spigot](https://www.spigotmc.org/resources/categories/bukkit.4/) support plugins that can both add new features and change the way "vanilla" Minecraft works. These plugins aren't supported at all in Bedrock.
+
+This flexibility can come at a bit of cost, mind you. Modding Minecraft requires some basic technical skills and it can cause the game to be less stable, especially if you're using mods and plugins that haven't been well tested. Bedrock Edition add-ons are officially supported so they're much less likely to cause problems.
+
+## Which Version of Minecraft is Right For You?
+
+If you want to play Minecraft with friends, the most important factor is which version they're playing. If they're all playing the Java version, you're going to feel left out if you're playing Minecraft Bedrock.
+
+It's also going to depend on what platform you're playing it on. If you're going to be playing on a mobile device or game console, the Bedrock Edition is your only option. On macOS and Linux, Java is the only choice. Windows 10 is the only platform where you have to make a decision between the two.
+
+If you want to be able to install mods and plugins to change the way Minecraft works or add new features, the Java Edition is the best choice. There are far more plugins and mods available and most of them are free to download. You won't need to spend more money to get add-ons through the Minecraft Marketplace as you will with Bedrock.
+
+### Larger Selection of Servers
+
+There are a lot more public servers for the Java Edition if you want to play multiplayer games. And if you want to set up your own server, you can configure it with the add-ons and plugins you want. AleForge offers a range of [Java Edition server plans](../games/minecraft). Start with the basic Minecraft Copper plan and as your server gets more popular, you can upgrade to higher levels without losing any of your hard work.
+
+If you're curious about running your own server and want to test it out for yourself, check out our [free trial plans](../gameservers). You'll get a full 10 days to test the waters - set the server up your way, get some friends to play on it, and see what you think. If you decide it's for you, you can upgrade to one of our full plans and keep all the work you put in.

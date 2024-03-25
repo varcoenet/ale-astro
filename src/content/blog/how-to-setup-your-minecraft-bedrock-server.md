@@ -1,0 +1,131 @@
+---
+title: "How to Setup Your Minecraft Bedrock Server"
+description: "Are you wondering how to use a server for your gaming adventures? Read here to learn how to setup your Minecraft Bedrock server."
+pubDate: "January 07, 2023"
+heroImage: "/images/blog/091242e5d551188a3ab9829a2d5f18b4.jpg"
+categories: ["minecraft", "gaming"]
+articleSection: "Gaming"
+articleTag: "minecraft bedrock server"
+---
+
+Few games have the staying power of Minecraft, which continues to grow over a decade after its release, with over [238 million copies sold](https://www.businessofapps.com/data/minecraft-statistics/). It's a game that's widely loved around the world.
+
+Its continued growth and popularity are partially due to the release of Minecraft Bedrock a few years ago. It's a complete rewrite of the game that allows for expanded multiplayer functionality.
+
+Maybe you're looking for a new way to reconnect with old friends, or perhaps you're looking to make new ones. Either way, hosting a Minecraft Bedrock server will allow you to play with people worldwide.
+
+Not sure how to host your own Minecraft server? Keep reading, and our guide will tell you everything you need to know.
+
+## Minecraft Bedrock vs. Minecraft Java Edition
+
+What is Minecraft Bedrock? And what is Minecraft Java?
+
+There are two different versions of Minecraft: Bedrock and Java Edition. First, let's talk about Java Edition.
+
+As the name suggests, the Java Edition was programmed in Java. Originally it was called Minecraft. This is the version of Minecraft released initially by Mojang in 2009.
+
+Minecraft Bedrock is a newer edition of the game. Launched in 2017, it's a complete rewrite of the game from the ground up. The Bedrock Engine powers this version of Minecraft.
+
+The Bedrock Engine is a custom engine written mainly in C++. Its most prominent feature is that it allows for cross-platform play, allowing PC and console players to play together.
+
+Due to many improvements, Minecraft Java Edition is largely incompatible with the Bedrock Edition.
+
+## Understanding Minecraft Server Types
+
+The open-world nature of Minecraft allows for enormous creativity when it comes to gameplay. Generally, they fall into three categories: creative, PVP, and roleplaying. Each server type offers different types of games, so there's something for everyone.
+
+Creative servers allow players to focus solely on the building aspect of Minecraft. While monsters spawn, they are primarily non-aggressive toward players.
+
+PVP or player versus player servers pit players against other human players in various ways. They may have strict rules as to how and where combat occurs.
+
+Roleplay servers encourage players to take on a specific role and act accordingly. Social interaction is highly encouraged.
+
+Check out our [ultimate guide](https://aleforge.net/blog/ultimate-guide-to-minecraft-server-types) to Minecraft server types for more info on server types.
+
+## Understand the Technical Requirements
+
+To set up your server hosting, you'll need a PC, a fast internet connection, and a copy of Minecraft Bedrock Edition. Once you have those, you're ready to set up your server.
+
+Despite its blocky look, Minecraft won't run on anything. The [system requirements](https://www.pcguide.com/software/system-requirements/minecraft/) for Minecraft vary. Using RTX (ray tracing) or installing mods may require additional system specs.
+
+## Setting up Your Minecraft Bedrock Server
+
+First, you need to download the server software. You can download the Bedrock dedicated server software from the [official Minecraft site](https://www.minecraft.net/en-us/download/server/bedrock).
+
+Once that's done, extract the files from the .zip folder. You can do this by right-clicking on the zipped folder and selecting the "extract all" option.
+
+### Configuring Your Server
+
+Now open the "server.properties" file and edit it. This file contains your basic server settings, such as the server name.
+
+The next step involves exempting Minecraft from UWP loopback restrictions. This allows you to connect to a server on the same computer that you are running Minecraft on.
+
+Open your command prompt. Choose it from the start menu and right-click to run it as an administrator. You can also find it by typing CMD into the search bar located on your Windows taskbar.
+
+Once the command prompt is open, paste the following command into it: CheckNetIsolation.exe LoopbackExempt –a –p=S-1-15-2-1958404141-86561845-1752920682-3514627264-368642714-62675701-733520436
+
+Now hit enter to execute the command. You can then close the command prompt.
+
+Now you need to open the "bedrock_server.exe" file. Double-click to open it, and it should automatically start. If you're installing it on Windows, a security alert may pop up, indicating that Windows Defender Firewall has blocked some app features. Check both boxes to allow it access to private and public networks.
+
+### Enable Port Forwarding
+
+The next step is to enable port forwarding. To do this, you need to open the command prompt again. Once open, type the command ipconfig /all and hit enter to execute it.
+
+It should display both an IPV4 and IPv6 address. It should also show an IP address next to "Default Gateway."
+
+Now you have to open your router and change your system port settings. This allows other players to communicate with your server.
+
+Unfortunately, there's no one way of doing this. Every router manufacturer has their own method, so you need to research your specific router to figure out how to enable it. However, you can check out a general [guide to port forwarding](https://www.hellotech.com/guide/for/how-to-port-forward).
+
+You will use your IP address to enable port forwarding via your router. Your router assigns an address to each device on your network. By enabling port forwarding, you're letting others access your Minecraft server - you need to give them the public IP address of the host.
+
+While enabling port forwarding, your router may ask for a port ID. By default, Minecraft Bedrock's port ID is 19132.
+
+## Joining Your Server
+
+Now it's time to access and test your server. You and any of your friends will access it the same way.
+
+Start by opening the Minecraft Bedrock app. From the main screen, hit play.
+
+At the top of your screen, you should see a tab for servers. Select that tab.
+
+Scroll to the bottom and hit the "Add Server" button. From here, you're going to enter the server details.
+
+You can name your server whatever you want. The server address is the same as your public IP address. The port is the port ID, which, unless you changed it, should still be 19132.
+
+Once that's done, hit play. The game should generate a new world for you to play in.
+
+Provided you and your friends are all using the Bedrock Edition of Minecraft and are all on the same version, you should now be able to play together.
+
+Hopefully, your server is running smoothly. If you're experiencing any issues, check out our guide to [managing common Minecraft bugs](https://aleforge.net/blog/managing-common-minecraft-bugs).
+
+## Customizing Your Server
+
+By default, starting a new server will load a standard survival world (also known as a "vanilla" world). However, one of the great appeals of having your own Minecraft server is the ability to customize it.
+
+At a fundamental level, you can customize your server by editing the "server.properties" file in notepad. It's located in the same unzipped folder where you run your Minecraft world.
+
+Changing this file allows you to edit the game mode (survival, adventure, or creative), the difficulty, the maximum number of players, player abilities, and more.
+
+You can take your Minecraft experience even further by using texture or resource packs. These packs are popular because they change the look of the base game. You can download resource packs and add them to the "resource_packs" folder (inside your unzipped Minecraft folder).
+
+Some texture packs add minor improvements to the game's look while trying to preserve its original vision. Others go in the complete opposite direction and strive for photorealism.
+
+Maybe you want to give your Minecraft game a medieval look, add new animals to the world, or slightly enhance the existing look of the game. No matter what look or style you want, there's a [Minecraft texture pack for everyone](https://www.pcgamer.com/best-minecraft-texture-packs/).
+
+## Closing and Saving Your Server
+
+Once you (and any of your friends) are done playing, you can leave the server by exiting the game. However, that won't automatically save your server progress.
+
+Instead, you must open the command prompt window with your server running. In the command prompt window, type "stop" and then hit enter to execute it. The server will save all progress and immediately close.
+
+Each time you want the server's progress to be saved, this must be done.
+
+## Make It Easy for Yourself
+
+Setting up a Minecraft Bedrock server requires technical know-how, local resource processing power, and time. We offer affordable gaming servers for Minecraft and other popular online games if you're struggling to set up a server or want to make the process easier.
+
+Our server hosting offers DDos protection, scheduled backups, automatic modpack installation, and 24/7 support. We offer support for both the Bedrock and Java Editions.
+
+Check out our complete list of affordable [Minecraft server options](https://aleforge.net/games/minecraft).
