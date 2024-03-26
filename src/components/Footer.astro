@@ -5,6 +5,26 @@ const today = new Date();
 <!-- Bootstrap -->
 <script src="/js/bootstrap.min.js" type="text/javascript"></script>
 
+<script>
+	// Get the select element
+	const selectElement = document.getElementById("tabselect");
+
+	// Add change event listener to the select element
+	selectElement.addEventListener("change", function () {
+		// Get the value of the selected option
+		const selectedTabId = this.value;
+
+		// Hide all tab panes
+		const tabPanes = document.querySelectorAll(".tab-pane");
+		tabPanes.forEach((tabPane) => {
+			tabPane.classList.remove("show", "active");
+		});
+
+		// Show the selected tab pane
+		const selectedTabPane = document.getElementById(selectedTabId);
+		selectedTabPane.classList.add("show", "active");
+	});
+</script>
 <script type="text/javascript">
 	jQuery(document).ready(function (e) {
 		function t(t) {
@@ -30,14 +50,10 @@ const today = new Date();
 			if (!n.parents().hasClass("button-dropdown")) e(".button-dropdown .dropdown-toggle").removeClass("active");
 		});
 
-		$("#toggle").click(function () {
-			$(this).toggleClass("active");
-			$("#overlay").toggleClass("open");
-			$(".button_container").toggleClass("fixed");
-		});
-
-		$("#tabselect").on("change", function (e) {
-			$("#home-tabs li a").eq($(this).val()).tab("show");
+		$(".button_container").click(function () {
+			$(".main-nav").slideToggle("fast");
+			$(".main-nav").toggleClass("active");
+			$(".button_container").toggleClass("active");
 		});
 
 		if ($(window).width() < 768 || $(window).height() < 480) {

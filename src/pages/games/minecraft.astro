@@ -10,6 +10,7 @@ import ThreeGuarantees from "../../components/three-guarantees.astro";
 import TPWidget from "../../components/TPWidget.astro";
 import MineCraftBedrockPlans from "../../components/MineCraftBedrockPlans.astro";
 import MineCraftJavaPlans from "../../components/MineCraftJavaPlans.astro";
+import FAQ from "../../components/FAQ.astro";
 ---
 
 <!doctype html>
@@ -251,113 +252,29 @@ import MineCraftJavaPlans from "../../components/MineCraftJavaPlans.astro";
 		<GamePanel />
 		<CompareTable />
 
-		<section class="faq grey-bg-small" id="newgs-faq">
+		<section class="faq grey-bg" id="newgs-faq">
 			<div class="container">
 				<div class="flex-grid one">
 					<div class="col">
-						<h2>FAQ</h2>Have your own question? <a href="https://billing.aleforge.net/submitticket.php">Ask us here &raquo;</a>
+						<h2>FAQ</h2>
+						Have your own question? <a href="https://billing.aleforge.net/submitticket.php?step=2&deptid=1">Ask us here &raquo;</a>
 					</div>
 				</div>
-				<div class="flex-grid two">
-					<div class="col">
-						<div class="toggle">
-							<div class="toggle-title">
-								<h3>
-									<i></i>
-									<span class="title-name">What is the difference between Standard and Premium?</span>
-								</h3>
-							</div>
-							<div class="toggle-inner">
-								<p>Standard was designed cost-effective for a small group of friends who want to play together. Premium is the best hardware we can source that runs at the fastest speeds, so your server will never lag or slow down. Each has its advantages and disadvantages.</p>
-							</div>
-						</div>
-						<!-- END OF TOGGLE -->
-						<div class="toggle">
-							<div class="toggle-title">
-								<h3>
-									<i></i>
-									<span class="title-name">How do I know the best location to pick?</span>
-								</h3>
-							</div>
-							<div class="toggle-inner">
-								<p>You can use the <a href="#map">map</a> on this page above to show your real-time pings to each of our locations. Just refresh the page to recalculate your live latency.</p>
-							</div>
-						</div>
-						<!-- END OF TOGGLE -->
-						<div class="toggle">
-							<div class="toggle-title">
-								<h3>
-									<i></i>
-									<span class="title-name">Can I use mods, modpacks, workshop content, or other custom resources on my server?</span>
-								</h3>
-							</div>
-							<div class="toggle-inner">
-								<p>Of course. We offer one-click installs for Minecraft mod packs from CurseForge, Modrinth, FTB, Technic, and Voidswrath.</p>
-							</div>
-						</div>
-						<!-- END OF TOGGLE -->
-						<div class="toggle">
-							<div class="toggle-title">
-								<h3>
-									<i></i>
-									<span class="title-name">How many slots am I limited to?</span>
-								</h3>
-							</div>
-							<div class="toggle-inner">
-								<p>All Minecraft plans are unlimited and you can change your slots via our control panel. We can recommended a number of slots based on your plans resources, players, and mods.</p>
-							</div>
-						</div>
-						<!-- END OF TOGGLE -->
+				<div class="row mt-4 pt-2">
+					<div class="col col-lg-6">
+						<FAQ
+							q="What is the difference between Standard and Premium?"
+							a="Standard was designed cost-effectively for a small group of friends who want to play together. Premium is the best hardware we can source that runs at the fastest speeds, so your server will never lag or slow down. Each has its advantages and disadvantages."
+						/>
+						<FAQ q="How do I know the best location to pick?" a="You can use the map on this page above to show your real-time pings to each of our locations. Just refresh the page to recalculate your live latency." />
+						<FAQ q="Can I use mods, workshop content, or other custom resources on my server?" a="Of course. For Factorio, you will just need to upload the mods from your computer to the server. You can install whole mod packs with a click for other games, such as Minecraft." />
+						<FAQ q="Are the player slots adjustable?" a="All Valheim plans are unlimited, and you can change your slots via our control panel. We can recommend a number of slots based on your plan's resources." />
 					</div>
-					<div class="col">
-						<div class="toggle">
-							<div class="toggle-title">
-								<h3>
-									<i></i>
-									<span class="title-name">When will my server be set up?</span>
-								</h3>
-							</div>
-							<div class="toggle-inner">
-								<p>Once your order payment has been processed, the server will start installing and should be ready within a few minutes. If there are any unusual delays, don't hesitate to contact us with the details so we can correct any issues at once.</p>
-							</div>
-						</div>
-						<!-- END OF TOGGLE -->
-						<div class="toggle">
-							<div class="toggle-title">
-								<h3>
-									<i></i>
-									<span class="title-name">Do you provide DDoS protection?</span>
-								</h3>
-							</div>
-							<div class="toggle-inner">
-								<p>Yes, of course! Our automated systems tackle the brunt of these attackers but if you find yourself under attack let our staff know and they will make sure additional mitigators are put in place for your server.</p>
-							</div>
-						</div>
-						<!-- END OF TOGGLE -->
-						<div class="toggle">
-							<div class="toggle-title">
-								<h3>
-									<i></i>
-									<span class="title-name">Can I upgrade or downgrade my server?</span>
-								</h3>
-							</div>
-							<div class="toggle-inner">
-								<p>Yes. You can change your plan/resources at any time and your server will automatically have resources added or removed based on your choice with out needing restarted.</p>
-							</div>
-						</div>
-						<!-- END OF TOGGLE -->
-						<div class="toggle">
-							<div class="toggle-title">
-								<h3>
-									<i></i>
-									<span class="title-name">Do you offer dedicated IPs?</span>
-								</h3>
-							</div>
-							<div class="toggle-inner">
-								<p>Yes, we have dedicated IPs available at checkout. Dedicated IPs are now an additional cost due to the increasing cost due to the IPV4 address shortage.</p>
-							</div>
-						</div>
-						<!-- END OF TOGGLE -->
+					<div class="col col-lg-6">
+						<FAQ q="When will my server be set up?" a="Once your order payment has been processed, the server will start installing and should be ready within a few minutes. If there are any unusual delays, don't hesitate to contact us with the details so we can correct any issues at once." />
+						<FAQ q="Do you provide DDoS protection?" a="Yes, of course! Our automated systems tackle the brunt of these attackers, but if you find yourself under attack, let our staff know and they will make sure additional mitigators are put in place for your server." />
+						<FAQ q="Can I upgrade or downgrade my server?" a="Yes. You can change your plan/resources at any time, and your server will automatically have resources added or removed based on your choice." />
+						<FAQ q="Do you offer dedicated IPs?" a="Yes, we have dedicated IPs available at checkout. Dedicated IPs are now an additional cost due to the increasing cost due to the IPV4 address shortage." />
 					</div>
 				</div>
 			</div>

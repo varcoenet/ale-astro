@@ -1,0 +1,12 @@
+@media screen and (min-width: 768px) and (max-width: 990px) {
+	#all-games .col img {
+		height: 180px;
+	}
+	#all-games .col {
+		width: 33.33333% !important;
+		flex-basis: 33.33333% !important;
+		max-width: 33.33333% !important;
+		overflow: hidden;
+		padding: 10px 10px;
+	}
+}

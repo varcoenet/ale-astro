@@ -2004,6 +2004,7 @@ strong {
 	display: table;
 	margin: 0px auto;
 	padding: 48px 0px;
+	text-align: center;
 }
 
 .tp-widget img {
@@ -2032,6 +2033,10 @@ strong {
 	margin: 0px 6px;
 	padding-bottom: 0px;
 	float: left;
+}
+
+.tp-widget-logo {
+	float: none !important;
 }
 
 .tp-widget h2 {
@@ -3070,13 +3075,26 @@ strong {
 .button_container {
 	position: absolute;
 	top: 39px;
-	right: 20px;
+	right: 10px;
 	height: 20px;
 	width: 28px;
 	cursor: pointer;
 	z-index: 1008;
 	-webkit-transition: opacity 0.25s ease;
 	transition: opacity 0.25s ease;
+	display: none;
+}
+
+.nav-close {
+	display: none;
+}
+
+.button_container.active .nav-close {
+	display: block;
+}
+
+.button_container.active .nav-open {
+	display: none;
 }
 
 .button_container.active {
@@ -3357,24 +3375,23 @@ strong {
 	border-radius: 3px;
 	box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.02);
 	font-size: 15px;
-
-	color: #4b525c;
+	background: #fff;
+	color: var(--header);
 	height: 44px;
 	padding: 0px 12px;
 	border: 1px solid #e5e5eb;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
-	background: url("/images/faq-down.webp") right 14px center no-repeat;
+	background: url("/images/faq-down.svg") right 14px center no-repeat #fff;
+	background-size: 12px;
+	border-radius: 6px;
+	margin-bottom: 20px;
 	margin-top: 12px;
 }
 
 #fdiv {
 	margin: 0px 20px;
-}
-
-#header .col:nth-last-child(1) li:nth-last-child(1) {
-	display: none;
 }
 
 .carousel-mobile-only .carousel-item {
@@ -4003,7 +4020,7 @@ strong {
 
 .nav-icon img {
 	vertical-align: middle;
-	margin-bottom: 6px;
+	margin-bottom: 0px;
 }
 
 .mnav li .dropdown-menu a:hover h5 {
@@ -4124,10 +4141,6 @@ strong {
 
 .nav-icon {
 	position: relative;
-}
-
-.width-24 {
-	width: 24px;
 }
 
 .width-20 {
@@ -5705,6 +5718,12 @@ html {
 	background: #e6e8f6;
 }
 
+.prose h3,
+.prose h4,
+.prose h5 {
+	padding-bottom: 6px;
+}
+
 .panel-compare h3 {
 	font-family: "Metropolis", sans-serif;
 	font-weight: 600;
@@ -6102,10 +6121,6 @@ section {
 
 	.game-specific-panel {
 		margin: 48px auto 48px auto;
-	}
-
-	#panel-reviews h4 {
-		padding-bottom: 20px;
 	}
 
 	.game-logo-tabs li {
