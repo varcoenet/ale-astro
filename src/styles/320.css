@@ -1222,6 +1222,16 @@
 		height: auto;
 	}
 
+	#gamebg-minecraft #gs-row .row {
+		padding: 0px 10px;
+	}
+
+	#gamebg-minecraft #gs-row .row .col {
+		width: 50% !important;
+		flex-basis: 50% !important;
+		padding: 0px 7.5px;
+	}
+
 	#home-two-features .col:nth-child(1) {
 		margin-bottom: 60px;
 	}
