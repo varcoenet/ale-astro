@@ -1137,34 +1137,64 @@
 	.game-boxes-nav .row {
 		padding: 0px 7.5px;
 		justify-content: center;
+		display: block;
+		flex-wrap: unset;
+		text-align: center;
 	}
 
 	.game-boxes-nav .col-lg-25 {
-		width: 8px !important;
-		height: 8px !important;
 		flex-basis: unset !important;
 		background: transparent !important;
 		flex: unset !important;
+		display: inline-block !important;
+		width: 28px !important;
+		margin: 0px 8px;
+		padding: 0px !important;
+	}
+
+	.home-game {
+		width: 28px;
+		height: 28px;
+		border-radius: 50%;
+		position: relative;
+		z-index: 1007;
+		padding: 10px;
+		background: transparent !important;
+		filter: unset !important;
+		box-shadow: unset;
+	}
+
+	.home-game-box.active .home-game {
+		box-shadow: unset;
+	}
+
+	.home-game .gametitle:after {
+		display: none;
+	}
+
+	.home-game .gametitle {
+		width: 8px !important;
+		background: #fff !important;
+		height: 8px !important;
 		padding: 0px !important;
 		margin: 0px 8px !important;
 		border-radius: 50%;
 		display: inline-block !important;
+		position: relative;
+		top: unset;
+		left: unset;
+		right: unset;
+		bottom: unset;
+		padding: 0px !important;
+		float: left;
+		margin: 0px !important;
 	}
 
-	.home-game .gametitle h3 {
-		font-size: 16px;
-		padding: 0px 10px;
-		line-height: 22px;
+	.home-game .game-title * {
+		display: none;
 	}
 
-	.home-game {
-		width: 8px;
-		height: 8px;
-		background: #fff !important;
-		border-radius: 50%;
-	}
-
-	.active .home-game {
+	.active .home-game .gametitle {
 		background: var(--blue) !important;
 	}
 
