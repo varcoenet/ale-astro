@@ -9,4 +9,27 @@
 		overflow: hidden;
 		padding: 10px 10px;
 	}
+
+	#hb-cstwo {
+		background: url("/images/cstwo-bg.webp") center top no-repeat;
+		background-size: contain !important;
+	}
+
+	#hb-minecraft {
+		background: url("/images/minecraft-bg.webp") center top 0px no-repeat;
+		background-size: contain !important;
+	}
+
+	#hb-valheim {
+		background: url("/images/valheim-bg.webp") center top no-repeat;
+		background-size: contain !important;
+	}
+	#hb-palworld {
+		background: url("/images/palworld-bg.webp") center top no-repeat;
+		background-size: contain !important;
+	}
+	#hb-terraria {
+		background: url("/images/terraria-bg.webp") center top no-repeat;
+		background-size: contain !important;
+	}
 }
