@@ -88,7 +88,7 @@ const { title, description, pubDate, updatedDate, heroImage, categories, article
 				box-shadow: var(--box-shadow);
 			}
 			.prose {
-				width: 960px;
+				width: 1000px;
 				max-width: calc(100% - 2em);
 				margin: auto;
 				padding: 1em;
@@ -127,7 +127,7 @@ const { title, description, pubDate, updatedDate, heroImage, categories, article
 			<div class="container">
 				<article>
 					<div class="hero-image">
-						{heroImage && <img width={960} height={420} src={heroImage} alt="" class="responsive-img" />}
+						{heroImage && <img width={960} height={240} src={heroImage} alt="" class="responsive-img" />}
 					</div>
 					<div class="prose">
 						<div class="title">
@@ -144,12 +144,13 @@ const { title, description, pubDate, updatedDate, heroImage, categories, article
 							<h1>{title}</h1>
 							<hr />
 						</div>
-						<slot />
-						<a href="/blog" class="button tiny mt-5">« Back to Blog</a>
 					</div>
+					<slot />
+					<a href="/blog" class="button tiny mt-5">« Back to Blog</a>
 				</article>
 			</div>
 		</section>
+
 		<Footer />
 	</body>
 </html>

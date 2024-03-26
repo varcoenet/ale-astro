@@ -1,46 +1,106 @@
 ---
-import { CollectionEntry, getCollection } from 'astro:content';
-import BlogPost from '../../layouts/BlogPost.astro';
-import FormattedDate from '../../components/FormattedDate.astro';
-import { getCollection } from 'astro:content';
+import { CollectionEntry, getCollection } from "astro:content";
+import BlogPost from "../../layouts/BlogPost.astro";
+import FormattedDate from "../../components/FormattedDate.astro";
+import { getCollection } from "astro:content";
 
-const posts = await getCollection('blog');
+const posts = await getCollection("blog");
 
 const { slug } = Astro.params;
 const post = posts.find((page) => page.slug === slug);
 if (!post) return Astro.redirect("/404");
 
-
 console.log("Current Post:", post); // Log current post
 
 const relatedPosts = posts
-  .filter(otherPost =>
-    otherPost.data.categories && // Ensure categories exist
-    otherPost.data.categories.some(category =>
-      post.data.categories && post.data.categories.includes(category)
-    ) && otherPost.slug !== post.data.slug
-  )
-  .slice(0, 3); // Adjust the number of related posts to display as needed
+	.filter(
+		(otherPost) =>
+			otherPost.data.categories && // Ensure categories exist
+			otherPost.data.categories.some((category) => post.data.categories && post.data.categories.includes(category)) &&
+			otherPost.slug !== post.data.slug
+	)
+	.slice(0, 3); // Adjust the number of related posts to display as needed
 
-  
 console.log("Related Posts:", relatedPosts); // Log related posts
 
 const { Content } = await post.render();
 ---
 
-<BlogPost {...post.data}>
-  <h1>{post.data.title}</h1>
-  <Content />
+<style>
+	main {
+		width: calc(100% - 2em);
+		max-width: 100%;
+		margin: 0;
+	}
+	.hero-image {
+		width: 100%;
+	}
+	.hero-image img {
+		display: block;
+		margin: 0 auto;
+		border-radius: 12px;
+		box-shadow: var(--box-shadow);
+	}
+	.prose {
+		width: 1000px;
+		max-width: calc(100% - 2em);
+		margin: auto;
+		padding: 1em;
+		color: rgb(var(--gray-dark));
+	}
+	.prose p img {
+		max-width: 100% !important;
+	}
+	.title {
+		margin-bottom: 1em;
+		padding: 2em 0;
+		text-align: center;
+		line-height: 1;
+	}
+	.title h1 {
+		margin: 0 0 0.65em 0;
+	}
+	.date {
+		margin-bottom: 0.75em;
+		color: rgb(var(--gray));
+	}
+	.last-updated-on {
+		font-style: italic;
+	}
+	hr {
+		opacity: 0.33;
+	}
+</style>
 
-  {/* Display related posts */}
-  <h2>Related Posts</h2>
-  <ul>
-    {relatedPosts.map(relatedPost => (
-      <li key={relatedPost.slug}>
-        <a href={`/blog/${relatedPost.slug}`}>
-          {relatedPost.data.title} - <FormattedDate date={relatedPost.data.pubDate} />
-        </a>
-      </li>
-    ))}
-  </ul>
+<BlogPost {...post.data}>
+	<div class="prose">
+		<h1>{post.data.title}</h1>
+		<Content />
+	</div>
+
+	<div class="related-posts">
+		{/* Display related posts */}
+		<h2>Related Posts</h2>
+
+		<div class="row">
+			{
+				relatedPosts.map((relatedPost) => (
+					<div class="col col-lg-4" key={relatedPost.slug}>
+						<a href={`/blog/${relatedPost.slug}/`} class="blog-box">
+							<div class="blog-box-img">
+								<img src={relatedPost.data.heroImage} alt="" class="responsive-img" />
+							</div>
+							<div class="blog-box-inner">
+								<p class="blog-date">
+									<FormattedDate date={relatedPost.data.pubDate} />
+								</p>
+								<h4 class="blog-title">{relatedPost.data.title}</h4>
+								<strong class="blue">Read More &raquo;</strong>
+							</div>
+						</a>
+					</div>
+				))
+			}
+		</div>
+	</div>
 </BlogPost>
