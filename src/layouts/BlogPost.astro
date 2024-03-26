@@ -44,6 +44,33 @@ const { title, description, pubDate, updatedDate, heroImage, categories, article
 		<meta property="article:section" content={articleSection} />
 		<meta property="article:tag" content={articleTag} />
 		<meta property="fb:app_id" content="2877703308935482" />
+		<!-- Schema -->
+		<script
+			type="application/ld+json"
+			set:html={`
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://aleforge.net${currentPath}" },
+    "headline": "${title}",
+    "author": {
+      "@type": "Organization",
+      "name": "AleForge",
+      "url": "https://aleforge.net/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "AleForge",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://aleforge.net/images/logo.webp"
+      }
+    },
+    "datePublished": "${pubDate}",
+    "dateModified": ""
+  }
+`}
+		/>
 
 		<style>
 			main {
