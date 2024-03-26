@@ -12,7 +12,7 @@ articleTag: "internet connection"
 
 Posted on January 08, 2023
 
-![](../images/blog/keyboard-5626500_1920.jpg)
+![](/images/blog/keyboard-5626500_1920.jpg)
 
 Everybody knows how frustrating a slow internet connection can be, especially when trying to enjoy your favorite online games. If you're stuck with a slow connection, you can do a few things to speed it up and get back to your gaming fun. Check out the top tips listed below.
 

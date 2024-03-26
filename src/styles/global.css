@@ -171,16 +171,6 @@
 @font-face {
 	font-family: "Metropolis";
 	src:
-		url("/fonts/Metropolis-Black.woff2") format("woff2"),
-		url("/fonts/Metropolis-Black.woff") format("woff");
-	font-weight: 900;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: "Metropolis";
-	src:
 		url("/fonts/Metropolis-SemiBoldItalic.woff2") format("woff2"),
 		url("/fonts/Metropolis-SemiBoldItalic.woff") format("woff");
 	font-weight: 600;
@@ -2984,7 +2974,6 @@ strong {
 .quicksearch {
 	border: 1px solid rgba(255, 255, 255, 0.1);
 	color: #fff;
-	background: url(../images/search.svg) center left 28px no-repeat #171a1e;
 	background-size: 18px;
 	width: 100%;
 	color: #fff;
@@ -3013,7 +3002,7 @@ strong {
 	line-height: 64px;
 	padding: 0px 24px;
 	display: block;
-	background: url(../images/drop-hover.svg) center right 24px no-repeat transparent;
+	background: url(/images/drop-hover.svg) center right 24px no-repeat transparent;
 	background-size: 15px auto;
 	color: rgba(185, 185, 185, 0.66);
 	font-family: "Metropolis", sans-serif;
@@ -4060,7 +4049,6 @@ strong {
 	bottom: -14px;
 	content: " ";
 	display: block;
-	background: url("/images/dropdown-arrow.svg");
 	width: 20px;
 	height: 9px;
 }
@@ -5583,7 +5571,7 @@ html {
 }
 
 .game-panel-preview {
-	background: url("../images/panel-preview-bg.svg") center center no-repeat;
+	background: url("/images/panel-preview-bg.svg") center center no-repeat;
 	padding: 16px;
 	background-size: 100%;
 }
@@ -5935,10 +5923,10 @@ section {
 }
 
 .dark-bg-small .carousel-control-next-icon {
-	background: url("../images/test-next.svg") center center no-repeat;
+	background: url("/images/test-next.svg") center center no-repeat;
 }
 .dark-bg-small .carousel-control-prev-icon {
-	background: url("../images/test-prev.svg") center center no-repeat;
+	background: url("/images/test-prev.svg") center center no-repeat;
 }
 
 #panel-reviews .carousel-control-prev-icon,

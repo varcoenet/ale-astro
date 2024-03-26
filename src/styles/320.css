@@ -606,14 +606,7 @@
 	#minecraft-bg {
 		padding-bottom: 80px;
 	}
-	.mc-plans .flex-grid.five .col {
-		background: url(../images/mcbg-5.webp) 50% no-repeat !important;
-		height: auto;
-		margin-bottom: 20px;
-		padding: 28px 16px;
-		text-align: center;
-		width: 47% !important;
-	}
+
 	#modpacks .flex-grid.seven .col {
 		margin-bottom: 20px;
 		width: 47%;
@@ -672,7 +665,6 @@
 		display: none;
 	}
 	.timeline ul li.inverted {
-		background: url(../images/timeline-pin.webp) 0 0 repeat-y;
 		margin-left: 0;
 		padding-left: 4%;
 		padding-right: 0;
@@ -873,11 +865,7 @@
 	#contact-methods li a img {
 		float: none;
 	}
-	.contact-form {
-		background: url(../images/contact-bg-mobile.webp) 50% no-repeat;
-		background-size: contain;
-		margin-top: 20px;
-	}
+
 	#contact-methods li {
 		padding: 4px 0;
 	}
@@ -927,22 +915,6 @@
 	}
 	#newgs-plans {
 		text-align: center;
-	}
-
-	.plan-box-dark,
-	#newgs-tabs-2 .plan-box-dark {
-		background-size: 400px;
-		width: 380px;
-		padding: 60px 37px 0px 37px;
-		margin-bottom: 12px;
-		display: inline-block;
-		margin-left: -8px !important;
-	}
-
-	#newgs-tabs-2 #newgs-plan-2 {
-		background: url(../images/newgs-plan-bg-2-prem.webp) center center no-repeat;
-		background-size: 400px;
-		margin-left: -14px !important;
 	}
 
 	.plan-box-specs .flex-grid.three .col {
