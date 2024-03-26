@@ -2,6 +2,7 @@
 title: "How Using a Server Will Enhance Your Gaming Experience"
 description: "You may use a gaming server all the time without thinking about the technology behind it. It's pretty cool! Here's how servers work to optimize your experience."
 pubDate: "January 18, 2019"
+updatedDate: "Mar 25, 2023"
 heroImage: "/images/blog/how-servers-work.jpg"
 categories: ["server", "gaming"]
 articleSection: "Gaming"
