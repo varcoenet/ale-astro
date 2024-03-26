@@ -4281,6 +4281,13 @@ strong {
 	opacity: 1;
 }
 
+.newgs-tabs li:nth-child(2) a.active {
+	background: #6cbc5c;
+}
+.newgs-tabs li:nth-child(2) a.active .green {
+	color: #fff;
+}
+
 .newgs-tabs li:nth-child(1) a {
 	line-height: 36px;
 	padding: 12px 34px 11px 34px;
