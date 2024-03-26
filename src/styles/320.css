@@ -1218,7 +1218,12 @@
 	}
 
 	.min-height-map {
+		margin-bottom: 0px;
 		height: auto;
+	}
+
+	#home-two-features .col:nth-child(1) {
+		margin-bottom: 60px;
 	}
 
 	#panel-reviews p {
@@ -1427,6 +1432,10 @@
 	}
 	.prose {
 		max-width: 100% !important;
+	}
+
+	.logo img {
+		height: 48px;
 	}
 	/* END Media query after this */
 
