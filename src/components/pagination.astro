@@ -1,3 +1,0 @@
-// pagination.astro
-
-export function Pagination({ totalPages }) { const pages = []; for (let i = 1; i <= totalPages; i++) { pages.push(i); } return ( <div> <div className="pagination"> <Fragment> {pages.map((pageNumber) => ( <a href={`?page=${pageNumber}`}>{pageNumber}</a> ))} </Fragment> </div> </div> ); }
