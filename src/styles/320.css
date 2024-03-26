@@ -1131,6 +1131,8 @@
 	}
 
 	.game-boxes-nav {
+		z-index: 1007;
+		position: relative;
 		padding: 0px 0px 20px 0px;
 	}
 
