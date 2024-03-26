@@ -2972,6 +2972,8 @@ strong {
 }
 
 .quicksearch {
+	color: #fff;
+	background: url(../images/search.svg) center left 28px no-repeat #171a1e;
 	border: 1px solid rgba(255, 255, 255, 0.1);
 	color: #fff;
 	background-size: 18px;
@@ -2985,6 +2987,9 @@ strong {
 	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.24);
 	font-weight: 500;
 	z-index: 1000;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 }
 
 .quicksearch:focus {
