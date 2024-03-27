@@ -6656,17 +6656,14 @@ section {
 }
 
 .prose ul li {
-	margin: 4px 0px;
+	padding: 6px 0px;
+	padding-left: 6px;
 }
 
 .prose ul {
 	list-style-type: disc;
-	margin-left: 10px;
+	margin-left: 12px;
 	margin-bottom: 20px;
-}
-
-.prose ul li {
-	padding-left: 4px;
 }
 
 .prose ul li::marker {
