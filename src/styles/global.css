@@ -6654,3 +6654,39 @@ section {
 	opacity: 0.5;
 	line-height: 32px;
 }
+
+.prose ul li {
+	margin: 4px 0px;
+}
+
+.prose ul {
+	list-style-type: disc;
+	margin-left: 10px;
+	margin-bottom: 20px;
+}
+
+.prose ul li {
+	padding-left: 4px;
+}
+
+.prose ul li::marker {
+	color: var(--blue);
+}
+
+.prose blockquote {
+	background: var(--grey-bg);
+	border-left: 3px solid var(--dark-light-grey);
+	padding: 12px 20px 10px 20px;
+	margin-bottom: 20px;
+	font-weight: 300;
+	margin-left: 30px;
+}
+
+.prose blockquote p:last-of-type,
+.prose p:last-of-type {
+	padding-bottom: 0px;
+}
+
+.prose h1:nth-child(1) {
+	display: none;
+}
