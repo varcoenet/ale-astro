@@ -6687,3 +6687,10 @@ section {
 .prose h1:nth-child(1) {
 	display: none;
 }
+
+.prose h2 {
+	font-size: 30px;
+}
+.prose h3 {
+	font-size: 24px;
+}
