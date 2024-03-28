@@ -32,7 +32,7 @@ All of those issues affected singleplayer and multiplayer alike, but there were 
 - Transferring Saves Between Servers
 - Multiple Memory Leaks.
 
-> 💡\*\*What’s a Memory Leak?\*\*
+> 💡**What’s a Memory Leak?**
 >
 > Think of your computer’s memory (RAM) like a whiteboard that programs use to write down information they plan on using later. When a program has a memory leak, it keeps writing things on that whiteboard, but it doesn’t go back and erase anything. Even if it doesn’t need it anymore. Eventually the program runs out of space to write new information and crashes. Sometimes taking your computer down with it.
 
@@ -74,10 +74,9 @@ Almost immediately, Carbonic spun up a community server for us to stress test it
 
 While there had been significant improvements to server performance and RAM usage, it wasn’t entirely fixed. As people played on a server, RAM usage would climb and climb, but _why?_ Mayples was the one who discovered what was going on, all thanks to the palsphere bug I mentioned earlier.
 
-> Mayples (paraphrased):_  
+> Mayples (paraphrased):
 > I had a bug like that back in CoDMW2 when we put in a new grenade launcher. It would launch the players, not the projectile. It was because we didn’t kill the object we just teleported it, and the momentum would send players flying. The palsphere bug is the same thing. They don’t kill the object; just teleport it, and the momentum launches you. Which told me they’re making a killbox somewhere like we were.  
-> They load dungeons under the map, if you get out you can see the whole map, and where they stack everything waiting to be killed. The graphics are turned off but the objects are there. Yet they never actually get deleted. Then the game starts throwing errors for stuff spawning off the map, eventually it building up a massive error log and crashing.  
-> _
+> They load dungeons under the map, if you get out you can see the whole map, and where they stack everything waiting to be killed. The graphics are turned off but the objects are there. Yet they never actually get deleted. Then the game starts throwing errors for stuff spawning off the map, eventually it building up a massive error log and crashing.
 
 Going back to the whiteboard analogy. When an object like used palspheres or sticks/stones on the ground spawn, they get drawn on the board. When they “despawn” they don’t get erased, just hidden. Eventually the server goes back and writes “error” under it, taking up more space. You’re probably starting to see how Palworld servers chew through RAM like potato chips, aren’t you?
 
