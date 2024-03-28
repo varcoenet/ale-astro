@@ -57,11 +57,9 @@ We managed to make some progress on transferring saves and getting past the infi
   There’s two parts to this, since going from singleplayer → server is different than server → server. We have a guide on how to do both [here](https://help.aleforge.net/article/228-how-to-upload-your-palworld-world), but the process is pretty janky and your results may vary.
 
   - Singleplayer/Co-Op → Server
-
     At the time of writing this works… Mostly. The world and most of the player data will transfer without a hitch, except for the host’s. By default Palworld tracks which player is which with a GUID (Globally Unique Identifier). That ID is tied to their Steam/Xbox account. However, the host’s data gets saved under ID 000000001. So when they join, the server doesn’t recognize them and forces them to make a new character. There’s an unofficial fix [here](https://github.com/xNul/palworld-host-save-fix), use at your own risk.
 
   - Server → Server
-
     Once again, this is currently kinda working. Unless you’re trying to transfer a world that was created before patch 1.3.0. That patch changed the way dedicated servers create and manage GUIDs. As far as we know, there isn’t a workaround for this. Otherwise, following guide I linked before should work. If you get stuck or need help transferring to our servers, open a ticket and we’ll help you out.
 
 While we were working on finding solutions to the infinite loading screen and save transfers, Mayples and VeroFess were still plugging away at the memory leaks and things were starting to heat up. So much so that we opened The Code Forge, a dedicated discord channel for our community to use as they reverse engineered the game.
