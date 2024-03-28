@@ -32,9 +32,7 @@ All of those issues affected singleplayer and multiplayer alike, but there were 
 - Transferring Saves Between Servers
 - Multiple Memory Leaks.
 
-> 💡\*\*What’s a Memory Leak?
->
-> \*\*
+> 💡\*\*What’s a Memory Leak?\*\*
 >
 > Think of your computer’s memory (RAM) like a whiteboard that programs use to write down information they plan on using later. When a program has a memory leak, it keeps writing things on that whiteboard, but it doesn’t go back and erase anything. Even if it doesn’t need it anymore. Eventually the program runs out of space to write new information and crashes. Sometimes taking your computer down with it.
 
